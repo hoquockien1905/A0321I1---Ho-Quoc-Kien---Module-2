@@ -20,6 +20,12 @@ public class LinearEquation {
         if (a != 0) {
             double solution = -b / a;
             System.out.printf("The solution is: %.2f !", solution);
+        } else {
+            if (b == 0) {
+                System.out.println("The equation has wealth of counter!");
+            } else {
+                System.out.println("Countless solutions!");
+            }
         }
     }
 }
