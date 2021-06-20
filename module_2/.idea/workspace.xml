@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="95d9d2fb-418a-49a3-a42e-a57446a40cd1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1u6GEGoGfz7MbxcKIg6BvEtZJ85" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="Images" />
+  </component>
+  <component name="RunManager" selected="Application.ShowTheFirstPrimes">
+    <configuration name="DrawingMenu (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_2_vong_lap_trong_java.thuc_hanh.ung_dung_menu_ve_hinh.DrawingMenu" />
+      <module name="module_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bai_2_vong_lap_trong_java.thuc_hanh.ung_dung_menu_ve_hinh.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GreatestCommonDivisor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_2_vong_lap_trong_java.thuc_hanh.tim_uoc_chung_lon_nhat.GreatestCommonDivisor" />
+      <module name="module_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bai_2_vong_lap_trong_java.thuc_hanh.tim_uoc_chung_lon_nhat.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrimesLessThan100" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_2_vong_lap_trong_java.bai_tap.hien_thi_cac_so_nguyen_to_nho_hon_100.PrimesLessThan100" />
+      <module name="module_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bai_2_vong_lap_trong_java.bai_tap.hien_thi_cac_so_nguyen_to_nho_hon_100.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShowShape" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_2_vong_lap_trong_java.bai_tap.hien_thi_cac_loai_hinh.ShowShape" />
+      <module name="module_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bai_2_vong_lap_trong_java.bai_tap.hien_thi_20_so_nguyen_to_dau_tien.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShowTheFirstPrimes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_2_vong_lap_trong_java.bai_tap.hien_thi_20_so_nguyen_to_dau_tien.ShowTheFirstPrimes" />
+      <module name="module_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bai_2_vong_lap_trong_java.bai_tap.hien_thi_20_so_nguyen_to_dau_tien.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ShowTheFirstPrimes" />
+        <item itemvalue="Application.PrimesLessThan100" />
+        <item itemvalue="Application.ShowShape" />
+        <item itemvalue="Application.DrawingMenu (1)" />
+        <item itemvalue="Application.GreatestCommonDivisor" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="95d9d2fb-418a-49a3-a42e-a57446a40cd1" name="Default Changelist" comment="" />
+      <created>1623978511541</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1623978511541</updated>
+      <workItem from="1623978514802" duration="5142000" />
+      <workItem from="1623988557204" duration="7002000" />
+      <workItem from="1624016542912" duration="3860000" />
+      <workItem from="1624052305735" duration="11766000" />
+      <workItem from="1624108151197" duration="1182000" />
+      <workItem from="1624134808893" duration="19947000" />
+      <workItem from="1624195200693" duration="1735000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="484" height="453" key="GridCell.Tab.0.bottom" timestamp="1624204942855">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="484" height="453" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1624204942855" />
+    <state width="484" height="453" key="GridCell.Tab.0.center" timestamp="1624204942855">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="484" height="453" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1624204942855" />
+    <state width="484" height="453" key="GridCell.Tab.0.left" timestamp="1624204942855">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="484" height="453" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1624204942855" />
+    <state width="484" height="453" key="GridCell.Tab.0.right" timestamp="1624204942855">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="484" height="453" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1624204942855" />
+    <state width="1342" height="258" key="GridCell.Tab.1.bottom" timestamp="1624176503460">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1342" height="258" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1624176503460" />
+    <state width="1342" height="258" key="GridCell.Tab.1.center" timestamp="1624176503460">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1342" height="258" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1624176503460" />
+    <state width="1342" height="258" key="GridCell.Tab.1.left" timestamp="1624176503460">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1342" height="258" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1624176503460" />
+    <state width="1342" height="258" key="GridCell.Tab.1.right" timestamp="1624176503460">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1342" height="258" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1624176503460" />
+    <state x="277" y="77" key="SettingsEditor" timestamp="1623981740539">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="277" y="77" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1623981740539" />
+    <state x="425" y="199" key="run.anything.popup" timestamp="1624174828607">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="425" y="199" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1624174828607" />
+    <state x="431" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1624136809530">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="431" y="185" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1624136809530" />
+  </component>
+</project>
