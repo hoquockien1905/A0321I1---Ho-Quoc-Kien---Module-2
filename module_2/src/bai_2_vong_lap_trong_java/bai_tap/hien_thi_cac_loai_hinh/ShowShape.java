@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class ShowShape {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int width;
-        int height;
+        int width = 0;
+        int height = 0;
 
         ShowShape check = new ShowShape();
         ShowShape show = new ShowShape();
@@ -43,7 +43,7 @@ public class ShowShape {
     }
 
     public int checkInputMenu() {
-        int choice;
+        int choice = 0;
         Scanner sc = new Scanner(System.in);
         while (true) {
             try {
@@ -55,7 +55,7 @@ public class ShowShape {
                 System.out.println("4. Exit");
                 System.out.print("Enter your choice: ");
                 choice = Integer.parseInt(sc.nextLine());
-                if (choice <= 4 && choice >=1) {
+                if (choice <= 4 && choice >= 1) {
                     break;
                 }
             } catch (Exception e){

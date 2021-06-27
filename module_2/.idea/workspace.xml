@@ -20,13 +20,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95d9d2fb-418a-49a3-a42e-a57446a40cd1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_3_mang_va_phuong_thuc_trong_mang/bai_tap/chen_phan_tu_cho_mang/InsertElementForArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_3_mang_va_phuong_thuc_trong_mang/bai_tap/dem_so_lan_xuat_hien_ky_tu_trong_chuoi/CountCharactersInString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_3_mang_va_phuong_thuc_trong_mang/bai_tap/gop_mang/ArrayMerge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_3_mang_va_phuong_thuc_trong_mang/bai_tap/tim_phan_tu_lon_nhat_trong_mang_2_chieu/MaxValueIn2D.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_3_mang_va_phuong_thuc_trong_mang/bai_tap/tinh_tong_duong_cheo_trong_mang_2_chieu/SumOfDiagonalLineIn2D.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_3_mang_va_phuong_thuc_trong_mang/bai_tap/tinh_tong_mot_cac_so_o_mot_cot_xac_dinh/SumOfColumnsInArray2D.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_3_mang_va_phuong_thuc_trong_mang/bai_tap/xoa_phan_tu_cua_mang/DeleteElementOfArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_3_mang_va_phuong_thuc_trong_mang/thuc_hanh/chuong_trinh_chuyen_doi_nhiet_do/ConvertTemperature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_3_mang_va_phuong_thuc_trong_mang/thuc_hanh/tim_gia_tri_nho_nhat_trong_mang/MinValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_4_lop_va_doi_tuong_trong_java/bai_tap/phuong_trinh_bac_hai/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_4_lop_va_doi_tuong_trong_java/bai_tap/phuong_trinh_bac_hai/QuadraticEquation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_4_lop_va_doi_tuong_trong_java/bai_tap/xay_dung_lop_fan/Fan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_4_lop_va_doi_tuong_trong_java/bai_tap/xay_dung_lop_fan/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_4_lop_va_doi_tuong_trong_java/bai_tap/xay_dung_lop_stop_watch/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_4_lop_va_doi_tuong_trong_java/bai_tap/xay_dung_lop_stop_watch/StopWatch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_4_lop_va_doi_tuong_trong_java/thuc_hanh/lop_hinh_chu_nhat/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_4_lop_va_doi_tuong_trong_java/thuc_hanh/lop_hinh_chu_nhat/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module_2/bai_2_vong_lap_trong_java/bai_tap/hien_thi_cac_loai_hinh/ShowShape.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module_2/bai_2_vong_lap_trong_java/bai_tap/hien_thi_cac_loai_hinh/ShowShape.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bai_2_vong_lap_trong_java/bai_tap/hien_thi_cac_loai_hinh/ShowShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bai_2_vong_lap_trong_java/bai_tap/hien_thi_cac_loai_hinh/ShowShape.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -37,6 +60,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1u6GEGoGfz7MbxcKIg6BvEtZJ85" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -50,21 +76,23 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../thuat_toan/sort" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="Images" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunManager" selected="Application.ShowTheFirstPrimes">
-    <configuration name="DrawingMenu (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bai_2_vong_lap_trong_java.thuc_hanh.ung_dung_menu_ve_hinh.DrawingMenu" />
+  <component name="RunManager" selected="Application.Main (2)">
+    <configuration name="CountCharactersInString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_3_mang_va_phuong_thuc_trong_mang.bai_tap.dem_so_lan_xuat_hien_ky_tu_trong_chuoi.CountCharactersInString" />
       <module name="module_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="bai_2_vong_lap_trong_java.thuc_hanh.ung_dung_menu_ve_hinh.*" />
+          <option name="PATTERN" value="bai_3_mang_va_phuong_thuc_trong_mang.bai_tap.dem_so_lan_xuat_hien_ky_tu_trong_chuoi.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -72,12 +100,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GreatestCommonDivisor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bai_2_vong_lap_trong_java.thuc_hanh.tim_uoc_chung_lon_nhat.GreatestCommonDivisor" />
+    <configuration name="DeleteElementOfArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_3_mang_va_phuong_thuc_trong_mang.bai_tap.xoa_phan_tu_cua_mang.DeleteElementOfArray" />
       <module name="module_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="bai_2_vong_lap_trong_java.thuc_hanh.tim_uoc_chung_lon_nhat.*" />
+          <option name="PATTERN" value="bai_3_mang_va_phuong_thuc_trong_mang.bai_tap.xoa_phan_tu_cua_mang.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -85,12 +113,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrimesLessThan100" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bai_2_vong_lap_trong_java.bai_tap.hien_thi_cac_so_nguyen_to_nho_hon_100.PrimesLessThan100" />
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_4_lop_va_doi_tuong_trong_java.bai_tap.phuong_trinh_bac_hai.Main" />
       <module name="module_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="bai_2_vong_lap_trong_java.bai_tap.hien_thi_cac_so_nguyen_to_nho_hon_100.*" />
+          <option name="PATTERN" value="bai_4_lop_va_doi_tuong_trong_java.bai_tap.phuong_trinh_bac_hai.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -98,12 +126,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShowShape" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bai_2_vong_lap_trong_java.bai_tap.hien_thi_cac_loai_hinh.ShowShape" />
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_4_lop_va_doi_tuong_trong_java.bai_tap.xay_dung_lop_fan.Main" />
       <module name="module_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="bai_2_vong_lap_trong_java.bai_tap.hien_thi_20_so_nguyen_to_dau_tien.*" />
+          <option name="PATTERN" value="bai_4_lop_va_doi_tuong_trong_java.bai_tap.xay_dung_lop_fan.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,12 +139,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShowTheFirstPrimes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bai_2_vong_lap_trong_java.bai_tap.hien_thi_20_so_nguyen_to_dau_tien.ShowTheFirstPrimes" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_4_lop_va_doi_tuong_trong_java.thuc_hanh.lop_hinh_chu_nhat.Main" />
       <module name="module_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="bai_2_vong_lap_trong_java.bai_tap.hien_thi_20_so_nguyen_to_dau_tien.*" />
+          <option name="PATTERN" value="bai_4_lop_va_doi_tuong_trong_java.thuc_hanh.lop_hinh_chu_nhat.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -126,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ShowTheFirstPrimes" />
-        <item itemvalue="Application.PrimesLessThan100" />
-        <item itemvalue="Application.ShowShape" />
-        <item itemvalue="Application.DrawingMenu (1)" />
-        <item itemvalue="Application.GreatestCommonDivisor" />
+        <item itemvalue="Application.Main (2)" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.CountCharactersInString" />
+        <item itemvalue="Application.DeleteElementOfArray" />
       </list>
     </recent_temporary>
   </component>
@@ -150,7 +178,27 @@
       <workItem from="1624052305735" duration="11766000" />
       <workItem from="1624108151197" duration="1182000" />
       <workItem from="1624134808893" duration="19947000" />
-      <workItem from="1624195200693" duration="1735000" />
+      <workItem from="1624195200693" duration="1995000" />
+      <workItem from="1624234778638" duration="3121000" />
+      <workItem from="1624238125438" duration="4587000" />
+      <workItem from="1624272320310" duration="5593000" />
+      <workItem from="1624278147548" duration="1487000" />
+      <workItem from="1624280489346" duration="13926000" />
+      <workItem from="1624322126476" duration="14743000" />
+      <workItem from="1624408814810" duration="5279000" />
+      <workItem from="1624585485780" duration="8293000" />
+      <workItem from="1624600266150" duration="12409000" />
+      <workItem from="1624628466640" duration="948000" />
+      <workItem from="1624671856527" duration="4371000" />
+      <workItem from="1624676307069" duration="828000" />
+      <workItem from="1624677286063" duration="41000" />
+      <workItem from="1624677492741" duration="29000" />
+      <workItem from="1624677869841" duration="193000" />
+      <workItem from="1624678085278" duration="71000" />
+      <workItem from="1624678172768" duration="692000" />
+      <workItem from="1624693504094" duration="10032000" />
+      <workItem from="1624714028765" duration="7605000" />
+      <workItem from="1624731487874" duration="67000" />
     </task>
     <servers />
   </component>
@@ -170,49 +218,74 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="484" height="453" key="GridCell.Tab.0.bottom" timestamp="1624204942855">
+    <state x="456" y="0" key="#Main_(1)" timestamp="1624714199962">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="484" height="453" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1624204942855" />
-    <state width="484" height="453" key="GridCell.Tab.0.center" timestamp="1624204942855">
+    <state x="456" y="0" key="#Main_(1)/0.0.1536.864@0.0.1536.864" timestamp="1624714199962" />
+    <state x="537" y="133" width="474" height="647" key="#com.intellij.ide.util.MemberChooser" timestamp="1624716205998">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="484" height="453" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1624204942855" />
-    <state width="484" height="453" key="GridCell.Tab.0.left" timestamp="1624204942855">
+    <state x="537" y="133" width="474" height="647" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1624716205998" />
+    <state x="516" y="287" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1624243205056">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="484" height="453" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1624204942855" />
-    <state width="484" height="453" key="GridCell.Tab.0.right" timestamp="1624204942855">
+    <state x="516" y="287" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.864@0.0.1536.864" timestamp="1624243205056" />
+    <state x="548" y="158" key="FileChooserDialogImpl" timestamp="1624731552727">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="484" height="453" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1624204942855" />
-    <state width="1342" height="258" key="GridCell.Tab.1.bottom" timestamp="1624176503460">
+    <state x="548" y="158" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1624731552727" />
+    <state width="503" height="669" key="GridCell.Tab.0.bottom" timestamp="1624723942543">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1342" height="258" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1624176503460" />
-    <state width="1342" height="258" key="GridCell.Tab.1.center" timestamp="1624176503460">
+    <state width="503" height="669" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1624723942543" />
+    <state width="503" height="669" key="GridCell.Tab.0.center" timestamp="1624723942543">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1342" height="258" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1624176503460" />
-    <state width="1342" height="258" key="GridCell.Tab.1.left" timestamp="1624176503460">
+    <state width="503" height="669" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1624723942543" />
+    <state width="503" height="669" key="GridCell.Tab.0.left" timestamp="1624723942543">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1342" height="258" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1624176503460" />
-    <state width="1342" height="258" key="GridCell.Tab.1.right" timestamp="1624176503460">
+    <state width="503" height="669" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1624723942543" />
+    <state width="503" height="669" key="GridCell.Tab.0.right" timestamp="1624723942543">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1342" height="258" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1624176503460" />
-    <state x="277" y="77" key="SettingsEditor" timestamp="1623981740539">
+    <state width="503" height="669" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1624723942543" />
+    <state width="1342" height="250" key="GridCell.Tab.1.bottom" timestamp="1624714164122">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="277" y="77" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1623981740539" />
-    <state x="425" y="199" key="run.anything.popup" timestamp="1624174828607">
+    <state width="1342" height="250" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1624714164122" />
+    <state width="1342" height="250" key="GridCell.Tab.1.center" timestamp="1624714164122">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="425" y="199" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1624174828607" />
-    <state x="431" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1624136809530">
+    <state width="1342" height="250" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1624714164122" />
+    <state width="1342" height="250" key="GridCell.Tab.1.left" timestamp="1624714164122">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="431" y="185" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1624136809530" />
+    <state width="1342" height="250" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1624714164122" />
+    <state width="1342" height="250" key="GridCell.Tab.1.right" timestamp="1624714164122">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1342" height="250" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1624714164122" />
+    <state x="277" y="77" key="SettingsEditor" timestamp="1624720092257">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="277" y="77" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1624720092257" />
+    <state x="477" y="170" key="refactoring.ChangeSignatureDialog" timestamp="1624716939046">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="477" y="170" key="refactoring.ChangeSignatureDialog/0.0.1536.864@0.0.1536.864" timestamp="1624716939046" />
+    <state x="425" y="199" key="run.anything.popup" timestamp="1624705104001">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="425" y="199" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1624705104001" />
+    <state x="431" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1624719839824">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="431" y="185" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1624719839824" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/module_2$Main__1_.ic" NAME="Main (1) Coverage Results" MODIFIED="1624714212554" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>bai_4_lop_va_doi_tuong_trong_java.bai_tap.phuong_trinh_bac_hai.*</FILTER>
+    </SUITE>
   </component>
 </project>
