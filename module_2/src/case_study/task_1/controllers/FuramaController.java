@@ -69,9 +69,6 @@ public class FuramaController {
         while (true) {
             try {
                 choice = Integer.parseInt(sc.nextLine());
-                if (choice < 5 && choice > 0) {
-                    break;
-                }
                 while (choice > 4 || choice < 1) {
                     System.err.print("Invalid input! Enter again: ");
                     choice = Integer.parseInt(sc.nextLine());
@@ -92,8 +89,6 @@ public class FuramaController {
                 break;
             case 4:
                 displayMainMenu();
-                break;
-            default:
                 break;
         }
     }
@@ -112,9 +107,6 @@ public class FuramaController {
         while (true) {
             try {
                 choice = Integer.parseInt(sc.nextLine());
-                if (choice < 5 && choice > 0) {
-                    break;
-                }
                 while (choice > 4 || choice < 1) {
                     System.err.print("Invalid input! Enter again: ");
                     choice = Integer.parseInt(sc.nextLine());
@@ -135,8 +127,6 @@ public class FuramaController {
                 break;
             case 4:
                 displayMainMenu();
-                break;
-            default:
                 break;
         }
     }
@@ -154,9 +144,6 @@ public class FuramaController {
         while (true) {
             try {
                 choice = Integer.parseInt(sc.nextLine());
-                if (choice < 5 && choice > 0) {
-                    break;
-                }
                 while (choice > 4 || choice < 1) {
                     System.err.print("Invalid input! Enter again: ");
                     choice = Integer.parseInt(sc.nextLine());
@@ -177,8 +164,6 @@ public class FuramaController {
                 break;
             case 4:
                 displayMainMenu();
-                break;
-            default:
                 break;
         }
     }
@@ -198,9 +183,6 @@ public class FuramaController {
         while (true) {
             try {
                 choice = Integer.parseInt(sc.nextLine());
-                if (choice < 7 && choice > 0) {
-                    break;
-                }
                 while (choice > 6 || choice < 1) {
                     System.err.print("Invalid input! Enter again: ");
                     choice = Integer.parseInt(sc.nextLine());
@@ -226,8 +208,6 @@ public class FuramaController {
             case 6:
                 displayMainMenu();
                 break;
-            default:
-                break;
         }
     }
 
@@ -243,9 +223,6 @@ public class FuramaController {
         while (true) {
             try {
                 choice = Integer.parseInt(sc.nextLine());
-                if (choice < 4 && choice > 0) {
-                    break;
-                }
                 while (choice > 3 || choice < 1) {
                     System.err.print("Invalid input! Enter again: ");
                     choice = Integer.parseInt(sc.nextLine());
@@ -264,8 +241,6 @@ public class FuramaController {
                 break;
             case 3:
                 displayMainMenu();
-                break;
-            default:
                 break;
         }
     }
