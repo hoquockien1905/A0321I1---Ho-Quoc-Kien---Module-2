@@ -3,7 +3,8 @@ package case_study.task_1.controllers;
 import java.util.Scanner;
 
 public class FuramaController {
-    int choice;
+    private int choice;
+
     public void displayMainMenu() {
         Scanner sc = new Scanner(System.in);
 
