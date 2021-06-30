@@ -20,12 +20,17 @@ public class Main {
         QuadraticEquation equation = new QuadraticEquation(a, b, c);
 
         System.out.println(equation.toString());
-        System.out.println("delta = " + equation.getDiscriminant());
+
+        double delta = equation.getDiscriminant();
+        double root1 = equation.getRoot1();
+        double root2 = equation.getRoot2();
+        double doubleRoot = equation.getDoubleRoot();
+        System.out.println("delta = " + delta);
         if (equation.getDiscriminant() > (double) 0) {
-            System.out.println("The equation has two roots: " + equation.getRoot1());
-            System.out.println("\t\t\t\t\t\tand " + equation.getRoot2());
+            System.out.println("The equation has two roots: " + root1);
+            System.out.println("\t\t\t\t\t\tand " + root2);
         } else if (equation.getDiscriminant() == (double) 0) {
-            System.out.println("The equation has double root is: " + equation.getDoubleRoot());
+            System.out.println("The equation has double root is: " + doubleRoot);
         } else {
             System.out.println("The equation has no real roots");
         }

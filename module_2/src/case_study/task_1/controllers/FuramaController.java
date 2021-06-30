@@ -3,7 +3,7 @@ package case_study.task_1.controllers;
 import java.util.Scanner;
 
 public class FuramaController {
-
+    int choice;
     public void displayMainMenu() {
         Scanner sc = new Scanner(System.in);
 
@@ -16,7 +16,6 @@ public class FuramaController {
         System.out.println("6. Exit");
         System.out.print("Enter your choice: ");
 
-        int choice;
         while (true) {
             try {
                 choice = Integer.parseInt(sc.nextLine());
@@ -65,7 +64,6 @@ public class FuramaController {
         System.out.println("4. Return main menu");
         System.out.print("Enter your choice: ");
 
-        int choice;
         while (true) {
             try {
                 choice = Integer.parseInt(sc.nextLine());
@@ -103,7 +101,6 @@ public class FuramaController {
         System.out.println("4. Return main menu");
         System.out.print("Enter your choice: ");
 
-        int choice;
         while (true) {
             try {
                 choice = Integer.parseInt(sc.nextLine());
@@ -140,7 +137,6 @@ public class FuramaController {
         System.out.println("4. Return main menu");
         System.out.print("Enter your choice: ");
 
-        int choice;
         while (true) {
             try {
                 choice = Integer.parseInt(sc.nextLine());
@@ -179,7 +175,6 @@ public class FuramaController {
         System.out.println("6. Return main menu");
         System.out.print("Enter your choice: ");
 
-        int choice;
         while (true) {
             try {
                 choice = Integer.parseInt(sc.nextLine());
@@ -219,7 +214,6 @@ public class FuramaController {
         System.out.println("3. Return main menu");
         System.out.print("Enter your choice: ");
 
-        int choice;
         while (true) {
             try {
                 choice = Integer.parseInt(sc.nextLine());
