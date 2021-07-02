@@ -1,8 +1,8 @@
 package bai_6_ke_thua.thuc_hanh.he_cac_doi_tuong_hinh_hoc;
 
 public class Shape {
-    private String color = "green";
-    private boolean filled = true;
+    protected String color = "green";
+    protected boolean filled = true;
 
     public Shape() {
     }

@@ -37,9 +37,6 @@ public class Point {
         float[] array = new float[2];
         array[0] = getX();
         array[1] = getY();
-        for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i] + " ");
-        }
         return array;
     }
 
