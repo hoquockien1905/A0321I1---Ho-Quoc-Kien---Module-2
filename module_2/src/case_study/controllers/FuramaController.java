@@ -1,4 +1,4 @@
-package case_study.task_1.controllers;
+package case_study.controllers;
 
 import java.util.Scanner;
 

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2825b6fa-8f7c-4dc2-8916-1bfab836ec43" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/module_2/bai_1_introduction_to_java/bai_tap/ung_dung_doc_so_thanh_chu/ReadNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/module_2/bai_1_introduction_to_java/bai_tap/ung_dung_doc_so_thanh_chu/ReadNumber.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/module_2/bai_4_lop_va_doi_tuong_trong_java/bai_tap/phuong_trinh_bac_hai/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/module_2/bai_4_lop_va_doi_tuong_trong_java/bai_tap/phuong_trinh_bac_hai/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/module_2/bai_4_lop_va_doi_tuong_trong_java/bai_tap/phuong_trinh_bac_hai/QuadraticEquation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/module_2/bai_4_lop_va_doi_tuong_trong_java/bai_tap/phuong_trinh_bac_hai/QuadraticEquation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/module_2/bai_4_lop_va_doi_tuong_trong_java/bai_tap/xay_dung_lop_fan/Fan.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/module_2/bai_4_lop_va_doi_tuong_trong_java/bai_tap/xay_dung_lop_fan/Fan.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/module_2/bai_4_lop_va_doi_tuong_trong_java/bai_tap/xay_dung_lop_fan/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/module_2/bai_4_lop_va_doi_tuong_trong_java/bai_tap/xay_dung_lop_fan/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/module_2/bai_4_lop_va_doi_tuong_trong_java/bai_tap/xay_dung_lop_stop_watch/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/module_2/bai_4_lop_va_doi_tuong_trong_java/bai_tap/xay_dung_lop_stop_watch/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/module_2/bai_4_lop_va_doi_tuong_trong_java/bai_tap/xay_dung_lop_stop_watch/StopWatch.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/module_2/bai_4_lop_va_doi_tuong_trong_java/bai_tap/xay_dung_lop_stop_watch/StopWatch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/module_2/bai_4_lop_va_doi_tuong_trong_java/thuc_hanh/lop_hinh_chu_nhat/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/module_2/bai_4_lop_va_doi_tuong_trong_java/thuc_hanh/lop_hinh_chu_nhat/Rectangle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_6_ke_thua/bai_tap/thiet_ke_va_trien_khai_lop_triangle/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/bai_6_ke_thua/bai_tap/thiet_ke_va_trien_khai_lop_triangle/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1uqCP1rkC6dTERROGQYPNGXJNDY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2825b6fa-8f7c-4dc2-8916-1bfab836ec43" name="Default Changelist" comment="" />
+      <created>1625383704307</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1625383704307</updated>
+      <workItem from="1625383705885" duration="12000" />
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="541" y="197" key="FileChooserDialogImpl" timestamp="1625383716394">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="541" y="197" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1625383716394" />
+  </component>
+</project>

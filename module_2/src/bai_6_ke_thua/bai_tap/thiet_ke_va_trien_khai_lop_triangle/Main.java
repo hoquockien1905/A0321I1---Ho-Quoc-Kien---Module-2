@@ -10,4 +10,4 @@ public class Main {
         System.out.println("Area = " + triangle.getArea());
         System.out.println("Perimeter = " + triangle.getPerimeter());
     }
-}   
+}
