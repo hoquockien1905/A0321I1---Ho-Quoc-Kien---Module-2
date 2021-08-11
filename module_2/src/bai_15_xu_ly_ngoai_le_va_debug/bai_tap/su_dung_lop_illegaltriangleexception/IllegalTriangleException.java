@@ -7,4 +7,8 @@ public class IllegalTriangleException extends Exception {
         super(msg);
         this.msg = msg;
     }
+
+    public IllegalTriangleException() {
+        super("Invalid!");
+    }
 }
