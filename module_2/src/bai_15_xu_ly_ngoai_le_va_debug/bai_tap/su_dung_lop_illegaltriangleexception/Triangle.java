@@ -12,6 +12,9 @@ public class Triangle {
         }
     }
 
+    public double perimeter(double firstSide, double secondSide, double thirdSide) {
+        return firstSide + secondSide + thirdSide;
+    }
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Triangle triangle = null;
@@ -23,6 +26,7 @@ public class Triangle {
             System.out.print("Enter a third side: ");
             double thirdSide = scanner.nextDouble();
             triangle = new Triangle(firstSide, secondSide, thirdSide);
+            System.out.print("Perimeter of triangle: " + triangle.perimeter(firstSide, secondSide, thirdSide));
         } catch (IllegalTriangleException e) {
             System.out.println(e.getMessage());
         }
