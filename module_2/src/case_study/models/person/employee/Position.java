@@ -2,14 +2,12 @@ package case_study.models.person.employee;
 
 public class Position {
     private String positionName;
-    private String idPosition;
 
     public Position() {
     }
 
-    public Position(String positionName, String idPosition) {
+    public Position(String positionName) {
         this.positionName = positionName;
-        this.idPosition = idPosition;
     }
 
     public String getPositionName() {
@@ -20,11 +18,8 @@ public class Position {
         this.positionName = positionName;
     }
 
-    public String getIdPosition() {
-        return idPosition;
-    }
-
-    public void setIdPosition(String idPosition) {
-        this.idPosition = idPosition;
+    @Override
+    public String toString() {
+        return positionName;
     }
 }

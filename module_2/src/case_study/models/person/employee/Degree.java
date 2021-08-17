@@ -2,14 +2,12 @@ package case_study.models.person.employee;
 
 public class Degree {
     private String degreeType;
-    private String idDegreeType;
 
     public Degree() {
     }
 
-    public Degree(String degreeType, String idDegreeType) {
+    public Degree(String degreeType) {
         this.degreeType = degreeType;
-        this.idDegreeType = idDegreeType;
     }
 
     public String getDegreeType() {
@@ -20,11 +18,8 @@ public class Degree {
         this.degreeType = degreeType;
     }
 
-    public String getIdDegreeType() {
-        return idDegreeType;
-    }
-
-    public void setIdDegreeType(String idDegreeType) {
-        this.idDegreeType = idDegreeType;
+    @Override
+    public String toString() {
+        return degreeType;
     }
 }

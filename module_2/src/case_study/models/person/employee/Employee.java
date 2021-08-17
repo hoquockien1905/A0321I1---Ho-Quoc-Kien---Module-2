@@ -3,24 +3,31 @@ package case_study.models.person.employee;
 import case_study.models.person.Person;
 
 public class Employee extends Person {
-    private String idEmp;
+    private static int autoID = 1;
+    private String idEmp = "EMP00";
     protected Degree degree;
     protected Position position;
-    private String salary;
+    private double salary;
 
     public Employee() {
     }
 
-    public Employee(String idEmp, Degree degree, Position position, String salary) {
-        this.idEmp = idEmp;
+    public Employee(Degree degree, Position position, double salary) {
+        this.idEmp = "EMP00" + Employee.autoID++;
+        if (Employee.autoID > 9 && Employee.autoID < 100) {
+            this.idEmp = "EMP0" + Employee.autoID++;
+        }
         this.degree = degree;
         this.position = position;
         this.salary = salary;
     }
 
-    public Employee(String fullName, String dateOfBirth, boolean gender, String idCode, String phone, String email, String idEmp, Degree degree, Position position, String salary) {
-        super(fullName, dateOfBirth, gender, idCode, phone, email);
-        this.idEmp = idEmp;
+    public Employee(String idCode, String fullName, String dateOfBirth, String gender, String phone, String email, Degree degree, Position position, double salary) {
+        super(idCode, fullName, dateOfBirth, gender, phone, email);
+        this.idEmp = "EMP00" + Employee.autoID++;
+        if (Employee.autoID > 9 && Employee.autoID < 100) {
+            this.idEmp = "EMP0" + Employee.autoID++;
+        }
         this.degree = degree;
         this.position = position;
         this.salary = salary;
@@ -50,11 +57,23 @@ public class Employee extends Person {
         this.position = position;
     }
 
-    public String getSalary() {
+    public double getSalary() {
         return salary;
     }
 
-    public void setSalary(String salary) {
+    public void setSalary(double salary) {
         this.salary = salary;
+    }
+
+    @Override
+    public String toString() {
+        return  "Employee {" +
+                "ID: " + idEmp +
+                ", " +
+                super.toString() +
+                ", Degree: " + degree +
+                ", Position: " + position +
+                ", Salary: " + salary +
+                '}';
     }
 }

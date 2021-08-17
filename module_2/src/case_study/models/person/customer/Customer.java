@@ -3,22 +3,29 @@ package case_study.models.person.customer;
 import case_study.models.person.Person;
 
 public class Customer extends Person {
-    private String idCustomer;
+    private static int autoId = 1;
+    private String idCustomer = "CTM00";
     protected CustomerType customerType;
     private String address;
 
     public Customer() {
     }
 
-    public Customer(String idCustomer, CustomerType customerType, String address) {
-        this.idCustomer = idCustomer;
+    public Customer(CustomerType customerType, String address) {
+        this.idCustomer = idCustomer + Customer.autoId++;
+        if (Customer.autoId > 9 && Customer.autoId < 100) {
+            this.idCustomer = "CTM0" + Customer.autoId++;
+        }
         this.customerType = customerType;
         this.address = address;
     }
 
-    public Customer(String fullName, String dateOfBirth, boolean gender, String idCode, String phone, String email, String idCustomer, CustomerType customerType, String address) {
-        super(fullName, dateOfBirth, gender, idCode, phone, email);
-        this.idCustomer = idCustomer;
+    public Customer(String idCode, String fullName, String dateOfBirth, String gender, String phone, String email, CustomerType customerType, String address) {
+        super(idCode, fullName, dateOfBirth, gender, phone, email);
+        this.idCustomer = idCustomer + Customer.autoId++;
+        if (Customer.autoId > 9 && Customer.autoId < 100) {
+            this.idCustomer = "CTM0" + Customer.autoId++;
+        }
         this.customerType = customerType;
         this.address = address;
     }
@@ -45,5 +52,16 @@ public class Customer extends Person {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "ID Customer: " + idCustomer +
+                ", " +
+                super.toString() +
+                ", Customer type: " + customerType +
+                ", Address: " + address +
+                "}";
     }
 }

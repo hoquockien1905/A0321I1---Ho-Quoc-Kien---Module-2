@@ -1,12 +1,15 @@
 package case_study.controllers;
 
+import case_study.services.implement_service.CustomerServiceImpl;
+import case_study.services.implement_service.EmployeeServiceImpl;
+
 import java.util.Scanner;
 
 public class FuramaController {
     private int choice;
+    static Scanner sc = new Scanner(System.in);
 
     public void displayMainMenu() {
-        Scanner sc = new Scanner(System.in);
 
         System.out.println("\n--------Main Menu--------");
         System.out.println("1. Employee Management");
@@ -17,22 +20,7 @@ public class FuramaController {
         System.out.println("6. Exit");
         System.out.print("Enter your choice: ");
 
-        while (true) {
-            try {
-                choice = Integer.parseInt(sc.nextLine());
-                if (choice < 7 && choice > 0) {
-                    break;
-                }
-                while (choice > 6 || choice < 1) {
-                    System.err.print("Invalid input! Enter again: ");
-                    choice = Integer.parseInt(sc.nextLine());
-                }
-                break;
-            }
-            catch (Exception e) {
-                System.err.print("Invalid input! Enter again: ");
-            }
-        }
+        checkChoice(1, 6);
 
         switch (choice) {
             case 1:
@@ -56,7 +44,6 @@ public class FuramaController {
     }
 
     public void displayMenuEmployee() {
-        Scanner sc = new Scanner(System.in);
 
         System.out.println("\n------Employee Management------");
         System.out.println("1. Display list employees");
@@ -65,26 +52,17 @@ public class FuramaController {
         System.out.println("4. Return main menu");
         System.out.print("Enter your choice: ");
 
-        while (true) {
-            try {
-                choice = Integer.parseInt(sc.nextLine());
-                while (choice > 4 || choice < 1) {
-                    System.err.print("Invalid input! Enter again: ");
-                    choice = Integer.parseInt(sc.nextLine());
-                }
-                break;
-            }
-            catch (Exception e) {
-                System.err.print("Invalid input! Enter again: ");
-            }
-        }
+        checkChoice(1, 4);
 
         switch (choice) {
             case 1:
+                EmployeeServiceImpl.displayListEmp();
                 break;
             case 2:
+                EmployeeServiceImpl.addNewEmp();
                 break;
             case 3:
+                EmployeeServiceImpl.updateEmp();
                 break;
             case 4:
                 displayMainMenu();
@@ -93,7 +71,6 @@ public class FuramaController {
     }
 
     public void displayMenuCustomer() {
-        Scanner sc = new Scanner(System.in);
 
         System.out.println("\n------Customer Management------");
         System.out.println("1. Display list customer");
@@ -102,26 +79,17 @@ public class FuramaController {
         System.out.println("4. Return main menu");
         System.out.print("Enter your choice: ");
 
-        while (true) {
-            try {
-                choice = Integer.parseInt(sc.nextLine());
-                while (choice > 4 || choice < 1) {
-                    System.err.print("Invalid input! Enter again: ");
-                    choice = Integer.parseInt(sc.nextLine());
-                }
-                break;
-            }
-            catch (Exception e) {
-                System.err.print("Invalid input! Enter again: ");
-            }
-        }
+        checkChoice(1, 4);
 
         switch (choice) {
             case 1:
+                CustomerServiceImpl.displayListCustomer();
                 break;
             case 2:
+                CustomerServiceImpl.addCustomer();
                 break;
             case 3:
+                CustomerServiceImpl.updateCustomer();
                 break;
             case 4:
                 displayMainMenu();
@@ -130,7 +98,6 @@ public class FuramaController {
     }
 
     public void displayMenuFacility() {
-        Scanner sc = new Scanner(System.in);
         System.out.println("\n------Facility Management------");
         System.out.println("1. Display list facility");
         System.out.println("2. Add new facility");
@@ -138,19 +105,7 @@ public class FuramaController {
         System.out.println("4. Return main menu");
         System.out.print("Enter your choice: ");
 
-        while (true) {
-            try {
-                choice = Integer.parseInt(sc.nextLine());
-                while (choice > 4 || choice < 1) {
-                    System.err.print("Invalid input! Enter again: ");
-                    choice = Integer.parseInt(sc.nextLine());
-                }
-                break;
-            }
-            catch (Exception e) {
-                System.err.print("Invalid input! Enter again: ");
-            }
-        }
+        checkChoice(1, 4);
 
         switch (choice) {
             case 1:
@@ -166,7 +121,6 @@ public class FuramaController {
     }
 
     public void displayMenuBooking() {
-        Scanner sc = new Scanner(System.in);
         System.out.println("\n------Booking Management------");
         System.out.println("1. Add new booking");
         System.out.println("2. Display list booking");
@@ -176,19 +130,7 @@ public class FuramaController {
         System.out.println("6. Return main menu");
         System.out.print("Enter your choice: ");
 
-        while (true) {
-            try {
-                choice = Integer.parseInt(sc.nextLine());
-                while (choice > 6 || choice < 1) {
-                    System.err.print("Invalid input! Enter again: ");
-                    choice = Integer.parseInt(sc.nextLine());
-                }
-                break;
-            }
-            catch (Exception e) {
-                System.err.print("Invalid input! Enter again: ");
-            }
-        }
+        checkChoice(1, 6);
 
         switch (choice) {
             case 1:
@@ -208,26 +150,13 @@ public class FuramaController {
     }
 
     public void displayMenuPromotion() {
-        Scanner sc = new Scanner(System.in);
         System.out.println("\n------Promotion Management------");
         System.out.println("1. Display list customers use service");
         System.out.println("2. Display list customers get voucher");
         System.out.println("3. Return main menu");
         System.out.print("Enter your choice: ");
 
-        while (true) {
-            try {
-                choice = Integer.parseInt(sc.nextLine());
-                while (choice > 3 || choice < 1) {
-                    System.err.print("Invalid input! Enter again: ");
-                    choice = Integer.parseInt(sc.nextLine());
-                }
-                break;
-            }
-            catch (Exception e) {
-                System.err.print("Invalid input! Enter again: ");
-            }
-        }
+        checkChoice(3, 1);
 
         switch (choice) {
             case 1:
@@ -237,6 +166,22 @@ public class FuramaController {
             case 3:
                 displayMainMenu();
                 break;
+        }
+    }
+
+    private void checkChoice(int start, int end) {
+        while (true) {
+            try {
+                choice = Integer.parseInt(sc.nextLine());
+                while (choice > end || choice < start) {
+                    System.err.print("Invalid input! Enter again: ");
+                    choice = Integer.parseInt(sc.nextLine());
+                }
+                break;
+            }
+            catch (Exception e) {
+                System.err.print("Invalid input! Enter again: ");
+            }
         }
     }
 }
