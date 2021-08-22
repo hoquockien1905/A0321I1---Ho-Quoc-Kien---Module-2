@@ -11,13 +11,5 @@ public class Main {
         FuramaController control = new FuramaController();
 
         control.displayMainMenu();
-
-//        static TreeSet<String> treeSet = new TreeSet<>();
-//        treeSet.add("a");
-//        treeSet.add("b");
-//        treeSet.add("c");
-//        treeSet.add("a");
-//
-//        System.out.println(treeSet);
     }
 }
