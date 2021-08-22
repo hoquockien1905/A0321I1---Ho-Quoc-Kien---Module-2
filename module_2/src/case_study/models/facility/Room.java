@@ -22,4 +22,12 @@ public class Room extends Facility {
     public void setFreeServiceToAccompany(String freeServiceToAccompany) {
         this.freeServiceToAccompany = freeServiceToAccompany;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                "Room{ " +
+                "Free Service To Accompany: " + freeServiceToAccompany +
+                " }";
+    }
 }

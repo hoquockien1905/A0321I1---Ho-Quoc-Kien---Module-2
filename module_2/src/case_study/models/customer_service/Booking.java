@@ -1,7 +1,8 @@
 package case_study.models.customer_service;
 
-public class Booking {
-    private String idBooking;
+public class Booking implements Comparable<Booking>{
+    private static int auId = 1;
+    private String idBooking = "BK00";
     private String startDay;
     private String endDay;
     private String idCustomerBooking;
@@ -11,8 +12,11 @@ public class Booking {
     public Booking() {
     }
 
-    public Booking(String idBooking, String startDay, String endDay, String idCustomerBooking, String serviceName, String serviceType) {
-        this.idBooking = idBooking;
+    public Booking(String startDay, String endDay, String idCustomerBooking, String serviceName, String serviceType) {
+        this.idBooking = idBooking + Booking.auId++;
+        if (Booking.auId > 9 && Booking.auId < 100) {
+            this.idBooking = "BK0" + Booking.auId++;
+        }
         this.startDay = startDay;
         this.endDay = endDay;
         this.idCustomerBooking = idCustomerBooking;
@@ -66,5 +70,25 @@ public class Booking {
 
     public void setServiceType(String serviceType) {
         this.serviceType = serviceType;
+    }
+
+    @Override
+    public int compareTo(Booking o) {
+        if (this.getStartDay().equals(o.getStartDay())) {
+            return o.getEndDay().compareTo(this.getEndDay());
+        }
+        return this.getStartDay().compareTo(o.getStartDay());
+    }
+
+    @Override
+    public String toString() {
+        return "Booking{ " +
+                "ID Booking: " + idBooking +
+                ", Start Day: " + startDay +
+                ", End Day: " + endDay +
+                ", ID Customer Booking: " + idCustomerBooking +
+                ", Service Name: " + serviceName +
+                ", Service Type: " + serviceType +
+                " }";
     }
 }

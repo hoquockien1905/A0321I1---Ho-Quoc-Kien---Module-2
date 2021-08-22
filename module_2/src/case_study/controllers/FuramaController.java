@@ -1,7 +1,9 @@
 package case_study.controllers;
 
+import case_study.services.implement_service.BookingServiceImpl;
 import case_study.services.implement_service.CustomerServiceImpl;
 import case_study.services.implement_service.EmployeeServiceImpl;
+import case_study.services.implement_service.FacilityServiceImpl;
 
 import java.util.Scanner;
 
@@ -109,8 +111,10 @@ public class FuramaController {
 
         switch (choice) {
             case 1:
+                FacilityServiceImpl.displayListFacility();
                 break;
             case 2:
+                FacilityServiceImpl.addService();
                 break;
             case 3:
                 break;
@@ -136,6 +140,7 @@ public class FuramaController {
             case 1:
                 break;
             case 2:
+                BookingServiceImpl.displayListBooking();
                 break;
             case 3:
                 break;
@@ -156,7 +161,7 @@ public class FuramaController {
         System.out.println("3. Return main menu");
         System.out.print("Enter your choice: ");
 
-        checkChoice(3, 1);
+        checkChoice(1, 3);
 
         switch (choice) {
             case 1:

@@ -8,6 +8,9 @@ public class Villa extends Facility {
     public Villa() {
     }
 
+    public Villa(String ordinary, int i) {
+    }
+
     public Villa(String roomStandard, double areaOfPool, int numberOfFloors) {
         this.roomStandard = roomStandard;
         this.areaOfPool = areaOfPool;
@@ -43,5 +46,15 @@ public class Villa extends Facility {
 
     public void setNumberOfFloors(int numberOfFloors) {
         this.numberOfFloors = numberOfFloors;
+    }
+
+    @Override
+    public String toString() {
+        return  super.toString() +
+                "Villa{ " +
+                "Room Standard: " + roomStandard +
+                ", Area Of Pool: " + areaOfPool +
+                ", Number Of Floors: " + numberOfFloors +
+                " }";
     }
 }
