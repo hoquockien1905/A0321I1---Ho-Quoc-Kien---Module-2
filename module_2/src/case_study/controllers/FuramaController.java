@@ -86,6 +86,7 @@ public class FuramaController {
         switch (choice) {
             case 1:
                 CustomerServiceImpl.displayListCustomer();
+                displayMenuCustomer();
                 break;
             case 2:
                 CustomerServiceImpl.addCustomer();
@@ -138,6 +139,7 @@ public class FuramaController {
 
         switch (choice) {
             case 1:
+                BookingServiceImpl.addNewBooking();
                 break;
             case 2:
                 BookingServiceImpl.displayListBooking();

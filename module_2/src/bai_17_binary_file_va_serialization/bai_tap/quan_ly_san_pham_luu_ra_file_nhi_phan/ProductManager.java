@@ -1,5 +1,6 @@
 package bai_17_binary_file_va_serialization.bai_tap.quan_ly_san_pham_luu_ra_file_nhi_phan;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -8,6 +9,12 @@ public class ProductManager {
     static List<Product> products;
     static private int choice;
     static Scanner scanner = new Scanner(System.in);
+    static private ProductDao productDao;
+
+    public ProductManager() throws IOException {
+        productDao = new ProductDao();
+        products = productDao.read();
+    }
 
     static {
         products = new ArrayList<>();
@@ -31,7 +38,7 @@ public class ProductManager {
         }
     }
 
-    public static void mainMenu() {
+    public static void mainMenu() throws IOException {
         System.out.println("\n=========Main Menu=========\n" +
                 "1. Add new product\n" +
                 "2. Display list product\n" +
@@ -54,7 +61,7 @@ public class ProductManager {
         }
     }
 
-    private static void productToLookFor() {
+    private static void productToLookFor() throws IOException {
         System.out.print("Enter ID of product: ");
         String id = scanner.nextLine().toUpperCase();
         if (searchProduct(id) != null) {
@@ -67,7 +74,7 @@ public class ProductManager {
         }
     }
 
-    public static void addNewProduct() {
+    public static void addNewProduct() throws IOException {
         System.out.print("Enter new product: ");
         String name = scanner.nextLine();
         System.out.print("Enter manufacturer: ");
@@ -80,6 +87,7 @@ public class ProductManager {
 
         System.out.println("A new product just has been added!");
         products.add(new Product(name, manufacturer, price, description));
+        productDao.write(products);
     }
 
     public static void displayListProduct() {

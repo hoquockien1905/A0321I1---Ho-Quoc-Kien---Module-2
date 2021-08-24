@@ -8,9 +8,6 @@ public class Villa extends Facility {
     public Villa() {
     }
 
-    public Villa(String ordinary, int i) {
-    }
-
     public Villa(String roomStandard, double areaOfPool, int numberOfFloors) {
         this.roomStandard = roomStandard;
         this.areaOfPool = areaOfPool;

@@ -26,11 +26,9 @@ public class FacilityServiceImpl implements FacilityService {
 
     public static void displayListFacility() {
         System.out.println("\n=========List Services=========");
-        for (Map.Entry o : facilityService.entrySet()) {
-            System.out.println(o);
+        for (Map.Entry service : facilityService.entrySet()) {
+            System.out.println(service);
         }
-
-        furamaController.displayMenuFacility();
     }
 
     public static void addService() {
@@ -97,7 +95,11 @@ public class FacilityServiceImpl implements FacilityService {
         System.out.println("A new Villa has just been added!");
 
         facilityService.put(villa, 0);
-
+        if (continues()) {
+            addNewVilla();
+        } else {
+            furamaController.displayMenuFacility();
+        }
     }
 
     private static void addNewHouse() {
@@ -115,6 +117,12 @@ public class FacilityServiceImpl implements FacilityService {
         System.out.println("A new House has just been added!");
 
         facilityService.put(house, 0);
+
+        if (continues()) {
+            addNewHouse();
+        } else {
+            furamaController.displayMenuFacility();
+        }
     }
 
     private static void addNewRoom() {
@@ -128,6 +136,12 @@ public class FacilityServiceImpl implements FacilityService {
         System.out.println("A new House has just been added!");
 
         facilityService.put(room, 0);
+
+        if (continues()) {
+            addNewRoom();
+        } else {
+            furamaController.displayMenuFacility();
+        }
     }
 
     public static void displayListFacilityMaintenance() {
@@ -146,6 +160,20 @@ public class FacilityServiceImpl implements FacilityService {
             } catch (Exception e) {
                 System.err.print("Invalid input! Enter again: ");
             }
+        }
+    }
+
+    private static boolean continues() {
+        System.out.print("Do you want to continue (Y/N)?: ");
+        String choice = scanner.nextLine();
+
+        if (choice.equals("Y") || choice.equals("y")) {
+            return true;
+        } else if (choice.equals("N") || choice.equals("n")) {
+            return false;
+        } else {
+            System.out.println("Invalid!");
+            return false;
         }
     }
 }

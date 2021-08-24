@@ -24,12 +24,10 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     public static void displayListCustomer() {
-        System.out.println("========= Customer List ========");
+        System.out.println("\n========= Customer List ========");
         for (Customer customer : customerList) {
             System.out.println(customer);
         }
-
-        furamaController.displayMenuCustomer();
     }
 
     public static void addCustomer() {
