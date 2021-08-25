@@ -4,7 +4,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class ValidateClassName {
-    static final String CLASS_NAME_REGEX = "\\A[CAP]\\d{4}X?[G-M]$";
+    static final String CLASS_NAME_REGEX = "([CAP])\\d{4}[G-M]";
     static final String[] INVALID_VALUE = {"M0318G", "P0323A"};
     static final String[] VALID_VALUE = {"C0318G"};
 

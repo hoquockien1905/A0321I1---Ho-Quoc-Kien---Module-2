@@ -4,7 +4,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class ValidateNumberPhone {
-    static final String NUMBER_PHONE_REGEX = "([(][0-9]{2}[)])([-])([(][0-9]{10}[)])";
+    static final String NUMBER_PHONE_REGEX = "([(]\\d{2}[)])([-])([(]\\d{10}[)])";
     static final String[] VALID_NUMBER = {"(84)-(1235648968)", "(28)-(8684525689)"};
     static final String[] INVALID_NUMBER = {"(a4)-(1235648968)", "(28)-(84525689)", "65-4758758828"};
 
