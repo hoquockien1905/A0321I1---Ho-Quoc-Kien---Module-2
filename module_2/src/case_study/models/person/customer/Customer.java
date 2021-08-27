@@ -9,10 +9,6 @@ public class Customer extends Person {
     private String address;
 
     public Customer() {
-//        this.idCustomer = idCustomer + Customer.autoId++;
-//        if (Customer.autoId > 9 && Customer.autoId < 100) {
-//            this.idCustomer = "CTM0" + Customer.autoId++;
-//        }
     }
 
     public Customer(CustomerType customerType, String address) {

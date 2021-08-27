@@ -1,6 +1,5 @@
 package case_study.services.implement_service;
 
-import case_study.controllers.FuramaController;
 import case_study.models.customer_service.Booking;
 import case_study.models.facility.Facility;
 import case_study.models.person.customer.Customer;
@@ -9,14 +8,20 @@ import case_study.services.interface_service.BookingService;
 import java.util.*;
 
 public class BookingServiceImpl implements BookingService {
-    static SortedSet<Booking> bookings;
+    static Set<Booking> bookings;
     static Scanner scanner = new Scanner(System.in);
+    static LinkedHashMap<Facility, Integer> facilities = FacilityServiceImpl.facilityService;
+    static List<Customer> customers = CustomerServiceImpl.customerList;
 
     static {
-        bookings = new TreeSet<>();
+        bookings = new TreeSet<>(new BookingComparator());
     }
 
-    public static void addNewBooking() {
+    public Set<Booking> sendBooking() {
+        return bookings;
+    }
+
+    public void addNewBooking() {
         System.out.print("Enter a start day: ");
         String startDay = scanner.nextLine();
 
@@ -26,76 +31,88 @@ public class BookingServiceImpl implements BookingService {
         System.out.print("Enter a service type: ");
         String serviceType = scanner.nextLine();
 
-        bookings.add(new Booking(startDay, endDay, addIdCustomer(), addServiceName(), serviceType));
+        bookings.add(new Booking(startDay, endDay, chooseIdCustomer(), chooseServiceName(), serviceType));
 
-        BookingServiceImpl.displayListBooking();
-        FuramaController furamaController = new FuramaController();
-        furamaController.displayMainMenu();
+        BookingServiceImpl bookingServiceImpl = new BookingServiceImpl();
+        bookingServiceImpl.displayListBooking();
     }
 
-    private static String addIdCustomer() {
+    private String chooseIdCustomer() {
         showListIdCustomer();
 
         System.out.print("Enter a number of list: ");
-        List<Customer> customers = CustomerServiceImpl.customerList;
         Scanner scanner = new Scanner(System.in);
         int choice = scanner.nextInt();
+
+        boolean check = true;
         String idCustomer = null;
-        for (Customer customer: customers) {
-            if (choice == customers.indexOf(customer)) {
-                idCustomer = customer.getIdCustomer();
+        while (check) {
+            for (Customer customer : customers) {
+                if (choice == customers.indexOf(customer)) {
+                    idCustomer = customer.getIdCustomer();
+                    check = false;
+                }
+            }
+            if (check) {
+                System.out.print("Enter again, please: ");
+                choice = scanner.nextInt();
             }
         }
         return idCustomer;
     }
 
-    private static void showListIdCustomer() {
-        System.out.println("\n========List ID Customer========");
-        List<Customer> customers = CustomerServiceImpl.customerList;
-        int index = 0;
-        for (Customer customer: customers) {
-            System.out.println("No." + index + ": " + customer.getIdCustomer());
-            index++;
-        }
-    }
-
-    private static void showListService() {
-        System.out.println("\n========List Services========");
-        LinkedHashMap<Facility, Integer> facilities = FacilityServiceImpl.facilityService;
-        Facility facility = null;
-        int indexOfFacilities = 0;
-        for (Map.Entry fac: facilities.entrySet()) {
-            facility = (Facility) fac.getKey();
-            System.out.println("No." + indexOfFacilities + ": " + facility.getServiceName());
-            indexOfFacilities++;
-        }
-    }
-
-    private static String addServiceName() {
-        showListService();
+    private String chooseServiceName() {
+        showListServiceName();
 
         Facility facility;
         System.out.print("Enter a number of facility list: ");
         Scanner scanner = new Scanner(System.in);
         int choice = scanner.nextInt();
-        int index = 0;
         String serviceName = null;
-        LinkedHashMap<Facility, Integer> facilities = FacilityServiceImpl.facilityService;
-        for (Map.Entry fac: facilities.entrySet()) {
-            facility = (Facility) fac.getKey();
-            if (choice == index) {
-                serviceName = facility.getServiceName();
-                FacilityServiceImpl.facilityService.put((Facility) fac.getKey(), (int) fac.getValue() + 1);
-                break;
+        boolean check = true;
+        while (check) {
+            int index = 0;
+            for (Map.Entry fac : facilities.entrySet()) {
+                facility = (Facility) fac.getKey();
+                if (choice == index) {
+                    serviceName = facility.getServiceName();
+                    FacilityServiceImpl.facilityService.put((Facility) fac.getKey(), (int) fac.getValue() + 1);
+                    check = false;
+                    break;
+                }
+                index++;
             }
-            index++;
+            if (check) {
+                System.out.print("Enter again, please: ");
+                choice = scanner.nextInt();
+            }
         }
         return serviceName;
     }
 
-    public static void displayListBooking() {
+    private void showListIdCustomer() {
+        System.out.println("\n========List ID Customer========");
+        int index = 0;
+        for (Customer customer : customers) {
+            System.out.println("No." + index + ": " + customer);
+            index++;
+        }
+    }
+
+    private void showListServiceName() {
+        System.out.println("\n========List Services========");
+        Facility facility = null;
+        int indexOfFacilities = 0;
+        for (Map.Entry fac : facilities.entrySet()) {
+            facility = (Facility) fac.getKey();
+            System.out.println("No." + indexOfFacilities + ": " + facility);
+            indexOfFacilities++;
+        }
+    }
+
+    public void displayListBooking() {
         System.out.println("\n----------List Booking---------");
-        for (Booking booking: bookings) {
+        for (Booking booking : bookings) {
             System.out.println(booking);
         }
     }

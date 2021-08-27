@@ -1,11 +1,15 @@
 package case_study.services.implement_service;
 
 import case_study.controllers.FuramaController;
+import case_study.data.DataProcessing;
 import case_study.models.person.employee.Degree;
 import case_study.models.person.employee.Employee;
 import case_study.models.person.employee.Position;
 import case_study.services.interface_service.EmployeeService;
 
+import java.io.*;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -14,6 +18,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     static Scanner scanner = new Scanner(System.in);
     private static List<Employee> employeeList;
     static FuramaController furamaController = new FuramaController();
+//    static DataProcessing dataProcessing = new DataProcessing();
     private static int choice;
 
     static {
@@ -24,7 +29,82 @@ public class EmployeeServiceImpl implements EmployeeService {
         employeeList.add(new Employee("261331287", "Trần Trung Kiên", "27/07/2007", "Nam", "0393985745", "hoquockien@gmail.com", new Degree("University"), new Position("Manager"), 1111000.0));
     }
 
-    public static void displayListEmp() {
+    public void saveData() {
+        FileOutputStream fileOutputStream = null;
+
+        try {
+            fileOutputStream = new FileOutputStream("D:\\Codegym\\A0321I1---Ho-Quoc-Kien---Module-2\\module_2\\src\\case_study\\data\\employee.csv");
+
+            for (Employee employee: employeeList) {
+                String line = employee.getFileLine();
+                byte[] bytes = line.getBytes("UTF-8");
+                fileOutputStream.write(bytes);
+            }
+        } catch (FileNotFoundException | UnsupportedEncodingException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (fileOutputStream != null) {
+                try {
+                    fileOutputStream.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+
+    public void readFile(){
+        FileInputStream fileInputStream = null;
+        InputStreamReader fileReader = null;
+        BufferedReader bufferedReader = null;
+
+        try {
+            fileInputStream = new FileInputStream("D:\\Codegym\\A0321I1---Ho-Quoc-Kien---Module-2\\module_2\\src\\case_study\\data\\employee.csv");
+            fileReader = new InputStreamReader(fileInputStream, StandardCharsets.UTF_8);
+
+            bufferedReader = new BufferedReader(fileReader);
+            employeeList = new ArrayList<>();
+            String line;
+            while ((line = bufferedReader.readLine()) != null) {
+                if (line.isEmpty()) {
+                    continue;
+                }
+                Employee employee = new Employee();
+                employee.parse(line);
+                employeeList.add(employee);
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (fileReader != null) {
+                try {
+                    fileReader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (fileInputStream != null) {
+                try {
+                    fileInputStream.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (bufferedReader != null) {
+                try {
+                    bufferedReader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+
+    public void displayListEmp() {
         System.out.println("========= Employee List ========");
         for (Employee employee : employeeList) {
             System.out.println(employee);
@@ -33,7 +113,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         furamaController.displayMenuEmployee();
     }
 
-    public static void addNewEmp() {
+    public void addNewEmp() {
         System.out.print("Enter ID Code: ");
         String idCode = scanner.nextLine();
         System.out.print("Enter new Name: ");
@@ -52,9 +132,11 @@ public class EmployeeServiceImpl implements EmployeeService {
         String position = scanner.nextLine();
         System.out.print("Enter Salary: ");
         double salary = scanner.nextDouble();
+        scanner.nextLine();
 
         employeeList.add(new Employee(idCode, name, dateOfBirth, gender, phone, email, new Degree(degree), new Position(position), salary));
         System.out.println("A new employee has just been added!");
+        saveData();
 
         if (continues()) {
             addNewEmp();
@@ -63,7 +145,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         }
     }
 
-    private static Employee findById(String idEmp) {
+    private Employee findById(String idEmp) {
         for (Employee employee : employeeList) {
             if (employee.getIdEmp().equals(idEmp)) {
                 return employee;
@@ -72,7 +154,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         return null;
     }
 
-    public static void updateEmp() {
+    public void updateEmp() {
         System.out.println("\n1. Update all\n"
                          + "2. Update details\n"
                          + "3. Return employee menu");
@@ -96,7 +178,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         }
     }
 
-    private static void updateAllInfo(String idEmp) {
+    private void updateAllInfo(String idEmp) {
         Employee employee = findById(idEmp);
         if (employee != null) {
             System.out.print("Enter ID Code: ");
@@ -147,7 +229,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         }
     }
 
-    private static void updateDetails(String id) {
+    private void updateDetails(String id) {
         Employee employee = findById(id);
         if (employee != null) {
             System.out.println("1. Edit ID Code\n"
@@ -265,7 +347,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         }
     }
 
-    private static boolean continues() {
+    private boolean continues() {
         System.out.print("Do you want to continue (Y/N)?: ");
         String choice = scanner.nextLine();
 
@@ -279,7 +361,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         }
     }
 
-    private static void checkChoice(int start, int end) {
+    private void checkChoice(int start, int end) {
         while (true) {
             try {
                 choice = Integer.parseInt(scanner.nextLine());

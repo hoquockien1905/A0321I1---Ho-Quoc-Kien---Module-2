@@ -1,7 +1,10 @@
 package case_study.models.customer_service;
 
+import case_study.models.person.customer.Customer;
+
 public class Contract {
-    private String idContract;
+    private static int autoId = 1;
+    private String idContract = "CT00";
     private String idBooking;
     private double depositAmount;
     private double totalAmount;
@@ -10,8 +13,11 @@ public class Contract {
     public Contract() {
     }
 
-    public Contract(String idContract, String idBooking, double depositAmount, double totalAmount, String idCustomer) {
-        this.idContract = idContract;
+    public Contract(String idBooking, double depositAmount, double totalAmount, String idCustomer) {
+        this.idContract = idContract + Contract.autoId++;
+        if (Contract.autoId > 9 && Contract.autoId < 100) {
+            this.idContract = "CTM0" + Contract.autoId++;
+        }
         this.idBooking = idBooking;
         this.depositAmount = depositAmount;
         this.totalAmount = totalAmount;
@@ -56,5 +62,16 @@ public class Contract {
 
     public void setIdCustomer(String idCustomer) {
         this.idCustomer = idCustomer;
+    }
+
+    @Override
+    public String toString() {
+        return "Contract{" +
+                " ID Contract: " + idContract +
+                ", ID Booking: " + idBooking +
+                ", Deposit Amount: " + depositAmount +
+                ", Total Amount: " + totalAmount +
+                ", ID Customer: " + idCustomer +
+                " }";
     }
 }

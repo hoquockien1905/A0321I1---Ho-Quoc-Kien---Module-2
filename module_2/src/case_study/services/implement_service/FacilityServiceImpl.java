@@ -19,20 +19,20 @@ public class FacilityServiceImpl implements FacilityService {
 
     static {
         facilityService = new LinkedHashMap<>();
-        facilityService.put(new House("House", 115.5, 100000.5, 5, "Ordinary", "Ordinary", 15), 0);
-        facilityService.put(new Villa("Villa", 20.5, 22222.0, 4, "VIP", "VIP", 115.5, 20), 0);
-        facilityService.put(new Room("Room", 25.5, 1000.5, 2, "Ordinary", "Water"), 0);
+        facilityService.put(new House("House", 115.5, 100000.5, 5, "Ordinary", "Ordinary", 15), 4);
+        facilityService.put(new Villa("Villa", 20.5, 22222.0, 4, "VIP", "VIP", 115.5, 20), 4);
+        facilityService.put(new Room("Room", 25.5, 1000.5, 2, "Ordinary", "Water"), 4);
     }
 
-    public static void displayListFacility() {
+    public void displayListFacility() {
         System.out.println("\n=========List Services=========");
         for (Map.Entry service : facilityService.entrySet()) {
             System.out.println(service);
         }
     }
 
-    public static void addService() {
-        System.out.println("--------Menu Add New Service--------\n" +
+    public void addService() {
+        System.out.println("\n--------Menu Add New Service--------\n" +
                 "1. Add New Villa\n" +
                 "2. Add New House\n" +
                 "3. Add New Room\n" +
@@ -54,7 +54,7 @@ public class FacilityServiceImpl implements FacilityService {
         }
     }
 
-    private static void inputSameInfo(Facility service) {
+    private void inputSameInfo(Facility service) {
         System.out.print("Service Name: ");
         String serviceName = scanner.nextLine();
         service.setServiceName(serviceName);
@@ -76,7 +76,7 @@ public class FacilityServiceImpl implements FacilityService {
         service.setRentalType(rentalType);
     }
 
-    private static void addNewVilla() {
+    public void addNewVilla() {
         Villa villa = new Villa();
         inputSameInfo(villa);
 
@@ -102,7 +102,7 @@ public class FacilityServiceImpl implements FacilityService {
         }
     }
 
-    private static void addNewHouse() {
+    public void addNewHouse() {
         House house = new House();
         inputSameInfo(house);
 
@@ -125,7 +125,7 @@ public class FacilityServiceImpl implements FacilityService {
         }
     }
 
-    private static void addNewRoom() {
+    public void addNewRoom() {
         Room room = new Room();
         inputSameInfo(room);
 
@@ -144,11 +144,32 @@ public class FacilityServiceImpl implements FacilityService {
         }
     }
 
-    public static void displayListFacilityMaintenance() {
-
+    public void displayListFacilityMaintenance() {
+        System.out.println("\n========List in need of maintenance========");
+        boolean check = resetTimesUses();
+        if (check) {
+            System.out.println("All under maintenance!");
+        } else {
+            System.out.println("All maintenance has been completed!");
+        }
     }
 
-    private static void checkChoice(int start, int end) {
+    private boolean resetTimesUses() {
+        int index = 1;
+        boolean check = false;
+        for (Map.Entry service : facilityService.entrySet()) {
+            int value = (int) service.getValue();
+            if (value >= 5) {
+                System.out.println(index + ": " + service);
+                check = true;
+                service.setValue(0);
+            }
+            index++;
+        }
+        return check;
+    }
+
+    private void checkChoice(int start, int end) {
         while (true) {
             try {
                 choice = Integer.parseInt(scanner.nextLine());
@@ -163,7 +184,7 @@ public class FacilityServiceImpl implements FacilityService {
         }
     }
 
-    private static boolean continues() {
+    private boolean continues() {
         System.out.print("Do you want to continue (Y/N)?: ");
         String choice = scanner.nextLine();
 

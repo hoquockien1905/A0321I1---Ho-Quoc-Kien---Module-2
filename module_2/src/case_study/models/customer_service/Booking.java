@@ -1,6 +1,8 @@
 package case_study.models.customer_service;
 
-public class Booking implements Comparable<Booking>{
+import case_study.models.person.customer.Customer;
+
+public class Booking {
     private static int auId = 1;
     private String idBooking = "BK00";
     private String startDay;
@@ -70,14 +72,6 @@ public class Booking implements Comparable<Booking>{
 
     public void setServiceType(String serviceType) {
         this.serviceType = serviceType;
-    }
-
-    @Override
-    public int compareTo(Booking o) {
-        if (this.getStartDay().equals(o.getStartDay())) {
-            return o.getEndDay().compareTo(this.getEndDay());
-        }
-        return this.getStartDay().compareTo(o.getStartDay());
     }
 
     @Override

@@ -1,9 +1,7 @@
 package case_study.controllers;
 
-import case_study.services.implement_service.BookingServiceImpl;
-import case_study.services.implement_service.CustomerServiceImpl;
-import case_study.services.implement_service.EmployeeServiceImpl;
-import case_study.services.implement_service.FacilityServiceImpl;
+import case_study.data.DataProcessing;
+import case_study.services.implement_service.*;
 
 import java.util.Scanner;
 
@@ -21,11 +19,11 @@ public class FuramaController {
         System.out.println("5. Promotion Management");
         System.out.println("6. Exit");
         System.out.print("Enter your choice: ");
-
+        EmployeeServiceImpl employeeService = new EmployeeServiceImpl();
         checkChoice(1, 6);
-
         switch (choice) {
             case 1:
+                employeeService.readFile();
                 displayMenuEmployee();
                 break;
             case 2:
@@ -51,20 +49,22 @@ public class FuramaController {
         System.out.println("1. Display list employees");
         System.out.println("2. Add new employee");
         System.out.println("3. Edit employee");
-        System.out.println("4. Return main menu");
+        System.out.println("4. Read file");
+        System.out.println("5. Save file");
+        System.out.println("6. Return main menu");
         System.out.print("Enter your choice: ");
 
-        checkChoice(1, 4);
-
+        checkChoice(1, 6);
+        EmployeeServiceImpl employeeServiceImpl = new EmployeeServiceImpl();
         switch (choice) {
             case 1:
-                EmployeeServiceImpl.displayListEmp();
+                employeeServiceImpl.displayListEmp();
                 break;
             case 2:
-                EmployeeServiceImpl.addNewEmp();
+                employeeServiceImpl.addNewEmp();
                 break;
             case 3:
-                EmployeeServiceImpl.updateEmp();
+                employeeServiceImpl.updateEmp();
                 break;
             case 4:
                 displayMainMenu();
@@ -82,17 +82,17 @@ public class FuramaController {
         System.out.print("Enter your choice: ");
 
         checkChoice(1, 4);
-
+        CustomerServiceImpl customerServiceImpl = new CustomerServiceImpl();
         switch (choice) {
             case 1:
-                CustomerServiceImpl.displayListCustomer();
+                customerServiceImpl.displayListCustomer();
                 displayMenuCustomer();
                 break;
             case 2:
-                CustomerServiceImpl.addCustomer();
+                customerServiceImpl.addCustomer();
                 break;
             case 3:
-                CustomerServiceImpl.updateCustomer();
+                customerServiceImpl.updateCustomer();
                 break;
             case 4:
                 displayMainMenu();
@@ -109,19 +109,22 @@ public class FuramaController {
         System.out.print("Enter your choice: ");
 
         checkChoice(1, 4);
-
+        FacilityServiceImpl facilityServiceImpl = new FacilityServiceImpl();
         switch (choice) {
             case 1:
-                FacilityServiceImpl.displayListFacility();
+                facilityServiceImpl.displayListFacility();
+                displayMenuFacility();
                 break;
             case 2:
-                FacilityServiceImpl.addService();
+                facilityServiceImpl.addService();
+                displayMenuFacility();
                 break;
             case 3:
+                facilityServiceImpl.displayListFacilityMaintenance();
+                displayMenuFacility();
                 break;
             case 4:
                 displayMainMenu();
-                break;
         }
     }
 
@@ -136,19 +139,28 @@ public class FuramaController {
         System.out.print("Enter your choice: ");
 
         checkChoice(1, 6);
-
+        BookingServiceImpl bookingServiceImpl = new BookingServiceImpl();
+        ContractServiceImpl contractServiceImpl = new ContractServiceImpl();
         switch (choice) {
             case 1:
-                BookingServiceImpl.addNewBooking();
+                bookingServiceImpl.addNewBooking();
+                displayMenuBooking();
                 break;
             case 2:
-                BookingServiceImpl.displayListBooking();
+                bookingServiceImpl.displayListBooking();
+                displayMenuBooking();
                 break;
             case 3:
+                contractServiceImpl.createNewContract();
+                displayMenuBooking();
                 break;
             case 4:
+                contractServiceImpl.displayListContracts();
+                displayMenuBooking();
                 break;
             case 5:
+                contractServiceImpl.updateContract();
+                displayMenuBooking();
                 break;
             case 6:
                 displayMainMenu();
@@ -185,8 +197,7 @@ public class FuramaController {
                     choice = Integer.parseInt(sc.nextLine());
                 }
                 break;
-            }
-            catch (Exception e) {
+            } catch (Exception e) {
                 System.err.print("Invalid input! Enter again: ");
             }
         }

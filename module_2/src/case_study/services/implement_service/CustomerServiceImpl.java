@@ -17,20 +17,20 @@ public class CustomerServiceImpl implements CustomerService {
 
     static {
         customerList = new LinkedList<>();
-        customerList.add(new Customer("206314832", "Trần Văn An", "14/05/1989", "Nam", "0935685468", "tran@gmail.com", new CustomerType("VIP"), "DN"));
-        customerList.add(new Customer("268535435", "Nguyễn Thị Đào", "02/08/1959", "Nữ", "0635284925", "dao@gmail.com", new CustomerType("Ordinary"), "QN"));
-        customerList.add(new Customer("235684431", "Lê Văn Chánh", "09/12/1985", "Nam", "0395864824", "chanh@gmail.com", new CustomerType("Ordinary"), "HN"));
-        customerList.add(new Customer("248834352", "Phạm Thu Trang", "16/02/1977", "Nữ", "0369856846", "bao@gmail.com", new CustomerType("VIP"), "HCM"));
+        customerList.add(new Customer("206314832", "Trần Văn An", "14/05/1989", "Nam", "0935685468", "tran@gmail.com", new CustomerType("Diamond"), "DN"));
+        customerList.add(new Customer("268535435", "Nguyễn Thị Đào", "02/08/1959", "Nữ", "0635284925", "dao@gmail.com", new CustomerType("Platinium"), "QN"));
+        customerList.add(new Customer("235684431", "Lê Văn Chánh", "09/12/1985", "Nam", "0395864824", "chanh@gmail.com", new CustomerType("Gold"), "HN"));
+        customerList.add(new Customer("248834352", "Phạm Thu Trang", "16/02/1977", "Nữ", "0369856846", "bao@gmail.com", new CustomerType("Silver"), "HCM"));
     }
 
-    public static void displayListCustomer() {
+    public void displayListCustomer() {
         System.out.println("\n========= Customer List ========");
         for (Customer customer : customerList) {
             System.out.println(customer);
         }
     }
 
-    public static void addCustomer() {
+    public void addCustomer() {
         System.out.print("Enter ID Code: ");
         String idCode = scanner.nextLine();
         System.out.print("Enter new Name: ");
@@ -58,7 +58,7 @@ public class CustomerServiceImpl implements CustomerService {
         }
     }
 
-    private static Customer findById(String id) {
+    private Customer findById(String id) {
         for (Customer customer : customerList) {
             if (customer.getIdCustomer().equals(id)) {
                 return customer;
@@ -67,7 +67,7 @@ public class CustomerServiceImpl implements CustomerService {
         return null;
     }
 
-    public static void updateCustomer() {
+    public void updateCustomer() {
         System.out.println("\n1. Update all\n"
                 + "2. Update details\n"
                 + "3. Return customer menu");
@@ -91,7 +91,7 @@ public class CustomerServiceImpl implements CustomerService {
         }
     }
 
-    private static void updateAllInfo(String idCustomer) {
+    private void updateAllInfo(String idCustomer) {
         Customer customer = findById(idCustomer);
         if (customer != null) {
             System.out.print("Enter ID Code: ");
@@ -138,7 +138,7 @@ public class CustomerServiceImpl implements CustomerService {
         }
     }
 
-    private static void updateDetails(String id) {
+    private void updateDetails(String id) {
         Customer customer = findById(id);
         if (customer != null) {
             System.out.println("1. Edit ID Code\n"
@@ -245,7 +245,7 @@ public class CustomerServiceImpl implements CustomerService {
         }
     }
 
-    private static boolean continues() {
+    private boolean continues() {
         System.out.print("Do you want to continue (Y/N)?: ");
         String choice = scanner.nextLine();
 
@@ -259,7 +259,7 @@ public class CustomerServiceImpl implements CustomerService {
         }
     }
 
-    private static void checkChoice(int start, int end) {
+    private void checkChoice(int start, int end) {
         while (true) {
             try {
                 choice = Integer.parseInt(scanner.nextLine());

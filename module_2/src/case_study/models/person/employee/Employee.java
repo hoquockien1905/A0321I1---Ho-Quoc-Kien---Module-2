@@ -65,6 +65,29 @@ public class Employee extends Person {
         this.salary = salary;
     }
 
+    public String getFileLine() {
+        return idEmp + "," + fullName +
+                "," + dateOfBirth + "," + gender +
+                "," + phone + "," + email +
+                "," + degree + "," + position +
+                "," + salary + "\n";
+    }
+
+    public void parse(String line) {
+        String[] params = line.split(",");
+        try {
+            idEmp = params[0];
+            fullName = params[1];
+            dateOfBirth = params[2];
+            gender = params[3];
+            phone = params[4];
+            email = params[5];
+            degree = new Degree(params[6]);
+            position = new Position(params[7]);
+        } catch (ArrayIndexOutOfBoundsException e) {
+        }
+    }
+
     @Override
     public String toString() {
         return  "Employee {" +
