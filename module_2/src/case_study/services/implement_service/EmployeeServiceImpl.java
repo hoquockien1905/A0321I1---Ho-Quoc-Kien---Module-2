@@ -1,7 +1,6 @@
 package case_study.services.implement_service;
 
 import case_study.controllers.FuramaController;
-import case_study.data.DataProcessing;
 import case_study.models.person.employee.Degree;
 import case_study.models.person.employee.Employee;
 import case_study.models.person.employee.Position;
@@ -9,7 +8,6 @@ import case_study.services.interface_service.EmployeeService;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
-import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -75,6 +73,7 @@ public class EmployeeServiceImpl implements EmployeeService {
                 employee.parse(line);
                 employeeList.add(employee);
             }
+            Employee.setAutoID(employeeList.size() + 1);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -109,7 +108,6 @@ public class EmployeeServiceImpl implements EmployeeService {
         for (Employee employee : employeeList) {
             System.out.println(employee);
         }
-
         furamaController.displayMenuEmployee();
     }
 
@@ -218,6 +216,7 @@ public class EmployeeServiceImpl implements EmployeeService {
             employee.setSalary(salary);
 
             System.out.println("All information has just been update!");
+            saveData();
             if (continues()) {
                 updateEmp();
             } else {
@@ -251,6 +250,7 @@ public class EmployeeServiceImpl implements EmployeeService {
                     String idCode = scanner.nextLine();
                     employee.setIdCode(idCode);
                     System.out.println("ID Code has just been updated!");
+                    saveData();
                     if (continues()) {
                         updateDetails(id);
                     } else {
@@ -261,6 +261,7 @@ public class EmployeeServiceImpl implements EmployeeService {
                     String name = scanner.nextLine();
                     employee.setFullName(name);
                     System.out.println("Name has just been updated!");
+                    saveData();
                     if (continues()) {
                         updateDetails(id);
                     } else {
@@ -271,6 +272,7 @@ public class EmployeeServiceImpl implements EmployeeService {
                     String dateOfBirth = scanner.nextLine();
                     employee.setDateOfBirth(dateOfBirth);
                     System.out.println("Date of birth has just been updated!");
+                    saveData();
                     if (continues()) {
                         updateDetails(id);
                     } else {
@@ -281,6 +283,7 @@ public class EmployeeServiceImpl implements EmployeeService {
                     String gender = scanner.nextLine();
                     employee.setGender(gender);
                     System.out.println("Gender has just been updated!");
+                    saveData();
                     if (continues()) {
                         updateDetails(id);
                     } else {
@@ -291,6 +294,7 @@ public class EmployeeServiceImpl implements EmployeeService {
                     String phone = scanner.nextLine();
                     employee.setPhone(phone);
                     System.out.println("Number phone has just been updated!");
+                    saveData();
                     if (continues()) {
                         updateDetails(id);
                     } else {
@@ -301,6 +305,7 @@ public class EmployeeServiceImpl implements EmployeeService {
                     String email = scanner.nextLine();
                     employee.setEmail(email);
                     System.out.println("Email has just been updated!");
+                    saveData();
                     if (continues()) {
                         updateDetails(id);
                     } else {
@@ -311,6 +316,7 @@ public class EmployeeServiceImpl implements EmployeeService {
                     String degree = scanner.nextLine();
                     employee.setDegree(new Degree(degree));
                     System.out.println("Degree has just been updated!");
+                    saveData();
                     if (continues()) {
                         updateDetails(id);
                     } else {
@@ -321,6 +327,7 @@ public class EmployeeServiceImpl implements EmployeeService {
                     String position = scanner.nextLine();
                     employee.setPosition(new Position(position));
                     System.out.println("Position has just been updated!");
+                    saveData();
                     if (continues()) {
                         updateDetails(id);
                     } else {
@@ -331,6 +338,7 @@ public class EmployeeServiceImpl implements EmployeeService {
                     double salary = scanner.nextDouble();
                     employee.setSalary(salary);
                     System.out.println("Salary has just been updated!");
+                    saveData();
                     if (continues()) {
                         updateDetails(id);
                     } else {

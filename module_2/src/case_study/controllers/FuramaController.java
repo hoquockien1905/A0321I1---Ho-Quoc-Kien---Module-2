@@ -1,6 +1,5 @@
 package case_study.controllers;
 
-import case_study.data.DataProcessing;
 import case_study.services.implement_service.*;
 
 import java.util.Scanner;
@@ -20,6 +19,8 @@ public class FuramaController {
         System.out.println("6. Exit");
         System.out.print("Enter your choice: ");
         EmployeeServiceImpl employeeService = new EmployeeServiceImpl();
+        CustomerServiceImpl customerService = new CustomerServiceImpl();
+        BookingServiceImpl bookingService = new BookingServiceImpl();
         checkChoice(1, 6);
         switch (choice) {
             case 1:
@@ -27,12 +28,14 @@ public class FuramaController {
                 displayMenuEmployee();
                 break;
             case 2:
+                customerService.readFile();
                 displayMenuCustomer();
                 break;
             case 3:
                 displayMenuFacility();
                 break;
             case 4:
+                bookingService.readFile();
                 displayMenuBooking();
                 break;
             case 5:
@@ -49,12 +52,10 @@ public class FuramaController {
         System.out.println("1. Display list employees");
         System.out.println("2. Add new employee");
         System.out.println("3. Edit employee");
-        System.out.println("4. Read file");
-        System.out.println("5. Save file");
-        System.out.println("6. Return main menu");
+        System.out.println("4. Return main menu");
         System.out.print("Enter your choice: ");
 
-        checkChoice(1, 6);
+        checkChoice(1, 4);
         EmployeeServiceImpl employeeServiceImpl = new EmployeeServiceImpl();
         switch (choice) {
             case 1:
@@ -155,6 +156,7 @@ public class FuramaController {
                 displayMenuBooking();
                 break;
             case 4:
+                contractServiceImpl.readFile();
                 contractServiceImpl.displayListContracts();
                 displayMenuBooking();
                 break;

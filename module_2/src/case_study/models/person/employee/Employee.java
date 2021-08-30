@@ -13,9 +13,10 @@ public class Employee extends Person {
     }
 
     public Employee(Degree degree, Position position, double salary) {
-        this.idEmp = "EMP00" + Employee.autoID++;
-        if (Employee.autoID > 9 && Employee.autoID < 100) {
+        if (Employee.autoID >= 10 && Employee.autoID < 100) {
             this.idEmp = "EMP0" + Employee.autoID++;
+        } else {
+            this.idEmp = "EMP00" + Employee.autoID++;
         }
         this.degree = degree;
         this.position = position;
@@ -24,13 +25,22 @@ public class Employee extends Person {
 
     public Employee(String idCode, String fullName, String dateOfBirth, String gender, String phone, String email, Degree degree, Position position, double salary) {
         super(idCode, fullName, dateOfBirth, gender, phone, email);
-        this.idEmp = "EMP00" + Employee.autoID++;
-        if (Employee.autoID > 9 && Employee.autoID < 100) {
+        if (Employee.autoID >= 10 && Employee.autoID < 100) {
             this.idEmp = "EMP0" + Employee.autoID++;
+        } else {
+            this.idEmp = "EMP00" + Employee.autoID++;
         }
         this.degree = degree;
         this.position = position;
         this.salary = salary;
+    }
+
+    public static int getAutoID() {
+        return autoID;
+    }
+
+    public static void setAutoID(int autoID) {
+        Employee.autoID = autoID;
     }
 
     public String getIdEmp() {
@@ -84,6 +94,7 @@ public class Employee extends Person {
             email = params[5];
             degree = new Degree(params[6]);
             position = new Position(params[7]);
+            salary = Double.parseDouble(params[8]);
         } catch (ArrayIndexOutOfBoundsException e) {
         }
     }

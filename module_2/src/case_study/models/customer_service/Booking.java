@@ -14,6 +14,14 @@ public class Booking {
     public Booking() {
     }
 
+    public static int getAuId() {
+        return auId;
+    }
+
+    public static void setAuId(int auId) {
+        Booking.auId = auId;
+    }
+
     public Booking(String startDay, String endDay, String idCustomerBooking, String serviceName, String serviceType) {
         this.idBooking = idBooking + Booking.auId++;
         if (Booking.auId > 9 && Booking.auId < 100) {
@@ -72,6 +80,26 @@ public class Booking {
 
     public void setServiceType(String serviceType) {
         this.serviceType = serviceType;
+    }
+
+    public void parse(String line) {
+        String[] params = line.split(",");
+        try {
+            idBooking = params[0];
+            startDay = params[1];
+            endDay = params[2];
+            idCustomerBooking = params[3];
+            serviceName = params[4];
+            serviceType = params[5];
+        }catch (ArrayIndexOutOfBoundsException e) {
+        }
+    }
+
+    public String getLineFile() {
+        return idBooking + "," + startDay +
+                "," + endDay + "," + idCustomerBooking +
+                "," + serviceName + "," + serviceType +
+                "\n";
     }
 
     @Override

@@ -3,8 +3,12 @@ package case_study.services.implement_service;
 import case_study.controllers.FuramaController;
 import case_study.models.person.customer.Customer;
 import case_study.models.person.customer.CustomerType;
+import case_study.models.person.employee.Employee;
 import case_study.services.interface_service.CustomerService;
 
+import java.io.*;
+import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
@@ -23,11 +27,90 @@ public class CustomerServiceImpl implements CustomerService {
         customerList.add(new Customer("248834352", "Phạm Thu Trang", "16/02/1977", "Nữ", "0369856846", "bao@gmail.com", new CustomerType("Silver"), "HCM"));
     }
 
+    public void saveData() {
+        FileOutputStream fileOutputStream = null;
+
+        try {
+            fileOutputStream = new FileOutputStream("D:\\Codegym\\A0321I1---Ho-Quoc-Kien---Module-2\\module_2\\src\\case_study\\data\\customer.csv");
+
+            for (Customer customer: customerList) {
+                String line = customer.getFileLine();
+                byte[] bytes = line.getBytes("UTF-8");
+                fileOutputStream.write(bytes);
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (fileOutputStream != null) {
+                try {
+                    fileOutputStream.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+
+    public void readFile(){
+        FileInputStream fileInputStream = null;
+        InputStreamReader fileReader = null;
+        BufferedReader bufferedReader = null;
+
+        try {
+            fileInputStream = new FileInputStream("D:\\Codegym\\A0321I1---Ho-Quoc-Kien---Module-2\\module_2\\src\\case_study\\data\\customer.csv");
+            fileReader = new InputStreamReader(fileInputStream, StandardCharsets.UTF_8);
+
+            bufferedReader = new BufferedReader(fileReader);
+            customerList = new ArrayList<>();
+            String line;
+            while ((line = bufferedReader.readLine()) != null) {
+                if (line.isEmpty()) {
+                    continue;
+                }
+                Customer customer = new Customer();
+                customer.parse(line);
+                customerList.add(customer);
+            }
+            Employee.setAutoID(customerList.size() + 1);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (fileReader != null) {
+                try {
+                    fileReader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (fileInputStream != null) {
+                try {
+                    fileInputStream.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (bufferedReader != null) {
+                try {
+                    bufferedReader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+
     public void displayListCustomer() {
         System.out.println("\n========= Customer List ========");
         for (Customer customer : customerList) {
             System.out.println(customer);
         }
+        furamaController.displayMenuCustomer();
     }
 
     public void addCustomer() {
@@ -50,6 +133,7 @@ public class CustomerServiceImpl implements CustomerService {
 
         customerList.add(new Customer(idCode, name, dateOfBirth, gender, phone, email, new CustomerType(customerType), address));
         System.out.println("A new customer has just been added!");
+        saveData();
 
         if (continues()) {
             addCustomer();
@@ -127,6 +211,8 @@ public class CustomerServiceImpl implements CustomerService {
             customer.setAddress(address);
 
             System.out.println("All information has just been update!");
+            saveData();
+
             if (continues()) {
                 updateCustomer();
             } else {
@@ -159,6 +245,7 @@ public class CustomerServiceImpl implements CustomerService {
                     String idCode = scanner.nextLine();
                     customer.setIdCode(idCode);
                     System.out.println("ID Code has just been updated!");
+                    saveData();
                     if (continues()) {
                         updateDetails(id);
                     } else {
@@ -169,6 +256,7 @@ public class CustomerServiceImpl implements CustomerService {
                     String name = scanner.nextLine();
                     customer.setFullName(name);
                     System.out.println("Name has just been updated!");
+                    saveData();
                     if (continues()) {
                         updateDetails(id);
                     } else {
@@ -179,6 +267,7 @@ public class CustomerServiceImpl implements CustomerService {
                     String dateOfBirth = scanner.nextLine();
                     customer.setDateOfBirth(dateOfBirth);
                     System.out.println("Date of birth has just been updated!");
+                    saveData();
                     if (continues()) {
                         updateDetails(id);
                     } else {
@@ -189,6 +278,7 @@ public class CustomerServiceImpl implements CustomerService {
                     String gender = scanner.nextLine();
                     customer.setGender(gender);
                     System.out.println("Gender has just been updated!");
+                    saveData();
                     if (continues()) {
                         updateDetails(id);
                     } else {
@@ -199,6 +289,7 @@ public class CustomerServiceImpl implements CustomerService {
                     String phone = scanner.nextLine();
                     customer.setPhone(phone);
                     System.out.println("Number phone has just been updated!");
+                    saveData();
                     if (continues()) {
                         updateDetails(id);
                     } else {
@@ -209,6 +300,7 @@ public class CustomerServiceImpl implements CustomerService {
                     String email = scanner.nextLine();
                     customer.setEmail(email);
                     System.out.println("Email has just been updated!");
+                    saveData();
                     if (continues()) {
                         updateDetails(id);
                     } else {
@@ -219,6 +311,7 @@ public class CustomerServiceImpl implements CustomerService {
                     String customerType = scanner.nextLine();
                     customer.setCustomerType(new CustomerType(customerType));
                     System.out.println("Customer type has just been updated!");
+                    saveData();
                     if (continues()) {
                         updateDetails(id);
                     } else {
@@ -229,6 +322,7 @@ public class CustomerServiceImpl implements CustomerService {
                     String address = scanner.nextLine();
                     customer.setAddress(address);
                     System.out.println("Address has just been updated!");
+                    saveData();
                     if (continues()) {
                         updateDetails(id);
                     } else {

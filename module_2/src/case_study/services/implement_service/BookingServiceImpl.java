@@ -5,6 +5,8 @@ import case_study.models.facility.Facility;
 import case_study.models.person.customer.Customer;
 import case_study.services.interface_service.BookingService;
 
+import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.util.*;
 
 public class BookingServiceImpl implements BookingService {
@@ -21,6 +23,85 @@ public class BookingServiceImpl implements BookingService {
         return bookings;
     }
 
+    public void saveDate() {
+        FileOutputStream fileOutputStream = null;
+
+        try {
+            fileOutputStream = new FileOutputStream("D:\\Codegym\\A0321I1---Ho-Quoc-Kien---Module-2\\module_2\\src\\case_study\\data\\booking.csv");
+
+            for (Booking booking : bookings) {
+                String line = booking.getLineFile();
+                byte[] bytes = line.getBytes("UTF-8");
+                fileOutputStream.write(bytes);
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (fileOutputStream != null) {
+                try {
+                    fileOutputStream.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+
+    }
+
+    public void readFile() {
+        FileInputStream fileInputStream = null;
+        InputStreamReader reader = null;
+        BufferedReader bufferedReader = null;
+
+        try {
+            fileInputStream = new FileInputStream("D:\\Codegym\\A0321I1---Ho-Quoc-Kien---Module-2\\module_2\\src\\case_study\\data\\booking.csv");
+            reader = new InputStreamReader(fileInputStream, StandardCharsets.UTF_8);
+
+            bufferedReader = new BufferedReader(reader);
+            bookings = new TreeSet<>(new BookingComparator());
+            String line;
+            while ((line = bufferedReader.readLine()) != null) {
+                if (line.isEmpty()) {
+                    continue;
+                }
+                Booking booking = new Booking();
+                booking.parse(line);
+                bookings.add(booking);
+            }
+            Booking.setAuId(Booking.getAuId() + 1);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (fileInputStream != null) {
+                try {
+                    fileInputStream.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (reader != null) {
+                try {
+                    reader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (bufferedReader != null) {
+                try {
+                    bufferedReader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+
     public void addNewBooking() {
         System.out.print("Enter a start day: ");
         String startDay = scanner.nextLine();
@@ -32,6 +113,7 @@ public class BookingServiceImpl implements BookingService {
         String serviceType = scanner.nextLine();
 
         bookings.add(new Booking(startDay, endDay, chooseIdCustomer(), chooseServiceName(), serviceType));
+        saveDate();
 
         BookingServiceImpl bookingServiceImpl = new BookingServiceImpl();
         bookingServiceImpl.displayListBooking();

@@ -28,6 +28,14 @@ public class Contract {
         return idContract;
     }
 
+    public static int getAutoId() {
+        return autoId;
+    }
+
+    public static void setAutoId(int autoId) {
+        Contract.autoId = autoId;
+    }
+
     public void setIdContract(String idContract) {
         this.idContract = idContract;
     }
@@ -62,6 +70,21 @@ public class Contract {
 
     public void setIdCustomer(String idCustomer) {
         this.idCustomer = idCustomer;
+    }
+
+    public void parse(String line) {
+        String[] params = line.split(",");
+        idContract = params[0];
+        idBooking = params[1];
+        depositAmount = Double.parseDouble(params[2]);
+        totalAmount = Double.parseDouble(params[3]);
+        idCustomer = params[4];
+    }
+
+    public String getLineFile() {
+        return idContract + "," + idBooking +
+                "," + depositAmount + "," + totalAmount +
+                "," + idCustomer + "\n";
     }
 
     @Override

@@ -5,6 +5,8 @@ import case_study.models.customer_service.Contract;
 import case_study.models.person.customer.Customer;
 import case_study.services.interface_service.ContractService;
 
+import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.util.*;
 
 public class ContractServiceImpl implements ContractService {
@@ -22,6 +24,34 @@ public class ContractServiceImpl implements ContractService {
         for (Contract contract : contracts) {
             System.out.println(contract);
         }
+    }
+
+    public void saveDate() {
+        FileOutputStream fileOutputStream = null;
+
+        try {
+            fileOutputStream = new FileOutputStream("D:\\Codegym\\A0321I1---Ho-Quoc-Kien---Module-2\\module_2\\src\\case_study\\data\\contract.csv");
+            for (Contract contract : contracts) {
+                String line = contract.getLineFile();
+                byte[] bytes = line.getBytes("UTF-8");
+                fileOutputStream.write(bytes);
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (fileOutputStream != null) {
+                try {
+                    fileOutputStream.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+
     }
 
     public void createNewContract() {
@@ -55,7 +85,59 @@ public class ContractServiceImpl implements ContractService {
 
             contracts.add(new Contract(idBooking, depositAmount, totalAmount, idCustomer));
             System.out.println("\nThe contract has just been added successfully!");
+            saveDate();
         }
+    }
+
+    public void readFile() {
+        FileInputStream fileInputStream = null;
+        InputStreamReader reader = null;
+        BufferedReader bufferedReader = null;
+
+        try {
+            fileInputStream = new FileInputStream("D:\\Codegym\\A0321I1---Ho-Quoc-Kien---Module-2\\module_2\\src\\case_study\\data\\contract.csv");
+            reader = new InputStreamReader(fileInputStream, StandardCharsets.UTF_8);
+
+            bufferedReader = new BufferedReader(reader);
+            contracts = new LinkedList<>();
+            String line;
+            while ((line = bufferedReader.readLine()) != null) {
+                if (line.isEmpty()) {
+                    continue;
+                }
+                Contract contract = new Contract();
+                contract.parse(line);
+                contracts.add(contract);
+            }
+            Contract.setAutoId(Contract.getAutoId() + 1);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (fileInputStream != null) {
+                try {
+                    fileInputStream.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (reader != null) {
+                try {
+                    reader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (bufferedReader != null) {
+                try {
+                    bufferedReader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+
     }
 
     private Contract findByIdContract(String id) {
