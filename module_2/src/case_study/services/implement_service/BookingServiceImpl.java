@@ -4,20 +4,17 @@ import case_study.models.customer_service.Booking;
 import case_study.models.facility.Facility;
 import case_study.models.person.customer.Customer;
 import case_study.services.interface_service.BookingService;
+import case_study.utilities.BookingComparator;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.util.*;
 
 public class BookingServiceImpl implements BookingService {
-    static Set<Booking> bookings;
+    static Set<Booking> bookings = new TreeSet<>(new BookingComparator());
     static Scanner scanner = new Scanner(System.in);
     static LinkedHashMap<Facility, Integer> facilities = FacilityServiceImpl.facilityService;
     static List<Customer> customers = CustomerServiceImpl.customerList;
-
-    static {
-        bookings = new TreeSet<>(new BookingComparator());
-    }
 
     public Set<Booking> sendBooking() {
         return bookings;

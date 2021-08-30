@@ -7,24 +7,213 @@ import case_study.models.facility.Room;
 import case_study.models.facility.Villa;
 import case_study.services.interface_service.FacilityService;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
+import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Scanner;
 
 public class FacilityServiceImpl implements FacilityService {
-    static LinkedHashMap<Facility, Integer> facilityService;
+    public static LinkedHashMap<Facility, Integer> facilityService = new LinkedHashMap<>();
+    ;
     static FuramaController furamaController = new FuramaController();
     static Scanner scanner = new Scanner(System.in);
     private static int choice;
 
-    static {
-        facilityService = new LinkedHashMap<>();
-        facilityService.put(new House("House", 115.5, 100000.5, 5, "Ordinary", "Ordinary", 15), 4);
-        facilityService.put(new Villa("Villa", 20.5, 22222.0, 4, "VIP", "VIP", 115.5, 20), 4);
-        facilityService.put(new Room("Room", 25.5, 1000.5, 2, "Ordinary", "Water"), 4);
+    public void saveDataVilla() {
+        FileOutputStream fileOutputStream = null;
+
+        try {
+            fileOutputStream = new FileOutputStream("D:\\Codegym\\A0321I1---Ho-Quoc-Kien---Module-2\\module_2\\src\\case_study\\data\\villa.csv");
+
+            for (Map.Entry entry : facilityService.entrySet()) {
+                if (entry.getKey() instanceof Villa) {
+                    Villa villa = (Villa) entry.getKey();
+                    String line = villa.getLineFile();
+                    byte[] bytes = line.getBytes("UTF-8");
+                    fileOutputStream.write(bytes);
+                }
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }finally {
+            if (fileOutputStream != null) {
+                try {
+                    fileOutputStream.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+
+    }
+
+    public void readFileVilla() {
+        FileInputStream fileInputStream = null;
+        InputStreamReader reader = null;
+        BufferedReader bufferedReader = null;
+
+        try {
+            fileInputStream = new FileInputStream("D:\\Codegym\\A0321I1---Ho-Quoc-Kien---Module-2\\module_2\\src\\case_study\\data\\villa.csv");
+            reader = new InputStreamReader(fileInputStream, StandardCharsets.UTF_8);
+
+            bufferedReader = new BufferedReader(reader);
+            String line;
+            while ((line = bufferedReader.readLine()) != null) {
+                if (line.isEmpty()) {
+                    continue;
+                }
+                Villa villa = new Villa();
+                villa.parse(line);
+                facilityService.put(villa, 0);
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (fileInputStream != null) {
+                try {
+                    fileInputStream.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (reader != null) {
+                try {
+                    reader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (bufferedReader != null) {
+                try {
+                    bufferedReader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+
+    }
+
+    public void saveDataHouse() {
+        FileOutputStream fileOutputStream = null;
+
+        try {
+            fileOutputStream = new FileOutputStream("D:\\Codegym\\A0321I1---Ho-Quoc-Kien---Module-2\\module_2\\src\\case_study\\data\\house.csv");
+
+            for (Map.Entry entry : facilityService.entrySet()) {
+                if (entry.getKey() instanceof  House) {
+                    House house = (House) entry.getKey();
+                    String line = house.getLineFile();
+                    byte[] bytes = line.getBytes("UTF-8");
+                    fileOutputStream.write(bytes);
+                }
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (fileOutputStream != null) {
+                try {
+                    fileOutputStream.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+
+    }
+
+    public void readFileHouse() {
+        FileInputStream fileInputStream = null;
+        InputStreamReader reader = null;
+        BufferedReader bufferedReader = null;
+
+        try {
+            fileInputStream = new FileInputStream("D:\\Codegym\\A0321I1---Ho-Quoc-Kien---Module-2\\module_2\\src\\case_study\\data\\house.csv");
+            reader = new InputStreamReader(fileInputStream, StandardCharsets.UTF_8);
+
+            bufferedReader = new BufferedReader(reader);
+            String line;
+            while ((line = bufferedReader.readLine()) != null) {
+                if (line.isEmpty()) {
+                    continue;
+                }
+                House house = new House();
+                house.parse(line);
+                facilityService.put(house, 0);
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void saveDataRoom() {
+        FileOutputStream fileOutputStream = null;
+
+        try {
+            fileOutputStream = new FileOutputStream("D:\\Codegym\\A0321I1---Ho-Quoc-Kien---Module-2\\module_2\\src\\case_study\\data\\room.csv");
+
+            for (Map.Entry entry : facilityService.entrySet()) {
+                if (entry.getKey() instanceof  Room) {
+                    Room room = (Room) entry.getKey();
+                    String line = room.getLineFile();
+                    byte[] bytes = line.getBytes("UTF-8");
+                    fileOutputStream.write(bytes);
+                }
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (fileOutputStream != null) {
+                try {
+                    fileOutputStream.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+
+    public void readFileRoom() {
+        FileInputStream fileInputStream = null;
+        InputStreamReader reader = null;
+        BufferedReader bufferedReader = null;
+
+        try {
+            fileInputStream = new FileInputStream("D:\\Codegym\\A0321I1---Ho-Quoc-Kien---Module-2\\module_2\\src\\case_study\\data\\room.csv");
+            reader = new InputStreamReader(fileInputStream, StandardCharsets.UTF_8);
+
+            bufferedReader = new BufferedReader(reader);
+            String line;
+            while ((line = bufferedReader.readLine()) != null) {
+                if (line.isEmpty()) {
+                    continue;
+                }
+                Room room = new Room();
+                room.parse(line);
+                facilityService.put(room, 0);
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public void displayListFacility() {
@@ -73,6 +262,7 @@ public class FacilityServiceImpl implements FacilityService {
         System.out.print("Maximum Number Of People: ");
         int maximumPeople = scanner.nextInt();
         service.setMaximumNumberOfPeople(maximumPeople);
+        scanner.nextLine();
 
         System.out.print("Rental Type: ");
         String rentalType = scanner.nextLine();
@@ -94,10 +284,12 @@ public class FacilityServiceImpl implements FacilityService {
         System.out.print("Number Of Floors: ");
         int numberOfFloors = scanner.nextInt();
         villa.setNumberOfFloors(numberOfFloors);
+        scanner.nextLine();
 
         System.out.println("A new Villa has just been added!");
-
         facilityService.put(villa, 0);
+        saveDataVilla();
+
         if (continues()) {
             addNewVilla();
         } else {
@@ -120,7 +312,7 @@ public class FacilityServiceImpl implements FacilityService {
         System.out.println("A new House has just been added!");
 
         facilityService.put(house, 0);
-
+        saveDataHouse();
         if (continues()) {
             addNewHouse();
         } else {
@@ -139,7 +331,7 @@ public class FacilityServiceImpl implements FacilityService {
         System.out.println("A new House has just been added!");
 
         facilityService.put(room, 0);
-
+        saveDataRoom();
         if (continues()) {
             addNewRoom();
         } else {

@@ -2,6 +2,7 @@ package case_study.controllers;
 
 import case_study.services.implement_service.*;
 
+import java.util.LinkedHashMap;
 import java.util.Scanner;
 
 public class FuramaController {
@@ -18,20 +19,25 @@ public class FuramaController {
         System.out.println("5. Promotion Management");
         System.out.println("6. Exit");
         System.out.print("Enter your choice: ");
-        EmployeeServiceImpl employeeService = new EmployeeServiceImpl();
-        CustomerServiceImpl customerService = new CustomerServiceImpl();
+        EmployeeServiceImpl employeeServiceImpl = new EmployeeServiceImpl();
+        CustomerServiceImpl customerServiceImpl = new CustomerServiceImpl();
         BookingServiceImpl bookingService = new BookingServiceImpl();
+        FacilityServiceImpl facilityServiceImpl = new FacilityServiceImpl();
         checkChoice(1, 6);
         switch (choice) {
             case 1:
-                employeeService.readFile();
+                employeeServiceImpl.readFile();
                 displayMenuEmployee();
                 break;
             case 2:
-                customerService.readFile();
+                customerServiceImpl.readFile();
                 displayMenuCustomer();
                 break;
             case 3:
+                FacilityServiceImpl.facilityService = new LinkedHashMap<>();
+                facilityServiceImpl.readFileVilla();
+                facilityServiceImpl.readFileHouse();
+                facilityServiceImpl.readFileRoom();
                 displayMenuFacility();
                 break;
             case 4:

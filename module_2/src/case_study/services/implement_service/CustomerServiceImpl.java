@@ -15,17 +15,9 @@ import java.util.Scanner;
 
 public class CustomerServiceImpl implements CustomerService {
     static Scanner scanner = new Scanner(System.in);
-    static List<Customer> customerList;
+    static List<Customer> customerList = new LinkedList<>();
     static FuramaController furamaController = new FuramaController();
     private static int choice;
-
-    static {
-        customerList = new LinkedList<>();
-        customerList.add(new Customer("206314832", "Trần Văn An", "14/05/1989", "Nam", "0935685468", "tran@gmail.com", new CustomerType("Diamond"), "DN"));
-        customerList.add(new Customer("268535435", "Nguyễn Thị Đào", "02/08/1959", "Nữ", "0635284925", "dao@gmail.com", new CustomerType("Platinium"), "QN"));
-        customerList.add(new Customer("235684431", "Lê Văn Chánh", "09/12/1985", "Nam", "0395864824", "chanh@gmail.com", new CustomerType("Gold"), "HN"));
-        customerList.add(new Customer("248834352", "Phạm Thu Trang", "16/02/1977", "Nữ", "0369856846", "bao@gmail.com", new CustomerType("Silver"), "HCM"));
-    }
 
     public void saveData() {
         FileOutputStream fileOutputStream = null;

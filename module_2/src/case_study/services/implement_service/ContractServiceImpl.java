@@ -10,13 +10,9 @@ import java.nio.charset.StandardCharsets;
 import java.util.*;
 
 public class ContractServiceImpl implements ContractService {
-    static Queue<Contract> contracts;
+    static Queue<Contract> contracts = new LinkedList<>();
     static List<Customer> customers = CustomerServiceImpl.customerList;
     static Scanner scanner = new Scanner(System.in);
-
-    static {
-        contracts = new LinkedList<>();
-    }
 
     @Override
     public void displayListContracts() {

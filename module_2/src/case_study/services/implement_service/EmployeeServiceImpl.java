@@ -14,18 +14,9 @@ import java.util.Scanner;
 
 public class EmployeeServiceImpl implements EmployeeService {
     static Scanner scanner = new Scanner(System.in);
-    private static List<Employee> employeeList;
+    private static List<Employee> employeeList = new ArrayList<>();
     static FuramaController furamaController = new FuramaController();
-//    static DataProcessing dataProcessing = new DataProcessing();
     private static int choice;
-
-    static {
-        employeeList = new ArrayList<>();
-        employeeList.add(new Employee("206314831", "Hồ Quốc Kiên", "19/05/1999", "Nam", "0399733998", "hquockien@gmail.com", new Degree("University"), new Position("Accountant"), 211000.0));
-        employeeList.add(new Employee("258952346", "Nguyễn Chí Kiên", "16/04/2000", "Nam", "0399732621", "hkien@gmail.com", new Degree("College"), new Position("Security officer"), 11100.0));
-        employeeList.add(new Employee("268461458", "Võ Minh Kiên", "05/06/2001", "Nam", "0368246792", "hqkien@gmail.com", new Degree("University"), new Position("Direction"), 5111000.0));
-        employeeList.add(new Employee("261331287", "Trần Trung Kiên", "27/07/2007", "Nam", "0393985745", "hoquockien@gmail.com", new Degree("University"), new Position("Manager"), 1111000.0));
-    }
 
     public void saveData() {
         FileOutputStream fileOutputStream = null;

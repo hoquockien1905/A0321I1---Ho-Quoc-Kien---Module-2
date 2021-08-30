@@ -1,11 +1,11 @@
 package case_study.models.facility;
 
 public abstract class Facility {
-    private String serviceName;
-    private double useArea;
-    private double rentalCosts;
-    private int maximumNumberOfPeople;
-    private String rentalType;
+    protected String serviceName;
+    protected double useArea;
+    protected double rentalCosts;
+    protected int maximumNumberOfPeople;
+    protected String rentalType;
 
     public Facility() {
     }
