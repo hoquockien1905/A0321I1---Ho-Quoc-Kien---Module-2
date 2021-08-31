@@ -76,7 +76,7 @@ public class Employee extends Person {
     }
 
     public String getFileLine() {
-        return idEmp + "," + fullName +
+        return idEmp + "," + fullName + "," + idCode +
                 "," + dateOfBirth + "," + gender +
                 "," + phone + "," + email +
                 "," + degree + "," + position +
@@ -88,13 +88,14 @@ public class Employee extends Person {
         try {
             idEmp = params[0];
             fullName = params[1];
-            dateOfBirth = params[2];
-            gender = params[3];
-            phone = params[4];
-            email = params[5];
-            degree = new Degree(params[6]);
-            position = new Position(params[7]);
-            salary = Double.parseDouble(params[8]);
+            idCode = params[2];
+            dateOfBirth = params[3];
+            gender = params[4];
+            phone = params[5];
+            email = params[6];
+            degree = new Degree(params[7]);
+            position = new Position(params[8]);
+            salary = Double.parseDouble(params[9]);
         } catch (ArrayIndexOutOfBoundsException e) {
         }
     }

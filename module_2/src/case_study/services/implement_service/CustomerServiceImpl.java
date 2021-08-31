@@ -15,8 +15,9 @@ import java.util.Scanner;
 
 public class CustomerServiceImpl implements CustomerService {
     static Scanner scanner = new Scanner(System.in);
-    static List<Customer> customerList = new LinkedList<>();
+    public static List<Customer> customerList = new LinkedList<>();
     static FuramaController furamaController = new FuramaController();
+    static EmployeeServiceImpl employeeService = new EmployeeServiceImpl();
     private static int choice;
 
     public void saveData() {
@@ -57,7 +58,6 @@ public class CustomerServiceImpl implements CustomerService {
             fileReader = new InputStreamReader(fileInputStream, StandardCharsets.UTF_8);
 
             bufferedReader = new BufferedReader(fileReader);
-            customerList = new ArrayList<>();
             String line;
             while ((line = bufferedReader.readLine()) != null) {
                 if (line.isEmpty()) {
@@ -67,7 +67,7 @@ public class CustomerServiceImpl implements CustomerService {
                 customer.parse(line);
                 customerList.add(customer);
             }
-            Employee.setAutoID(customerList.size() + 1);
+            Customer.setAutoId(customerList.size() + 1);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -99,6 +99,8 @@ public class CustomerServiceImpl implements CustomerService {
 
     public void displayListCustomer() {
         System.out.println("\n========= Customer List ========");
+        customerList = new LinkedList<>();
+        readFile();
         for (Customer customer : customerList) {
             System.out.println(customer);
         }
@@ -106,18 +108,25 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     public void addCustomer() {
+        readFile();
         System.out.print("Enter ID Code: ");
         String idCode = scanner.nextLine();
+        idCode = employeeService.regexIDCode(idCode);
         System.out.print("Enter new Name: ");
         String name = scanner.nextLine();
+        name = employeeService.regexName(name);
         System.out.print("Enter Date of birth: ");
         String dateOfBirth = scanner.nextLine();
+        dateOfBirth = employeeService.regexDateOfBirth(dateOfBirth);
         System.out.print("Enter Gender: ");
         String gender = scanner.nextLine();
+        gender = employeeService.regexGender(gender);
         System.out.print("Enter Number phone: ");
         String phone = scanner.nextLine();
+        phone = employeeService.regexNumberPhone(phone);
         System.out.print("Enter Email: ");
         String email = scanner.nextLine();
+        email = employeeService.regexEmail(email);
         System.out.print("Enter Customer type: ");
         String customerType = scanner.nextLine();
         System.out.print("Enter Address: ");
@@ -144,6 +153,7 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     public void updateCustomer() {
+        readFile();
         System.out.println("\n1. Update all\n"
                 + "2. Update details\n"
                 + "3. Return customer menu");

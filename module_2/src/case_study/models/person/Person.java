@@ -75,6 +75,7 @@ public abstract class Person {
     @Override
     public String toString() {
         return  "Full Name: " + fullName +
+                ", ID Code: " + idCode +
                 ", Date Of Birth: " + dateOfBirth +
                 ", Gender: " + gender +
                 ", Phone: " + phone +

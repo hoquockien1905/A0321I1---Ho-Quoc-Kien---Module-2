@@ -118,7 +118,6 @@ public class BookingServiceImpl implements BookingService {
 
     private String chooseIdCustomer() {
         showListIdCustomer();
-
         System.out.print("Enter a number of list: ");
         Scanner scanner = new Scanner(System.in);
         int choice = scanner.nextInt();
@@ -142,7 +141,6 @@ public class BookingServiceImpl implements BookingService {
 
     private String chooseServiceName() {
         showListServiceName();
-
         Facility facility;
         System.out.print("Enter a number of facility list: ");
         Scanner scanner = new Scanner(System.in);
@@ -170,6 +168,8 @@ public class BookingServiceImpl implements BookingService {
     }
 
     private void showListIdCustomer() {
+        CustomerServiceImpl customerService = new CustomerServiceImpl();
+        customerService.readFile();
         System.out.println("\n========List ID Customer========");
         int index = 0;
         for (Customer customer : customers) {
@@ -179,6 +179,10 @@ public class BookingServiceImpl implements BookingService {
     }
 
     private void showListServiceName() {
+        FacilityServiceImpl facilityService = new FacilityServiceImpl();
+        facilityService.readFileVilla();
+        facilityService.readFileVilla();
+        facilityService.readFileRoom();
         System.out.println("\n========List Services========");
         Facility facility = null;
         int indexOfFacilities = 0;
