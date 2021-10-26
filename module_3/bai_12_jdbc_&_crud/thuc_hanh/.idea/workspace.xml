@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e95fba39-3b42-4ce3-864f-743717d68962" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../module_2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module_2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/module_2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module_2/module_2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/out/production/module_2/phan_thi_thuc_hanh/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/out/production/module_2/phan_thi_thuc_hanh/controller/XYZController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/out/production/module_2/phan_thi_thuc_hanh/data/medical_records.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/out/production/module_2/phan_thi_thuc_hanh/model/BenhAn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/out/production/module_2/phan_thi_thuc_hanh/model/BenhAnBenhNhanThuong.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/out/production/module_2/phan_thi_thuc_hanh/model/BenhAnBenhNhanVip.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/out/production/module_2/phan_thi_thuc_hanh/services/QuanLyBenhAn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/out/production/module_2/test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.21/apache-tomcat-9.0.21/webapps/ROOT/WEB-INF/classes/controller/ProductServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.21/apache-tomcat-9.0.21/webapps/ROOT/WEB-INF/classes/controller/ProductServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.21/apache-tomcat-9.0.21/webapps/ROOT/WEB-INF/classes/model/repository/ProductRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.21/apache-tomcat-9.0.21/webapps/ROOT/WEB-INF/classes/model/repository/ProductRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.21/apache-tomcat-9.0.21/webapps/ROOT/WEB-INF/classes/model/repository/impl/BaseRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.21/apache-tomcat-9.0.21/webapps/ROOT/WEB-INF/classes/model/repository/impl/BaseRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.21/apache-tomcat-9.0.21/webapps/ROOT/WEB-INF/classes/model/repository/impl/ProductRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.21/apache-tomcat-9.0.21/webapps/ROOT/WEB-INF/classes/model/repository/impl/ProductRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.21/apache-tomcat-9.0.21/webapps/ROOT/WEB-INF/classes/model/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.21/apache-tomcat-9.0.21/webapps/ROOT/WEB-INF/classes/model/service/ProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.21/apache-tomcat-9.0.21/webapps/ROOT/WEB-INF/classes/model/service/impl/ProductServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.21/apache-tomcat-9.0.21/webapps/ROOT/WEB-INF/classes/model/service/impl/ProductServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_11_mvc_model/bai_tap/product_management/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_11_mvc_model/bai_tap/product_management/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_11_mvc_model/bai_tap/product_management/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_11_mvc_model/bai_tap/product_management/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_11_mvc_model/bai_tap/product_management/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_11_mvc_model/bai_tap/product_management/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_11_mvc_model/bai_tap/product_management/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_11_mvc_model/bai_tap/product_management/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_11_mvc_model/bai_tap/product_management/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_11_mvc_model/bai_tap/product_management/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_11_mvc_model/bai_tap/product_management/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_11_mvc_model/bai_tap/product_management/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_11_mvc_model/bai_tap/product_management/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_11_mvc_model/bai_tap/product_management/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_11_mvc_model/bai_tap/product_management/build/classes/java/main/controller/ProductServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_11_mvc_model/bai_tap/product_management/build/classes/java/main/controller/ProductServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_11_mvc_model/bai_tap/product_management/build/classes/java/main/model/repository/ProductRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_11_mvc_model/bai_tap/product_management/build/classes/java/main/model/repository/ProductRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_11_mvc_model/bai_tap/product_management/build/classes/java/main/model/repository/impl/BaseRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_11_mvc_model/bai_tap/product_management/build/classes/java/main/model/repository/impl/BaseRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_11_mvc_model/bai_tap/product_management/build/classes/java/main/model/repository/impl/ProductRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_11_mvc_model/bai_tap/product_management/build/classes/java/main/model/repository/impl/ProductRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_11_mvc_model/bai_tap/product_management/build/classes/java/main/model/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_11_mvc_model/bai_tap/product_management/build/classes/java/main/model/service/ProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_11_mvc_model/bai_tap/product_management/build/classes/java/main/model/service/impl/ProductServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_11_mvc_model/bai_tap/product_management/build/classes/java/main/model/service/impl/ProductServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_11_mvc_model/bai_tap/product_management/build/libs/product_management-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_11_mvc_model/bai_tap/product_management/build/libs/product_management-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_11_mvc_model/bai_tap/product_management/src/main/java/controller/ProductServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_11_mvc_model/bai_tap/product_management/src/main/java/controller/ProductServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_11_mvc_model/bai_tap/product_management/src/main/java/model/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_11_mvc_model/bai_tap/product_management/src/main/java/model/repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_11_mvc_model/bai_tap/product_management/src/main/java/model/repository/impl/BaseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_11_mvc_model/bai_tap/product_management/src/main/java/model/repository/impl/BaseRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_11_mvc_model/bai_tap/product_management/src/main/java/model/repository/impl/ProductRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_11_mvc_model/bai_tap/product_management/src/main/java/model/repository/impl/ProductRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_11_mvc_model/bai_tap/product_management/src/main/java/model/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_11_mvc_model/bai_tap/product_management/src/main/java/model/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_11_mvc_model/bai_tap/product_management/src/main/java/model/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_11_mvc_model/bai_tap/product_management/src/main/java/model/service/impl/ProductServiceImpl.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="202aIE3gJR9BBvCAGLw4XwToiIb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e95fba39-3b42-4ce3-864f-743717d68962" name="Default Changelist" comment="" />
+      <created>1635245054021</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1635245054021</updated>
+      <workItem from="1635245055741" duration="58000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1635245093361">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1635245093361" />
+    <state x="209" y="0" key="new project wizard" timestamp="1635245111908">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="209" y="0" key="new project wizard/0.0.1536.864@0.0.1536.864" timestamp="1635245111908" />
+  </component>
+</project>
