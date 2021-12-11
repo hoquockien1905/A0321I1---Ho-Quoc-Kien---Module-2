@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog List</title>
+</head>
+<body>
+<h2>Blog List</h2>
+<a href="create">Add a blog</a>
+<form action="/" method="get">
+    <input type="text" name="searchKey" placeholder="Enter Author">
+    <button type="submit">Search</button>
+</form>
+<form action="/" method="get">
+    <select th:name="categoryId" id="" onchange="this.form.submit()">
+        <option value="" selected disabled>Choose</option>
+        <th:block th:each="category : ${categoryList}">
+            <option th:value="${category.id}" th:text="${category.name}"></option>
+        </th:block>
+    </select>
+</form>
+<h3 th:text="${mesage}" style="color: green"></h3>
+<h3 th:text="${deleteMessage}" style="color: green"></h3>
+<table border="2" cellspacing="0">
+    <tr>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Content</td>
+        <td>Author</td>
+        <td>Category</td>
+        <td colspan="2">Update</td>
+    </tr>
+    <tr th:each="blog : ${blogList}">
+        <td th:text="${blog.id}"></td>
+        <td th:text="${blog.name}"></td>
+        <td th:text="${blog.content}"></td>
+        <td th:text="${blog.author}"></td>
+        <td th:text="${blog.category.name}"></td>
+        <td><a th:href="@{/edit/{id}(id=${blog.id})}">Edit</a></td>
+        <td><a th:href="@{/delete/{id}(id=${blog.id})}">Delete</a></td>
+    </tr>
+</table>
+<div>
+    <button><a th:href="@{/(page=${blogList.number - 1})}" th:if="${blogList.hasPrevious()}">Previous</a></button>
+    <span th:text="${blogList.number + 1}"></span><span th:text="${blogList.totalPages}"></span></span>
+    <button><a th:href="@{/(page=${blogList.number + 1})}" th:if="${blogList.hasNext()}">Next</a></button>
+</div>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7bd0d427-9d8b-4845-a23f-72cb8689609f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../bai_7_spring_data_repository/bai_tap/mo_rong_ung_dung_blog/src/main/java/com/example/demo/controller/BlogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_7_spring_data_repository/bai_tap/mo_rong_ung_dung_blog/src/main/java/com/example/demo/model/Blog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_7_spring_data_repository/bai_tap/mo_rong_ung_dung_blog/src/main/java/com/example/demo/model/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_7_spring_data_repository/bai_tap/mo_rong_ung_dung_blog/src/main/java/com/example/demo/repositories/BlogRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_7_spring_data_repository/bai_tap/mo_rong_ung_dung_blog/src/main/java/com/example/demo/repositories/CategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_7_spring_data_repository/bai_tap/mo_rong_ung_dung_blog/src/main/java/com/example/demo/service/BlogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_7_spring_data_repository/bai_tap/mo_rong_ung_dung_blog/src/main/java/com/example/demo/service/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_7_spring_data_repository/bai_tap/mo_rong_ung_dung_blog/src/main/java/com/example/demo/service/impl/BlogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_7_spring_data_repository/bai_tap/mo_rong_ung_dung_blog/src/main/java/com/example/demo/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_7_spring_data_repository/bai_tap/mo_rong_ung_dung_blog/src/main/resources/templates/blog/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_7_spring_data_repository/bai_tap/mo_rong_ung_dung_blog/src/main/resources/templates/blog/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_7_spring_data_repository/bai_tap/mo_rong_ung_dung_blog/src/main/resources/templates/blog/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../validating_form_input/src/main/java/com/example/demo/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../validating_form_input/src/main/java/com/example/demo/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../validating_form_input/src/main/resources/templates/user/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../validating_form_input/src/main/resources/templates/user/result.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module_2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module_2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module_2/module_2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module_2/module_2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module_2/out/production/module_2/phan_thi_thuc_hanh/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module_2/out/production/module_2/phan_thi_thuc_hanh/controller/XYZController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module_2/out/production/module_2/phan_thi_thuc_hanh/data/medical_records.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module_2/out/production/module_2/phan_thi_thuc_hanh/model/BenhAn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module_2/out/production/module_2/phan_thi_thuc_hanh/model/BenhAnBenhNhanThuong.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module_2/out/production/module_2/phan_thi_thuc_hanh/model/BenhAnBenhNhanVip.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module_2/out/production/module_2/phan_thi_thuc_hanh/services/QuanLyBenhAn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module_2/out/production/module_2/test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module_2/src/test/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module_2/src/test/controller/QuanLyDienThoai.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module_2/src/test/model/DienThoai.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module_2/src/test/model/DienThoaiChinhHang.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module_2/src/test/model/DienThoaiXachTay.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module_2/src/test/service/implement_interface/DienThoaiService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module_2/src/test/service/implement_service/DienThoaiImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module_3/apache-tomcat-9.0.21/apache-tomcat-9.0.21/webapps/ROOT/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module_3/apache-tomcat-9.0.21/apache-tomcat-9.0.21/webapps/ROOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module_3/apache-tomcat-9.0.21/apache-tomcat-9.0.21/webapps/ROOT/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module_3/product_management/src/main/java/controller/ProductServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module_3/product_management/src/main/java/controller/ProductServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module_3/product_management/src/main/java/model/bean/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module_3/product_management/src/main/java/model/bean/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module_3/product_management/src/main/java/model/bean/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module_3/product_management/src/main/java/model/bean/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module_3/product_management/src/main/java/model/repository/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module_3/product_management/src/main/java/model/repository/CategoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module_3/product_management/src/main/java/model/repository/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module_3/product_management/src/main/java/model/repository/DBConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module_3/product_management/src/main/java/model/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module_3/product_management/src/main/java/model/repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module_3/product_management/src/main/java/model/repository/impl/CategoryRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module_3/product_management/src/main/java/model/repository/impl/CategoryRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module_3/product_management/src/main/java/model/repository/impl/ProductRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module_3/product_management/src/main/java/model/repository/impl/ProductRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module_3/product_management/src/main/java/model/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module_3/product_management/src/main/java/model/service/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module_3/product_management/src/main/java/model/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module_3/product_management/src/main/java/model/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module_3/product_management/src/main/java/model/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module_3/product_management/src/main/java/model/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module_3/product_management/src/main/java/model/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module_3/product_management/src/main/java/model/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module_3/product_management/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module_3/product_management/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module_3/product_management/src/main/webapp/product/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module_3/product_management/src/main/webapp/product/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module_3/product_management/src/main/webapp/product/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module_3/product_management/src/main/webapp/product/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module_3/thi_thuc_hanh/src/main/java/controller/QuanLyBenhAn.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module_3/thi_thuc_hanh/src/main/java/controller/QuanLyBenhAn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module_3/thi_thuc_hanh/src/main/java/model/bean/BenhAn.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module_3/thi_thuc_hanh/src/main/java/model/bean/BenhAn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module_3/thi_thuc_hanh/src/main/java/model/bean/BenhNhan.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module_3/thi_thuc_hanh/src/main/java/model/bean/BenhNhan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module_3/thi_thuc_hanh/src/main/java/model/repository/HoSoBenhAnRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module_3/thi_thuc_hanh/src/main/java/model/repository/HoSoBenhAnRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module_3/thi_thuc_hanh/src/main/java/model/repository/impl/HoSoBenhAnRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module_3/thi_thuc_hanh/src/main/java/model/repository/impl/HoSoBenhAnRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module_3/thi_thuc_hanh/src/main/java/model/service/HoSoBenhAnService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module_3/thi_thuc_hanh/src/main/java/model/service/HoSoBenhAnService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module_3/thi_thuc_hanh/src/main/java/model/service/impl/HoSoBenhAnServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module_3/thi_thuc_hanh/src/main/java/model/service/impl/HoSoBenhAnServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module_3/thi_thuc_hanh/src/main/webapp/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module_3/thi_thuc_hanh/src/main/webapp/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module_3/thi_thuc_hanh/src/main/webapp/update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module_3/thi_thuc_hanh/src/main/webapp/update.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai_7_spring_data_repository/thuc_hanh/qlkh_phan_trang_va_tim_kiem/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bai_7_spring_data_repository/thuc_hanh/qlkh_phan_trang_va_tim_kiem/.idea/gradle.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="227TKeWGbLuGmplmluOupYfuWyt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../custom_validation" />
+  </component>
+  <component name="RunManager">
+    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="demo.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7bd0d427-9d8b-4845-a23f-72cb8689609f" name="Default Changelist" comment="" />
+      <created>1639187562684</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1639187562684</updated>
+      <workItem from="1639187567006" duration="950000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="570" y="144" key="#com.intellij.ide.util.MemberChooser" timestamp="1639188155970">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="570" y="144" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1639188155970" />
+    <state x="545" y="183" key="FileChooserDialogImpl" timestamp="1639188526292">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="545" y="183" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1639188526292" />
+    <state width="1390" height="202" key="GridCell.Tab.0.bottom" timestamp="1639188527746">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1390" height="202" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1639188527746" />
+    <state width="1390" height="202" key="GridCell.Tab.0.center" timestamp="1639188527746">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1390" height="202" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1639188527746" />
+    <state width="1390" height="202" key="GridCell.Tab.0.left" timestamp="1639188527746">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1390" height="202" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1639188527746" />
+    <state width="1390" height="202" key="GridCell.Tab.0.right" timestamp="1639188527746">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1390" height="202" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1639188527746" />
+    <state width="1390" height="202" key="GridCell.Tab.1.bottom" timestamp="1639188527746">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1390" height="202" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1639188527746" />
+    <state width="1390" height="202" key="GridCell.Tab.1.center" timestamp="1639188527746">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1390" height="202" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1639188527746" />
+    <state width="1390" height="202" key="GridCell.Tab.1.left" timestamp="1639188527746">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1390" height="202" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1639188527746" />
+    <state width="1390" height="202" key="GridCell.Tab.1.right" timestamp="1639188527746">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1390" height="202" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1639188527746" />
+  </component>
+</project>
