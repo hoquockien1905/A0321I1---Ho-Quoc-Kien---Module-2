@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>View</title>
+</head>
+<body>
+<a href="/">Trở lại Trang chủ</a>
+<h4 th:if="${borrow != null}" th:text="${borrow}" style="color: green"></h4>
+<h3>Thông tin</h3>
+<table th:object="${card}" border="2" cellspacing="0">
+    <tr>
+        <td>Mã Card</td>
+        <td th:text="${card.id}"></td>
+    </tr>
+    <tr>
+        <td>Mã sách</td>
+        <td th:text="${card.book.id}"></td>
+    </tr>
+    <tr>
+        <td>Tên sách</td>
+        <td th:text="${card.book.name}"></td>
+    </tr>
+</table>
+</body>
+</html>

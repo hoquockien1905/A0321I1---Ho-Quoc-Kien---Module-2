@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Book List</title>
+</head>
+<body>
+<h2>Book List</h2>
+<h4 th:if="${message != null}" th:text="${message}" style="color: green"></h4>
+<h4 th:if="${delete != null}" th:text="${delete}" style="color: green"></h4>
+<a href="/create">Thêm sách mới</a>
+<table border="2" cellspacing="0" >
+    <tr>
+        <td>ID</td>
+        <td>Tên sách</td>
+        <td>Tác giả</td>
+        <td>Số lượng</td>
+        <td colspan="2"></td>
+    </tr>
+    <tr th:each="book : ${bookList}">
+        <td th:text="${book.id}"></td>
+        <td th:text="${book.name}"></td>
+        <td th:text="${book.author}"></td>
+        <td th:text="${book.quantity}"></td>
+        <td><a th:href="@{/borrow/{id}(id=${book.id})}">Mượn sách</a></td>
+        <td><a th:href="@{/delete/{id}(id=${book.id})}">Xóa sách</a></td>
+    </tr>
+</table>
+</body>
+</html>

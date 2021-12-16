@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Thêm sách mới</title>
+</head>
+<body>
+<a href="/">Quay lại Trang chủ</a>
+<form action="/create" method="post" th:object="${book}">
+    <table>
+        <tr>
+            <td>Name</td>
+            <td><input type="text" th:field="*{name}"></td>
+            <td th:text="${#fields.hasErrors()}" th:errors="*{name}" style="color: red"></td>
+        </tr>
+        <tr>
+            <td>Quantity</td>
+            <td><input type="text" th:field="*{quantity}"></td>
+            <td th:text="${#fields.hasErrors()}" th:errors="*{quantity}" style="color: red"></td>
+
+        </tr>
+        <tr>
+            <td>Author</td>
+            <td><input type="text" th:field="*{author}"></td>
+            <td th:text="${#fields.hasErrors()}" th:errors="*{author}" style="color: red"></td>
+
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" value="Add"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

@@ -18,6 +18,8 @@
             <th scope="col">Ngày nhập viện</th>
             <th scope="col">Ngày ra viện</th>
             <th scope="col">Lý do nhập viện</th>
+            <th scope="col">Cập nhập</th>
+
         </tr>
         </thead>
         <tbody>
@@ -29,6 +31,7 @@
                 <td>${benhAn.ngayNhapVien}</td>
                 <td>${benhAn.ngayRaVien}</td>
                 <td>${benhAn.lyDoNhapVien}</td>
+                <td><a href="?action=update&id=${benhAn.idBenhAn}">Sửa</a></td>
 <%--                <td>--%>
 <%--                    <button type="button" class="btn btn-danger" onclick="setValueForm('${product.id}')"--%>
 <%--                            data-toggle="modal" data-target="#deleteModal">--%>
