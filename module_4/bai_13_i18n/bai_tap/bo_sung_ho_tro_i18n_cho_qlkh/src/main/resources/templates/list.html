@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="#{title.list}"></title>
+</head>
+<body>
+<div>
+    <a href="?lang=en" th:text="#{lang.english}"></a> | <a href="?lang=ja" th:text="#{lang.japanese}"></a> |
+    <a href="?lang=ko" th:text="#{lang.korean}"></a> | <a href="?lang=th" th:text="#{lang.thai}"></a> |
+    <a href="?lang=vi" th:text="#{lang.vietnamese}"></a>
+</div>
+<a href="create" th:text="#{create.button}"></a>
+<p th:text="${addSuccess}" style="color:green; font-size: 14px"></p>
+<h2 th:text="#{title.table}"></h2>
+    <table border="1" style="text-align: center">
+        <tr>
+            <th th:text="#{customer.id}"></th>
+            <th th:text="#{customer.name}"></th>
+            <th th:text="#{customer.email}"></th>
+            <th th:text="#{customer.address}"></th>
+        </tr>
+        <tr th:each="customer : ${customerList}">
+            <td th:text="${customer.id}"></td>
+            <td th:text="${customer.name}"></td>
+            <td th:text="${customer.email}"></td>
+            <td th:text="${customer.address}"></td>
+        </tr>
+    </table>
+</body>
+</html>

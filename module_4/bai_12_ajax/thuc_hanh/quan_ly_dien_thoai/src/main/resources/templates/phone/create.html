@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Create</title>
+</head>
+<body>
+<form action="create" method="post" th:object="${newPhone}">
+    <table border="1">
+        <tr>
+            <td>Model</td>
+            <td>Price</td>
+            <td>Producer</td>
+        </tr>
+        <tr>
+            <td><input type="text" th:field="*{model}"></td>
+            <td><input type="text" th:field="*{price}"></td>
+            <td>
+                <select name="" id="" th:field="*{producer}">
+                    <option value="NOKIA">Nokia</option>
+                    <option value="IPHONE">Iphone</option>
+                    <option value="SAMSUNG">Samsung</option>
+                    <option value="OPPO">Oppo</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3"><input type="submit" value="Add" style="width: 100%;"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
