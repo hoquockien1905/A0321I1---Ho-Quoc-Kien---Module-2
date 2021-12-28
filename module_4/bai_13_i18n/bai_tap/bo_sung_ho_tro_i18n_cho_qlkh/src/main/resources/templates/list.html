@@ -11,7 +11,7 @@
     <a href="?lang=vi" th:text="#{lang.vietnamese}"></a>
 </div>
 <a href="create" th:text="#{create.button}"></a>
-<p th:text="${addSuccess}" style="color:green; font-size: 14px"></p>
+<p th:if="${addSuccess == 1}" th:text="#{add.success}" style="color:green; font-size: 20px"></p>
 <h2 th:text="#{title.table}"></h2>
     <table border="1" style="text-align: center">
         <tr>
