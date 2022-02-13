@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0dee4159-1bff-4ed3-a3a8-ac50d9c0433f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/controller/ContractController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/controller/ContractDetailController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/controller/EmployeeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/controller/ServiceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/repositories/AttachServiceRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/repositories/ContractDetailRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/repositories/ContractRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/repositories/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/repositories/CustomerTypeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/repositories/DivisionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/repositories/EducationDegreeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/repositories/EmployeeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/repositories/PositionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/repositories/RentTypeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/repositories/ServiceRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/repositories/ServiceTypeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/repositories/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/repositories/UserRoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/service/IAttachService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/service/IContractDetailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/service/IContractService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/service/ICustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/service/ICustomerTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/service/IDivisionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/service/IEducationDegreeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/service/IEmployeeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/service/IPositionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/service/IRentTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/service/IServiceResortService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/service/IServiceTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/service/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/service/impl/AttachService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/service/impl/ContractDetailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/service/impl/ContractService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/service/impl/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/service/impl/CustomerTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/service/impl/DivisionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/service/impl/EducationDegreeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/service/impl/EmployeeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/service/impl/PositionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/service/impl/RentTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/service/impl/ServiceResortService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/service/impl/ServiceTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/service/impl/UserDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/service/impl/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/resources/static/css/login_style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/resources/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/resources/static/images/avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/resources/static/images/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/resources/static/images/copyright.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/resources/static/images/logo-furama-resort-danang.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/resources/static/images/search-interface-symbol.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/resources/templates/contract/contract-detail/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/resources/templates/contract/contract-detail/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/resources/templates/contract/contract-detail/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/resources/templates/contract/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/resources/templates/contract/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/resources/templates/contract/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/resources/templates/customer/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/resources/templates/customer/customer_using_service.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/resources/templates/customer/delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/resources/templates/customer/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/resources/templates/customer/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/resources/templates/customer/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/resources/templates/customer/searchTable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/resources/templates/employee/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/resources/templates/employee/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/resources/templates/employee/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/resources/templates/service/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/resources/templates/service/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/src/main/resources/templates/service/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/model/customer/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/model/customer/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/model/employee/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../case_study/src/main/java/com/example/demo/model/employee/Employee.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="23VG85FWjBhAPM6p7KjjEctLAYt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="demo.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0dee4159-1bff-4ed3-a3a8-ac50d9c0433f" name="Default Changelist" comment="" />
+      <created>1641811677277</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1641811677277</updated>
+      <workItem from="1641811680428" duration="1099000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="545" y="170" key="FileChooserDialogImpl" timestamp="1641812777642">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="545" y="170" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1641812777642" />
+    <state x="205" y="4" key="new project wizard" timestamp="1641812778774">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="205" y="4" key="new project wizard/0.0.1536.864@0.0.1536.864" timestamp="1641812778774" />
+  </component>
+</project>
