@@ -1,0 +1,7 @@
+<h2>Color Picker</h2>
+<div>
+  <label for="">Chọn màu:</label>
+  <input type="color" [value]="background" (change)="onChange($event.target.value)">
+</div>
+<p>Output:</p>
+<div class="color-preview" [style.background]="background" ></div>
