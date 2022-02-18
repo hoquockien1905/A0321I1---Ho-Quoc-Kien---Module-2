@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ung-dung-name-card"
+    }
+  },
+  "defaultProject": "ung-dung-name-card",
+  "cli": {
+    "analytics": false
+  }
 }

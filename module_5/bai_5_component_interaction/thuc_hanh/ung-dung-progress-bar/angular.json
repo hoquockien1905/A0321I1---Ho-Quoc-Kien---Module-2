@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ung-dung-progress-bar"
+    }
+  },
+  "defaultProject": "ung-dung-progress-bar",
+  "cli": {
+    "analytics": false
+  }
 }
