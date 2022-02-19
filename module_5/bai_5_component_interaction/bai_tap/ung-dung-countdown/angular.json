@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ung-dung-countdown"
+    }
+  },
+  "defaultProject": "ung-dung-countdown",
+  "cli": {
+    "analytics": false
+  }
 }

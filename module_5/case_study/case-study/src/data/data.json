@@ -1,0 +1,124 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Nguyễn Văn A",
+      "dob": "12/06/2000",
+      "phone": "0365245245",
+      "address": "Đà Nẵng",
+      "position": "Thu ngân",
+      "degree": "Đại học",
+      "division": "Kinh doanh"
+    },
+    {
+      "id": 2,
+      "name": "Nguyễn Văn B",
+      "dob": "12/06/1999",
+      "phone": "0365245245",
+      "address": "Quảng Nam",
+      "position": "Giám đốc",
+      "degree": "Đại học",
+      "division": "Tài chính"
+    },
+    {
+      "id": 3,
+      "name": "Nguyễn Văn C",
+      "dob": "12/06/1998",
+      "phone": "0365245245",
+      "address": "Huế",
+      "position": "Bảo vệ",
+      "degree": "Cao đẳng",
+      "division": "Bảo vệ"
+    },
+    {
+      "name": "Nguyễn Văn G",
+      "dob": "12/06/2000",
+      "phone": "0365245245",
+      "address": "Đà Nẵng",
+      "position": "Thu ngân",
+      "degree": "Đại học",
+      "division": "Kinh doanh",
+      "id": 4
+    },
+    {
+      "name": "Nguyễn Văn D",
+      "dob": "12/06/2000",
+      "phone": "0365245245",
+      "address": "Đà Nẵng",
+      "position": "Thu ngân",
+      "degree": "Đại học",
+      "division": "Kinh doanh",
+      "id": 5
+    },
+    {
+      "name": "Nguyễn Văn D",
+      "dob": "12/06/2000",
+      "phone": "0365245245",
+      "address": "Đà Nẵng",
+      "position": "Thu ngân",
+      "degree": "Đại học",
+      "division": "Kinh doanh",
+      "id": 6
+    },
+    {
+      "name": "Nguyễn Văn D",
+      "dob": "12/06/2000",
+      "phone": "0365245245",
+      "address": "Đà Nẵng",
+      "position": "Thu ngân",
+      "degree": "Đại học",
+      "division": "Kinh doanh",
+      "id": 7
+    },
+    {
+      "name": "Nguyễn Văn D",
+      "dob": "12/06/2000",
+      "phone": "0365245245",
+      "address": "Đà Nẵng",
+      "position": "Thu ngân",
+      "degree": "Đại học",
+      "division": "Kinh doanh",
+      "id": 8
+    },
+    {
+      "name": "Nguyễn Văn D",
+      "dob": "12/06/2000",
+      "phone": "0365245245",
+      "address": "Đà Nẵng",
+      "position": "Thu ngân",
+      "degree": "Đại học",
+      "division": "Kinh doanh",
+      "id": 9
+    },
+    {
+      "name": "Nguyễn Văn D",
+      "dob": "12/06/2000",
+      "phone": "0365245245",
+      "address": "Đà Nẵng",
+      "position": "Thu ngân",
+      "degree": "Đại học",
+      "division": "Kinh doanh",
+      "id": 10
+    },
+    {
+      "name": "Nguyễn Văn D",
+      "dob": "12/06/2000",
+      "phone": "0365245245",
+      "address": "Đà Nẵng",
+      "position": "Thu ngân",
+      "degree": "Đại học",
+      "division": "Kinh doanh",
+      "id": 11
+    },
+    {
+      "name": "Nguyễn Văn D",
+      "dob": "12/06/2000",
+      "phone": "0365245245",
+      "address": "Đà Nẵng",
+      "position": "Thu ngân",
+      "degree": "Đại học",
+      "division": "Kinh doanh",
+      "id": 12
+    }
+  ]
+}

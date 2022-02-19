@@ -1,0 +1,42 @@
+<div class="row justify-content-between">
+  <h2 class="ml-5">Danh sách nhân viên</h2>
+  <div class="d-flex">
+    <input [(ngModel)]="term" class="form-control mr-3" style="width: 400px; height: 46px;" placeholder="Tìm kiếm..." type="text">
+    <button class="btn btn-outline-success">Tìm kiếm</button>
+  </div>
+</div>
+<div class="row mx-5">
+  <button class="btn btn-outline-success ml-0 mt-3">Thêm mới</button>
+  <table class="mt-3 table table-bordered table-striped" style="text-align: center">
+    <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Họ và tên</th>
+      <th scope="col">Ngày sinh</th>
+      <th scope="col">SĐT</th>
+      <th scope="col">Địa chỉ</th>
+      <th scope="col">Vị trí</th>
+      <th scope="col">Trình độ</th>
+      <th scope="col">Bộ phận</th>
+      <th colspan="2" scope="col">Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let emp of employees |filter:term | paginate: { itemsPerPage: 3, currentPage: p }">
+      <td>{{emp.id}}</td>
+      <td>{{emp.name}}</td>
+      <td>{{emp.dob}}</td>
+      <td>{{emp.phone}}</td>
+      <td>{{emp.address}}</td>
+      <td>{{emp.position}}</td>
+      <td>{{emp.degree}}</td>
+      <td>{{emp.division}}</td>
+      <td>
+        <button class="btn btn-sm btn-warning mr-3">Sửa</button>
+        <button class="btn btn-sm btn-danger">Xóa</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  <pagination-controls (pageChange)="p = $event"></pagination-controls>
+</div>
