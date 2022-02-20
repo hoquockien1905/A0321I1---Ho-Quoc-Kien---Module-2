@@ -86,10 +86,13 @@
       <change beforePath="$PROJECT_DIR$/../../../module_4/thi_thuc_hanh/src/main/resources/templates/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module_4/thi_thuc_hanh/src/main/resources/templates/list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../module_4/thi_thuc_hanh/src/main/resources/templates/searchTable.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module_4/thi_thuc_hanh/src/main/resources/templates/searchTable.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../module_4/thi_thuc_hanh_module_4/src/main/java/com/example/demo/model/ChuongTrinhKhuyenMai.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bai_5_component_interaction/bai_tap/ung-dung-countdown/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_5_component_interaction/bai_tap/ung-dung-countdown/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bai_5_component_interaction/bai_tap/ung-dung-countdown/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_5_component_interaction/bai_tap/ung-dung-countdown/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bai_5_component_interaction/bai_tap/ung-dung-countdown/src/app/app.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bai_5_component_interaction/bai_tap/ung-dung-countdown/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_5_component_interaction/bai_tap/ung-dung-countdown/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tao-form-dang-ky/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/tao-form-dang-ky/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tao-form-dang-ky/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/tao-form-dang-ky/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tao-form-dang-ky/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/tao-form-dang-ky/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tao-form-dang-ky/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/tao-form-dang-ky/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tao-form-dang-ky/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tao-form-dang-ky/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tao-form-dang-ky/src/app/app.module.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,6 +113,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="ts.external.directory.path" value="D:\Codegym\A0321I1---Ho-Quoc-Kien---Module-2\module_5\bai_6_angular_form\bai_tap\tao-form-dang-ky\node_modules\typescript\lib" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -122,6 +132,7 @@
       <option name="presentableId" value="Default" />
       <updated>1645191383492</updated>
       <workItem from="1645191384747" duration="762000" />
+      <workItem from="1645372393763" duration="3139000" />
     </task>
     <servers />
   </component>
