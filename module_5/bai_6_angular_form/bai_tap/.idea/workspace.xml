@@ -119,7 +119,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="ts.external.directory.path" value="D:\Codegym\A0321I1---Ho-Quoc-Kien---Module-2\module_5\bai_6_angular_form\bai_tap\tao-form-dang-ky\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="D:\Codegym\A0321I1---Ho-Quoc-Kien---Module-2\module_5\bai_6_angular_form\bai_tap\tao-form\node_modules\typescript\lib" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -133,6 +133,8 @@
       <updated>1645191383492</updated>
       <workItem from="1645191384747" duration="762000" />
       <workItem from="1645372393763" duration="3139000" />
+      <workItem from="1645407910750" duration="54000" />
+      <workItem from="1645408000360" duration="1515000" />
     </task>
     <servers />
   </component>
@@ -140,9 +142,9 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="203" y="188" key="FileChooserDialogImpl" timestamp="1645192194875">
+    <state x="203" y="188" key="FileChooserDialogImpl" timestamp="1645407963836">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="203" y="188" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1645192194875" />
+    <state x="203" y="188" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1645407963836" />
   </component>
 </project>
