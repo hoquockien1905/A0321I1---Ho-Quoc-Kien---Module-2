@@ -7,12 +7,14 @@ import {CustomerListComponent} from "./components/customers/customer-list/custom
 import {Ng2SearchPipeModule} from 'ng2-search-filter';
 import {FormsModule} from "@angular/forms";
 import {NgxPaginationModule} from 'ngx-pagination';
+import { EmployeeAddComponent } from './components/employees/employee-add/employee-add.component';
 
 const routes: Routes = [
   {path: "", component: HomeComponent},
   {path: "home", component: HomeComponent},
   {path: "employee-list", component: EmployeeListComponent},
   {path: "customer-list", component: CustomerListComponent},
+  {path: "employee-add", component: EmployeeAddComponent},
 
   {path: "**", component: PageNotFoundComponent}
 ];
@@ -23,7 +25,8 @@ const routes: Routes = [
     FormsModule,
     NgxPaginationModule
   ],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  declarations: [EmployeeAddComponent]
 })
 export class AppRoutingModule {
 }
