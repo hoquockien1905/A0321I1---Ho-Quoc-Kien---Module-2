@@ -1,0 +1,7 @@
+<div mat-dialog-content>
+  Are you sure delete {{name}} ?
+</div>
+<div>
+  <input class="btn btn-secondary float-md-right" type="button" value="Cancel"  [mat-dialog-close]="false">
+  <input  class="btn btn-danger float-md-right" type="button" value="Delete" (click)="deleteCustomer()" [mat-dialog-close]="true">
+</div>

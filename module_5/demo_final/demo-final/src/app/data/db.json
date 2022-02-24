@@ -1,0 +1,82 @@
+{
+  "customerTypes": [
+    {
+      "id": 1,
+      "typeName": "Gold"
+    },
+    {
+      "id": 2,
+      "typeName": "Silver"
+    },
+    {
+      "id": 3,
+      "typeName": "Platinum"
+    },
+    {
+      "id": 4,
+      "typeName": "Diamond"
+    }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "name": "Hồ Quốc Kiên",
+      "dob": "1999-05-19",
+      "email": "hquockien@gmail.com",
+      "customerType": {
+        "id": 2,
+        "typeName": "Silver"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Nguyễn Minh Nghĩa",
+      "dob": "2009-12-21",
+      "email": "nminhnghia@gmail.com",
+      "customerType": {
+        "id": 4,
+        "typeName": "Diamond"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Trần Quốc Toàn",
+      "dob": "2005-05-16",
+      "email": "tquoctoan@gmail.com",
+      "customerType": {
+        "id": 3,
+        "typeName": "Platinum"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Trương Công Thành",
+      "dob": "1994-08-11",
+      "email": "tcongthanh@gmail.com",
+      "customerType": {
+        "id": 2,
+        "typeName": "Silver"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Võ Văn Hùng",
+      "dob": "2001-12-21",
+      "email": "vvanhung@gmail.com",
+      "customerType": {
+        "id": 1,
+        "typeName": "Gold"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Lê Bảo Khánh",
+      "dob": "2012-06-16",
+      "email": "lbaokhanh@gmail.com",
+      "customerType": {
+        "id": 3,
+        "typeName": "Platinum"
+      }
+    }
+  ]
+}

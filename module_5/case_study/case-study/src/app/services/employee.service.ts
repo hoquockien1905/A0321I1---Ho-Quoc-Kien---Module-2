@@ -16,4 +16,8 @@ export class EmployeeService {
   getAllEmployees(): Observable<any> {
     return this.httpClient.get<any>(this.API);
   }
+
+  addNewEmployee(employee): Observable<any> {
+    return this.httpClient.post(this.API, employee);
+  }
 }

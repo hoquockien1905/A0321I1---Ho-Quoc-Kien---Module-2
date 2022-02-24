@@ -5,9 +5,10 @@ import {PageNotFoundComponent} from "./components/page-not-found/page-not-found.
 import {EmployeeListComponent} from "./components/employees/employee-list/employee-list.component";
 import {CustomerListComponent} from "./components/customers/customer-list/customer-list.component";
 import {Ng2SearchPipeModule} from 'ng2-search-filter';
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {NgxPaginationModule} from 'ngx-pagination';
 import { EmployeeAddComponent } from './components/employees/employee-add/employee-add.component';
+import {CommonModule} from '@angular/common';
 
 const routes: Routes = [
   {path: "", component: HomeComponent},
@@ -23,7 +24,7 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes),
     Ng2SearchPipeModule,
     FormsModule,
-    NgxPaginationModule
+    NgxPaginationModule, ReactiveFormsModule, CommonModule
   ],
   exports: [RouterModule],
   declarations: [EmployeeAddComponent]

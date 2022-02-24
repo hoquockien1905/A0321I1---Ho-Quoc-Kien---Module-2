@@ -1,37 +1,64 @@
 <h3 class="text-center">Thêm nhân viên mới</h3>
 <button [routerLink]="['/employee-list']" class="btn btn-success">Quay lại</button>
 <div>
-  <form class="m-5 w-50 mx-auto">
+  <form [formGroup]="formGroup" class="m-5 w-50 mx-auto">
     <div class="form-group">
-      <label for="exampleInputEmail1">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-      <span class="text-danger" *ngIf="false">Vui lòng nhập!</span>
+      <label>Họ và tên</label>
+      <input formControlName="name" type="text" class="form-control"
+             aria-describedby="emailHelp">
+      <span *ngIf="formGroup.controls.name.errors?.required
+     && formGroup.controls.name.touched"
+            class="text-danger">Vui lòng nhập Họ và tên!</span>
     </div>
     <div class="form-group">
-      <label for="exampleInputPassword1">Password</label>
-      <input type="password" class="form-control" id="exampleInputPassword1">
-      <span style="color: red; font-size: 14px;" >Vui lòng nhập!</span>
+      <label>Email</label>
+      <input formControlName="email" type="text" class="form-control"
+             aria-describedby="emailHelp">
+      <span *ngIf="email.errors?.required && email.touched"
+            class="text-danger">Vui lòng nhập Email!</span>
+      <span *ngIf="email.errors?.email && email.touched"
+            class="text-danger">Email không đúng định dạng!</span>
     </div>
     <div class="form-group">
-      <label for="exampleInputEmail1">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-      <span style="color: red; font-size: 14px" >Vui lòng nhập!</span>
+      <label>Ngày sinh</label>
+      <input formControlName="dob" type="date" class="form-control">
+      <span *ngIf="formGroup.controls.dob.errors?.required
+     && formGroup.controls.dob.touched"
+            class="text-danger">Vui lòng nhập Ngày sinh!</span>
     </div>
     <div class="form-group">
-      <label for="exampleInputPassword1">Password</label>
-      <input type="password" class="form-control" id="exampleInputPassword1">
-      <span style="color: red; font-size: 14px;" >Vui lòng nhập!</span>
+      <label>Số điện thoại</label>
+      <input formControlName="phone" type="text" class="form-control"
+             aria-describedby="emailHelp">
+      <span *ngIf="formGroup.controls.phone.errors?.required
+     && formGroup.controls.phone.touched"
+            class="text-danger">Vui lòng nhập Số điện thoại!</span>
+<!--      <span *ngIf="formGroup.controls.phone.errors?.pattern-->
+<!--     && formGroup.controls.phone.touched"-->
+<!--            class="text-danger">Số điện thoại không đúng định dạng!</span>-->
     </div>
     <div class="form-group">
-      <label for="exampleInputEmail1">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-      <span style="color: red; font-size: 14px" >Vui lòng nhập!</span>
+      <label>Địa chỉ</label>
+      <input formControlName="address" type="text" class="form-control">
+      <span *ngIf="formGroup.controls.address.errors?.required
+     && formGroup.controls.address.touched"
+            class="text-danger">Vui lòng nhập Địa chỉ!</span>
     </div>
     <div class="form-group">
-      <label for="exampleInputPassword1">Password</label>
-      <input type="password" class="form-control" id="exampleInputPassword1">
-      <span style="color: red; font-size: 14px;" >Vui lòng nhập!</span>
+      <label>Trình độ</label>
+      <input formControlName="degree" type="text" class="form-control"
+             aria-describedby="emailHelp">
+      <span *ngIf="formGroup.controls.degree.errors?.required
+     && formGroup.controls.degree.touched"
+            class="text-danger">Vui lòng nhập Trình độ!</span>
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
+    <div class="form-group">
+      <label>Bộ phận</label>
+      <input formControlName="division" type="text" class="form-control">
+      <span *ngIf="formGroup.controls.division.errors?.required
+     && formGroup.controls.division.touched"
+            class="text-danger">Vui lòng nhập Bộ phận!</span>
+    </div>
+    <button [disabled]="formGroup.invalid" (click)="onSubmit()" type="submit" class="btn btn-primary">Submit</button>
+</form>
 </div>

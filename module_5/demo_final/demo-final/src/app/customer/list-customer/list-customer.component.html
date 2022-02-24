@@ -1,0 +1,37 @@
+<form class="form-group d-flex" [formGroup]="formSearch" (ngSubmit)="search()">
+  <input type="text" class="form-control w-25" placeholder="Name..." formControlName="name">
+  <input type="text" class="form-control w-25" placeholder="Email..." formControlName="email">
+  <input type="text" class="form-control w-25" placeholder="Customer type..." formControlName="customerType">
+  <select formControlName="customerType">
+    <option *ngFor="let cus of customerList">{{cus.customerType.typeName}}</option>
+  </select>
+  <button type="submit" class="btn btn-success">search</button>
+</form>
+<h2 class="d-flex justify-content-center mt-5">Customer List</h2>
+<table class="table table-striped" style="text-align: center">
+  <thead>
+  <tr>
+    <th scope="col">ID</th>
+    <th scope="col">Name</th>
+    <th scope="col">Birthday</th>
+    <th scope="col">Email</th>
+    <th scope="col">Customer Type</th>
+    <th scope="col" colspan="2">Action</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let customer of customerList | paginate: { itemsPerPage: 3, currentPage: p }">
+    <th scope="row">{{ customer.id }}</th>
+    <td>{{ customer.name }}</td>
+    <td>{{ customer.dob | date: 'dd/MM/yyyy'}}</td>
+    <td>{{ customer.email }}</td>
+    <td>{{ customer.customerType.typeName}}</td>
+    <td><a [routerLink]="['edit', customer.id]" class="btn btn-warning btn-sm">Edit</a></td>
+    <td>
+      <button mat-button (click)="openDialogDelete(customer.id ,customer.name)" class="btn btn-danger">Delete
+      </button>
+    </td>
+  </tr>
+  </tbody>
+</table>
+<pagination-controls (pageChange)="p = $event"></pagination-controls>

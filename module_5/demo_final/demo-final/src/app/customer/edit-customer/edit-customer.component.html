@@ -1,0 +1,32 @@
+<div class="container">
+  <h2 class="d-flex justify-content-center mt-5">Edit Customer</h2>
+  <a class="btn btn-success" [routerLink]="['/customer']">Quay lại</a>
+  <form [formGroup]="formGroup" class="w-75 mx-auto" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label class="form-label">ID</label>
+      <input type="text" class="form-control" formControlName="id" readonly>
+    </div>
+    <div class="form-group">
+      <label class="form-label">Name</label>
+      <input type="text" class="form-control" formControlName="name">
+    </div>
+    <div class="form-group">
+      <label class="form-label">Birthday</label>
+      <input type="text" class="form-control" formControlName="dob">
+    </div>
+    <div class="form-group">
+      <label class="form-label">Customer Type</label>
+      <select [compareWith]="compareFn" class="form-control" formControlName="customerType">
+        <ng-container *ngFor="let customerType of listCustomerType">
+          <option [ngValue]="customerType">{{ customerType.typeName }}</option>
+        </ng-container>
+      </select>
+    </div>
+    <div class="form-group">
+      <label class="form-label">Email</label>
+      <input type="text" class="form-control" formControlName="email">
+    </div>
+    <button  type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+</div>
