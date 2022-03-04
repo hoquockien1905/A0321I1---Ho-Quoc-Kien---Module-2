@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+<body>
+    <script>
+        let n = parseInt(prompt("Bạn muốn in dãy bao nhiều số fibonacci?"));
+        let fib = [];
+        fib[0] = 0;
+        fib[1] = 1;
+        if (n < 0) {
+            document.write("Nhập một số là nguyên dương");
+        } else {
+            let fn, f0 = 0, f1 = 1;
+            for (let i = 2; i <= n+1; i++){
+                fn = f0 + f1;
+                f0 = f1;
+                f1 = fn;
+            }
+            document.write("Đây là số thứ " + n + " có giá trị là: " + fn);
+            document.write("<br>");
+            if (n == 0) {
+                document.write("0");
+            } else if (n == 1) {
+                document.write("1");
+            } else {
+                document.write("Dãy fibonacci gồm " + n + " số: ");
+                for (let i = 2; i <= n+1; i++) {
+                    fib[i] = fib[i - 2] + fib[i - 1];
+                    document.write(fib[i] + ", ");
+                }
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng mảng b là prefix sums</title>
+</head>
+<body>
+    <script>
+        let b = Array(parseInt(prompt("Enter the numbers of elements of the array")));
+        let array = [];
+        let a;
+        for (let i = 0; i < b.length; i++) {
+            a = parseInt(prompt("b[" + i + "]="));
+            array[i] = a;
+        }
+        alert("Original Array is: " + "[" + array + "]");
+        let prefixSum = 0;
+        let newArray = [];
+        for (let j = 0; j < array.length; j++) {
+            prefixSum += array[j];
+            newArray[j] = prefixSum;
+        }
+        alert("The new Array after the prefix sum is: " + "[" + newArray + "]");
+    </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Thực hành] Xây dựng lớp mô phỏng sự hoạt động của đèn pin</title>
+</head>
+<body>
+    <script>
+        class Battery {
+            constructor(energy) {
+                this.energy = energy;
+            }
+
+            setEnergy(charge) {
+                if (this.energy >= 0 || this.energy <= 100) {
+                    this.energy = charge;
+                }
+            }
+
+            getEnergy() {
+                return this.energy;
+            }
+
+            decreaseEnergy() {
+                if (this.energy > 0) {
+                    this.energy--;
+                } else {
+                    console.log("Out of battery");
+                }
+            }
+        }
+
+        class FlashLamp {
+            constructor() {
+                this.status = false;
+            }
+
+            setBattery(battery) {
+                this.battery = battery;
+            }
+
+            getBatteryInfo() {
+                return this.battery.getEnergy();
+            }
+
+            turnOn() {
+                this.status = true;
+                this.battery.decreaseEnergy();
+                console.log("remaining battery is: " + this.battery.getEnergy());
+                if(this.battery.getEnergy() > 0) {
+                    console.log("Lighting");
+                } else {
+                    console.log("Not lighting");
+                }
+            }
+
+            turnOff() {
+                this.status = false;
+                console.log("remaining battery is: " + this.battery.getEnergy());
+                console.log("Not lighting");
+            }
+        }
+
+        let flash = new FlashLamp();
+        let battery = new Battery(10);
+
+        flash.setBattery(battery);
+
+        console.log(flash.getBatteryInfo());
+        flash.turnOff();
+        for (let i = 1; i <= 10; i++) {
+            flash.turnOn();
+        }
+        battery.setEnergy(20);
+        console.log(flash.getBatteryInfo());
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7</title>
+</head>
+<body>
+    <script>
+        let minutes = parseFloat(prompt("Nhập số phút đã gọi"));
+        let expense = 0;
+        let sum;
+        const fixedCost = 25000;
+        if (minutes > 200) {
+            expense = (minutes - 200) * 200 + 150 * 400 + 50 * 600;
+        } else if (minutes > 50) {
+            expense = (minutes - 50) * 400 + 50 * 600;
+        } else {
+            expense = minutes * 600;
+        }
+        sum = 0.01 * expense + fixedCost;
+        alert("Bạn đã gọi " + minutes + " phút");
+        alert(" Số tiền của bạn phải nộp là " + sum);
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+    <script>
+        let arr = [5, 9, 8, 3, 55, 94];
+        let max = arr[0];
+        let sum = 0;
+        let average = 0;
+        for (let value in arr) {
+            sum += arr[value];
+            average = sum / arr.length;
+            if (max <= arr[value]) {
+                max = arr[value];
+            }
+        }
+        document.write("The average of the elements in the array is: " + average.toFixed(2) + "<br>");
+        document.write(max + " is greatest values");
+    </script>
+</body>
+</html>

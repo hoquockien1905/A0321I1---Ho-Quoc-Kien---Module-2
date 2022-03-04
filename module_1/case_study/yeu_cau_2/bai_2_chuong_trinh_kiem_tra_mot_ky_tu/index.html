@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết chương trình kiểm tra một ký tự trong bảng chữ cái tiếng Anh</title>
+</head>
+<body>
+    <script>
+        let arr = ['o', 'u', 'i', 'a', 'e'];
+        let char = prompt("Enter a character:");
+
+        let check = arr.find(function (item) {
+            return item.toLowerCase() === char.toLowerCase();
+        });
+
+        if (check) {
+            alert(char + " is a vowel");
+        } else {
+            alert(char + " is consonant");
+        }
+    </script>
+</body>
+</html>

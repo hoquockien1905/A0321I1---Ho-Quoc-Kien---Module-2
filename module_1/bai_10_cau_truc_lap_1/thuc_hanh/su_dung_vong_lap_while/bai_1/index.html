@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+<body>
+    <script>
+        let num = parseInt(prompt());
+        let sum = 0;
+        while(num != -1) {
+                num = parseInt(prompt("Enter a number: "));
+                document.write(num + "<br>");
+                if (num == -1) {
+                    break;
+                }
+                sum += num;
+        }
+        document.write("sum = " + sum);
+    </script>
+</body>
+</html>

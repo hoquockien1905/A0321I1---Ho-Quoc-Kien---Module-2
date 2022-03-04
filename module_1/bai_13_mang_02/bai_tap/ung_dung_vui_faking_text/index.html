@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[*Bài tập] Ứng dụng vui Faking Textarea on Typing</title>
+</head>
+<body style="width: 500px; margin: 100px auto">
+    <div>
+        <h1 style="text-align: center; font-size: 40px">Type anything slowly</h1>
+        <textarea id="input" onkeyup="inputChange()" style="width: 100%; height: 200px; font-size: 30px"></textarea>
+    </div>
+    <script>
+        let arrSource = Array.from("Tôi là một đứa ngốc!!!");
+
+        function inputChange() {
+            let inputText = document.getElementById("input").value;
+            let outputText = Array(inputText.length);
+
+            if (outputText.length > arrSource.length) {
+                outputText = [""];
+            }
+
+            for (let i = 0; i < outputText.length; i++) {
+                outputText[i] = arrSource[i];
+            }
+
+            document.getElementById("input").value = outputText.join("");
+        }
+    </script>
+</body>
+</html>

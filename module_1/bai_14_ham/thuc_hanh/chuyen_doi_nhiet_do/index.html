@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Thực hành] Chuyển đổi nhiệt độ</title>
+</head>
+<body>
+    <div>
+        <label>Fahrenheit</label>
+        <input type="number" id="input" />
+        <button onclick="temperatureConverter()">Chuyển đổi</button>
+    </div>
+    <p id="result"></p>
+    <script>
+        function temperatureConverter() {
+            let f = document.getElementById("input").value;
+                let c = (f - 32) / 1.8;
+                document.getElementById("result").innerHTML = "Celsius: " + c;
+        }
+    </script>
+</body>
+</html>

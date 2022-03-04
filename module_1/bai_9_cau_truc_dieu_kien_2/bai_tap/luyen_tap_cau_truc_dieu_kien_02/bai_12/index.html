@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 12</title>
+</head>
+<body>
+    <script>
+        alert("Ngân hàng cho vay từ 50 triệu trở lên!");
+        let money = parseFloat(prompt("Nhập số tiền bạn muốn vay trong thời hạn 1 năm (12 tháng)"));
+        if (Number.isFinite(money) == false) {
+            alert("Mời thử lại!");
+        } else {
+            if (money < 50000000) {
+                alert("Vui lòng nhập số tiền từ 50 triệu trở lên!");
+            } else {
+                alert("Số tiền bạn đã nhập là: " + money.toLocaleString() + " VNĐ" + ". Lãi cố định là 12%/năm");
+                let interestRate = money * 0.12/12;
+                alert("Lãi suất hàng tháng là: " + interestRate.toLocaleString() + " VNĐ");
+                let expense = money/12 + interestRate;
+                alert("Số tiền bạn phải trả hàng tháng là: " + expense.toLocaleString() + " VNĐ");
+                let question = prompt("Bạn có muốn trả nợ không? Nếu không nhấn phím 1. Nếu có nhấn phím 2 ");
+                if (question == '1') {
+                    alert("Về nhà lo mà làm ăn!");
+                } else if (question == '2') {
+                    while (expense >= 50000000) {
+                        let newDebt = expense + interestRate;
+                        alert("Đây là số nợ sau một năm: " + newDebt.toLocaleString() + " VNĐ");
+                        let pay = parseFloat(prompt("Nhập số tiền bạn muốn trả"));
+                        if (Number.isFinite(pay) == false) {
+                            alert("Thử lại!");
+                            break;
+                        } else {
+                            if (pay == expense) {
+                                alert("Bạn đã hết nợ!");
+                                break;
+                            } else if (pay > expense) {
+                                let change = pay - expense;
+                                alert("Bạn đã thanh toán xong! Và tiền thừa còn: " + change.toLocaleString() + " VNĐ");
+                            } else {
+                                alert("Bạn vẫn chưa trả hết nợ! Còn nợ lại: " + (expense - pay).toLocaleString());
+                                break;
+                            }
+                        }
+                    }
+                } else {
+                    alert("Thử lại!")
+                }
+            }
+        }
+
+    </script>
+</body>
+</html>

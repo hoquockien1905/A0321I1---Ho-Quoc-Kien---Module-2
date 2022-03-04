@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Tạo form đơn giản</title>
+</head>
+<body>
+    <div class="app">
+        <form action="tao_form_phan_1.html">
+            <h1>Sở thích của bạn</h1>
+            <div class="name">
+                <label class="name_lable">Họ và tên</label>
+                <input class="input_name" required type="text" name="yourname">
+            </div>
+            <div class="email">
+                <label class="email_lable">Email</label>
+                <input class="input_email" required type="email" name="email">
+            </div>
+            <div class="hobby">
+                <label class="hobby_lable">Sở thích</label>
+                <ul class="hobby_list">
+                    <li><input type="checkbox" name="hobby"> Thể thao</li>
+                    <li><input type="checkbox" name="hobby"> Âm nhạc</li>
+                    <li><input type="checkbox" name="hobby"> Đọc sách</li>
+                    <li><input type="checkbox" name="hobby"> Lướt web</li>
+                    <li><input type="checkbox" name="hobby"> Chơi game</li>
+                    <li><input type="checkbox" name="hobby"> Điện ảnh</li>
+                    <li><input type="checkbox" name="hobby"> Du lịch</li>
+                </ul>
+            </div>
+            <div class="submit">
+                <input class="submit_data" type="submit" value="Gửi thông tin">
+                <input class="reset_data" type="reset" value="Nhập lại">
+            </div>
+        </form>
+    </div>
+</body>
+<style type="text/css">
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body {
+        border: 1px solid black;
+        width: 500px ;
+        margin: 100px auto 0;
+        color: orange;
+        background: #D5FEFF;
+    }
+    ul {
+        list-style: none;
+    }
+    form {
+        padding: 5px;
+        margin: 10px;
+        background: white;
+    }
+    h1 {
+        font-size: 20px;
+        line-height: 20px;
+        background: #FF4C00;
+        color: white;
+        text-transform: uppercase;
+        padding-bottom: 4px;
+        padding-top: 4px;
+        text-align: center;
+    }
+    .app{
+        background: ư;
+    }
+    label {
+        color: blue;
+    }
+    .name {
+        width: 300px;
+        display: flex;
+        margin: 10px 30px;
+    }
+    .email{
+        width: 150px;
+        display: flex;
+        margin: 15px 30px;
+    }
+    .name_lable,
+    .email_lable,
+    .hobby_lable {
+        min-width: 70px;
+        text-align: right;
+        margin-right: 10px;
+    }
+    .input_name,
+    .input_email {
+        height: 20px;
+        flex: 1;
+        outline: none;
+        border: 2px solid #ccc;
+        border-left: 2px solid rgba(0, 0, 0, .6);
+        border-top: 2px solid rgba(0, 0, 0, .6);
+    }
+    .input_name:focus,
+    .input_email:focus {
+        border-left: 3px solid rgba(0, 0, 0, .7);
+        border-top: 3px solid rgba(0, 0, 0, .7);
+    }
+    .hobby {
+        width: 400px;
+        display: flex;
+        margin: 10px 30px;
+    }
+    .hobby_list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 4px;
+    }
+    ul li {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    .submit {
+        width: 200px;
+        margin-left: 110px;
+    }
+    .submit input {
+        background: #DCD9D2;
+        border:  2.5px solid white;
+        border-bottom: 2.5px solid rgba(0, 0, 0, .6);
+        border-right: 2.5px solid rgba(0, 0, 0, .6);
+        outline: none;
+        font-size: 16px;
+    }
+    .reset_data {
+        width: 80px;
+    }
+    .submit_data {
+        width: 100px;
+    }
+    .submit input:hover,
+    .hobby_list input:hover {
+        cursor: pointer;
+    }
+    .submit input:active{
+        outline: none;
+        border:  2.5px solid white;
+        border-left: 2.5px solid rgba(0, 0, 0, .6);
+        border-top: 2.5px solid rgba(0, 0, 0, .6);
+        font-size: 14px;
+    }
+</style>
+</html>

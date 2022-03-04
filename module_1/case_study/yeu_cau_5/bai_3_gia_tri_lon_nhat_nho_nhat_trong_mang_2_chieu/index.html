@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giá trị lớn nhất và nhỏ nhất trong mảng 2 chiều</title>
+</head>
+<body>
+    <script>
+        let rows = parseInt(prompt("Nhập số số phần tử của mảng cha"));
+        let cols = parseInt(prompt("Nhập số số phần tử của mảng con"));
+        let arr = Array(rows);
+        for (let i = 0; i < rows; i++) {
+            arr[i] = Array(cols);
+        }
+
+        for (let i = 0; i < rows; i++) {
+            for (let j = 0; j < cols; j++) {
+                arr[i][j] = parseInt(prompt("arr[" + i + "][" + j + "]="));
+            }
+        }
+
+        function findMax(arr) {
+            let max = arr[0][0];
+            for (let i = 0; i < rows; i++) {
+                for (let j = 0; j < cols; j++) {
+                    if (max <= arr[i][j]) {
+                        max = arr[i][j];
+                    }
+                }
+            }
+            return max;
+        }
+
+        function findMin(arr) {
+            let min = arr[0][0];
+            for (let i = 0; i < rows; i++) {
+                for (let j = 0; j < cols; j++) {
+                    if (min >= arr[i][j]) {
+                        min = arr[i][j];
+                    }
+                }
+            }
+            return min
+        }
+
+        console.log(arr);
+        console.log("max = " + findMax(arr) + "\n" + "min = " + findMin(arr));
+    </script>
+</body>
+</html>

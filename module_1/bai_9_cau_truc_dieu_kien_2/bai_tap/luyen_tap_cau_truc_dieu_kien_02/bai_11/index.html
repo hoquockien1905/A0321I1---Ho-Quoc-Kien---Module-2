@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 11</title>
+</head>
+<body>
+    <script>
+        let income = parseFloat(prompt("Số tiền thu nhập trên một tháng của bạn (VD: 5000000)"));
+        alert("Số tiền bạn đã nhập là: " + income.toLocaleString() + " VNĐ");
+        let result = 0;
+        if (income > 0) {
+            if (income <= 3000000) {
+                alert("Không phải đóng thuế");
+            } else if (income > 3000000 && income <= 5000000) {
+                alert("Thuế suất là 5%");
+                result = parseFloat(0.05 * income);
+                alert("Số tiền thuế cần phải nộp là: " + result.toLocaleString() + " VNĐ");
+            } else if (income > 5000000 && income <= 10000000) {
+                alert("Thuế suất là 10%");
+                result = parseFloat(0.1 * income - 250000);
+                alert("Số tiền thuế cần phải nộp là: " + result.toLocaleString() + " VNĐ");
+            } else if (income > 10000000 && income <= 18000000) {
+                alert("Thuế suất là 15%");
+                result = parseFloat(0.15 * income - 750000);
+                alert("Số tiền thuế cần phải nộp là: " + result.toLocaleString() + " VNĐ");
+            } else if (income > 18000000 && income <= 32000000) {
+                alert("Thuế suất là 20%");
+                result = parseFloat(0.2 * income - 1650000);
+                alert("Số tiền thuế cần phải nộp là: " + result.toLocaleString() + " VNĐ");
+            } else if (income > 32000000 && income <= 52000000) {
+                alert("Thuế suất là 25%");
+                result = parseFloat(0.25 * income - 3250000);
+                alert("Số tiền thuế cần phải nộp là: " + result.toLocaleString() + " VNĐ");
+            } else if (income > 52000000 && income <= 80000000) {
+                alert("Thuế suất là 30%");
+                result = parseFloat(0.3 * income - 5850000);
+                alert("Số tiền thuế cần phải nộp là: " + result.toLocaleString() + " VNĐ");
+            } else {
+                alert("Thuế suất là 35%");
+                result = parseFloat(3.5 * income - 9850000);
+                alert("Số tiền thuế cần phải nộp là: " + result.toLocaleString() + " VNĐ");
+            }
+        } else {
+            alert("Số tiền bạn nhập không hợp lệ!");
+        }
+    </script>
+</body>
+</html>

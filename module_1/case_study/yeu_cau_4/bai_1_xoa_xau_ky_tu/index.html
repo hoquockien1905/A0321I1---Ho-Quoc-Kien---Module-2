@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuẩn hóa xâu ký tự</title>
+</head>
+<body>
+<script>
+    let str = prompt("Enter any string");
+
+    function normal(str) {
+        let arr = str.split(" ");
+        let newStr = "";
+        let temp;
+        for (let i = 0; i < arr.length; i++) {
+            temp = arr[i].trim().toLowerCase();
+            if (temp != "") {
+                temp = temp.substr(0,1).toUpperCase() + temp.substr(1);
+                newStr += temp + " ";
+            }
+        }
+        return newStr;
+    }
+
+    function longestWord(str) {
+        let arr = str.split(" ");
+        let lengthLongestWord = 0;
+        let longestWord = "";
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i].length >= lengthLongestWord) {
+                lengthLongestWord = arr[i].length;
+                longestWord = arr[i];
+            }
+        }
+        return `The Longest Word is \"${longestWord}\" with a length of ${lengthLongestWord}`;
+    }
+    console.log(normal(str));
+    console.log(longestWord(str));
+</script>
+</body>
+</html>

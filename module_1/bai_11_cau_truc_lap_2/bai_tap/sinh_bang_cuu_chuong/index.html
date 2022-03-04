@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Sinh bảng cửu chương</title>
+</head>
+<body>
+    <script>
+        let sout = "<table border = '2' width = '1000px' cellspacing = '2' cellpadding = '3'>";
+        let i = 1;
+        while (i <= 10) {
+            sout += "<tr>";
+            let j = 2;
+            while (j <= 10) {
+                sout += "<td align='center'>" + j + " x " + i + " = " + j * i + "</td>";
+                j++;
+            }
+            i++;
+            sout += "</tr>";
+        }
+        sout += "</table>";
+        document.write(sout);
+    </script>
+</body>
+</html>

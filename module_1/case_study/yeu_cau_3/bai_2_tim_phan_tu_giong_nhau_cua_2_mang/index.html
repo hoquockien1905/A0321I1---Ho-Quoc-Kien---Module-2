@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm ra một mảng đã được sắp xếp</title>
+</head>
+<body>
+    <script>
+        let elmsOfA;
+        let elmsOfB;
+        let a = [];
+        let b = [];
+        let A = Array(parseInt(prompt("The numbers of the Array A")));
+        for (let i = 0; i < A.length; i++) {
+            elmsOfA = parseInt(prompt("a[" + i + "] ="));
+            a[i] = elmsOfA;
+        }
+
+        let B = Array(parseInt(prompt("The numbers of the Array B")));
+        for (let i = 0; i < B.length; i++) {
+            elmsOfB = parseInt(prompt("b[" + i + "] ="));
+            b[i] = elmsOfB;
+        }
+
+        let c = [];
+        let length;
+        if (a.length > b.length) {
+            length = a.length;
+        } else {
+            length = b.length;
+        }
+        for (let i = 0; i < length; i++) {
+            if (a.indexOf(b[i]) === -1) {
+                if (c.indexOf(b[i]) === -1) {
+                    c.push(b[i]);
+                }
+            }
+        }
+        alert("A = " + a + "\n" + "B = " + b + "\n" + "missingValue(A, B) = " + "[" + c.join("; ") + "]");
+    </script>
+</body>
+</html>

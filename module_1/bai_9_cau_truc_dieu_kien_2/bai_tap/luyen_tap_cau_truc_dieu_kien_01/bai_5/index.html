@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+    <script>
+        let test = parseFloat(prompt("Nhập điểm bài kiểm tra"));
+        let middleTest = parseFloat(prompt("Nhập điểm bài thi giữa kỳ"));
+        let finalTest = parseFloat(prompt("Nhập điểm bài thi cuối kỳ"));
+        let average = (test + middleTest + finalTest) / 3;
+        if (average >= 8.5) {
+            alert("Bạn được xếp hạng học lực Giỏi " + average.toFixed(1));
+        } else if (average <= 8.4 && average >= 6.5) {
+            alert("Bạn được xếp hạng học lực Khá " + average.toFixed(1));
+        } else {
+            alert("Bạn được xếp hạng học lực Trung Bình " + average.toFixed(1));
+        }
+    </script>
+</body>
+</html>

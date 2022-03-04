@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết một chương trình để nhập lương nhân viên</title>
+</head>
+<body>
+    <script>
+        let salary = parseFloat(prompt("Enter your salary (million)"));
+        let result;
+        if (salary >= 15) {
+            result = salary * 0.2;
+        } else if (salary <= 15 && salary >= 7) {
+            result = salary * 0.1;
+        } else {
+            result = salary * 0.05;
+        }
+
+        alert("Your salary is: " + result);
+    </script>
+</body>
+</html>

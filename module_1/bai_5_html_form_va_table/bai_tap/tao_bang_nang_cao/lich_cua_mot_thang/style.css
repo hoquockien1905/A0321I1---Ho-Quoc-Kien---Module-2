@@ -1,0 +1,71 @@
+body {
+    width: 700px;
+    margin: 100px auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th {
+    border: 1px solid white;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+}
+td {
+    font-weight: 700;
+    font-size: 25px;
+}
+.english td {
+    font-weight: normal;
+    font-size: 20px;
+    padding: 10px;
+}
+h2 {
+    font-size: 30px;
+    color: blue;
+    text-align: center;
+}
+.vietnamese th {
+    background: #FFB300;
+}
+.vietnamese th:first-child {
+    background: #FF2600;
+}
+.vietnamese th:last-child {
+    background: blue;
+}
+.row_1 td,
+.row_2 td,
+.row_3 td,
+.row_4 td,
+.row_5 td {
+    border: 3px solid #AEAEAE;
+    padding: 10px;
+    width: 14.28%;
+}
+.english td:first-child,
+.row_2 td:first-child,
+.row_3 td:first-child,
+.row_4 td:first-child,
+.row_5 td:first-child {
+    color: #FF2600;
+}
+.english td:last-child,
+.row_1 td:last-child,
+.row_2 td:last-child,
+.row_3 td:last-child,
+.row_4 td:last-child,
+.row_5 td:last-child {
+    color: blue;
+}
+
+sub {
+    font-weight: normal;
+    font-size: 15px;
+    color: black;
+}
+
+
+
+

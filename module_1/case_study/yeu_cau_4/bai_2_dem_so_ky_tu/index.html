@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đếm số lượng ký tự khác nhau trong chuỗi</title>
+</head>
+<body>
+<script>
+    let str = prompt("Enter any string");
+    function differentSymbolsNaive(str) {
+        let count = 0;
+        for (let i = 0; i < str.length; i++) {
+            let k = 0;
+            for (let j = 0; j < i; j++) {
+                if(str[i] !== str[j]){
+                    k++;
+                }
+            }
+            if (i === k) {
+                count++;
+            }
+        }
+        return count;
+    }
+    console.log(str);
+    console.log("different symbols naive: " + differentSymbolsNaive(str));
+</script>
+</body>
+</html>

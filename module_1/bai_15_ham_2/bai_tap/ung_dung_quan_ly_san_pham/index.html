@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[*Bài tập] Ứng dụng quản lý sản phẩm sử dụng hàm</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <div id="add">
+        <h2>Add New Product</h2>
+        <div id="input">
+            <input id="inputAdd" type="text" placeholder="New product"/>
+            <input id="submit" onclick="addProduct(listProduct)" type="submit" value="Add"/>
+        </div>
+    </div>
+    <div>
+        <h2>Display All Product</h2>
+        <div id="info">
+            <h4>Quantity: </h4>
+            <p id="quantity"></p>
+        </div>
+        <div id="showTable"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

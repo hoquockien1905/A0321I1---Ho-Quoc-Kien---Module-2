@@ -1,0 +1,86 @@
+
+body {
+    width: 700px;
+    margin: 70px auto;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#add {
+    width: 500px;
+    margin-left: 100px;
+}
+h2, #info {
+    text-align: center;
+    margin: 20px 0;
+}
+#input {
+    border-radius: 5px;
+    background-color: #F2F2F2;
+    height: 100px;
+    position: relative;
+}
+#submit {
+    position: absolute;
+    top: 30px;
+    right: 48px;
+    height: 40px;
+    width: 60px;
+    background-color: #50AF50;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+#submit:hover,
+#update:hover {
+    cursor: pointer;
+    background-color: #50AF80;
+}
+#submit:active,
+#update:active {
+    background-color: #50AF20;
+}
+#inputAdd {
+    position: absolute;
+    top: 30px;
+    left: 38px;
+    font-size: 14px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    outline: none;
+    height: 40px;
+    width: 70%;
+}
+#info {
+    display: flex;
+}
+#quantity {
+    font-weight: bold;
+    color: #50AF10;
+}
+table {
+    border-spacing: 0;
+    width: 100%;
+    text-align: center;
+}
+tr {
+    height: 40px;
+}
+tr:nth-child(odd){
+    background-color: white;
+}
+tr:nth-child(even) {
+    background-color: #F2F2F2;
+}
+#update {
+    font-size: 12px;
+    height: 30px;
+    width: 50px;
+    background-color: #50AF50;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}

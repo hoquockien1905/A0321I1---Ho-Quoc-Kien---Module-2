@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6</title>
+</head>
+<body>
+    <script>
+        let sales = parseFloat(prompt("Nhập doanh số bán hàng (VNĐ)"));
+        let commission = parseInt(prompt("Nhập % hoa hồng của bạn (10, 20, 30) "));
+        switch (commission) {
+            case 10:
+                commission = parseFloat(sales * 0.1);
+                alert("Tiền hoa hồng của bạn là " + commission + " VNĐ");
+                break;
+            case 20:
+                commission = parseFloat(sales * 0.2);
+                alert("Tiền hoa hồng của bạn là " + commission + " VNĐ");
+                break;
+            case 30:
+                commission = parseFloat(sales * 0.3);
+                alert("Tiền hoa hồng của bạn là " + commission + " VNĐ");
+                break;
+            default:
+                alert("Nhập lại tiền hoa hồng (10, 20, 30)");
+        }
+    </script>
+</body>
+</html>

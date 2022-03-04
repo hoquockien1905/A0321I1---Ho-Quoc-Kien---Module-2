@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Tạo form đơn giản p2</title>
+</head>
+<body>
+    <div class="app">
+        <form action="tao_form_phan_2.html">
+            <h1>Đăng ký học viên</h1>
+            <div class="name">
+                <label for="idName" class="name_lable">Họ và tên</label>
+                <input class="name_input" id="idName"name="name" type="text" required>
+            </div>
+            <div class="birthday">
+                 <label for="idBd" class="birthday_lable">Ngày sinh</label>
+                 <input id="idBd"class="birthday_input" name="name" type="date" required>
+             </div>
+            <div class="sex">
+                <label>Giới tính</label>
+                <label ><input type="radio" name="radio" checked> Nam</label>
+                <label ><input type="radio" id="" name="radio" > Nữ </label>
+            </div>
+            <div class="address">
+                <label for="idAddress">Địa chỉ</label>
+                <textarea id="idAddress" required cols="40" rows="3"></textarea>
+            </div>
+            <div class="class">
+                <label>Lớp</label>
+                <select required>
+                    <option>- Chọn lớp -</option>
+                    <option>A0321I1</option>
+                    <option>A0321I2</option>
+                    <option>A0321I3</option>
+                    <option>A0321I4</option>
+                </select>
+            </div>
+            <div class="email">
+                <label for="idEmail">Email</label>
+                <input id="idEmail" name="email" type="email" required>
+            </div>
+            <div class="phone">
+                <label for="idTel">Điện thoại</label>
+                <input id="idTel" name="phone" type="tel" required>
+            </div>
+            <div class="btn">
+                <input class="submit_data" type="submit" name="submit" value="Đăng ký">
+                <input class="reset_data" type="reset" name="reset" value="Nhập lại">
+            </div>
+        </form>
+    </div>
+</body>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        form {
+            padding: 7px;
+            width: 700px;
+            margin: 100px auto 0;
+            background: #FFFDA9;
+        }
+        h1 {
+            margin-bottom: 10px;
+            padding: 5px;
+            font-size: 27px;
+            color: blue;
+            text-transform: uppercase;
+            background: #D4FDD6;
+        }
+        label {
+            color: #1D37AB;
+        }
+        .name,
+        .birthday,
+        .sex,
+        .address,
+        .class,
+        .email,
+        .phone,
+        .btn {
+            display: flex;
+            margin-bottom: 15px;
+        }
+        .name {
+            width: 500px;
+        }
+        .birthday {
+            width: 300px;
+        }
+        .name_lable,
+        .birthday_lable,
+        .sex label,
+        .address label,
+        .class label,
+        .email label,
+        .phone label {
+            padding-top: 2px;
+            min-width: 120px;
+        }
+        .email,
+        .phone {
+            width: 350px;
+        }
+        .name_input,
+        .birthday_input,
+        .email input,
+        .phone input{
+            flex: 1;
+            height: 25px;
+            outline: none;
+            border: 2px solid #ccc;
+            border-left: 2px solid rgba(0, 0, 0, .6);
+            border-top: 2px solid rgba(0, 0, 0, .6);
+        }
+        .class select{
+            width: 150px;
+            padding: 2px;
+        }
+        .address textarea,
+        .class select {
+            outline: none;
+            border: 2px solid #ccc;
+            border-left: 2px solid rgba(0, 0, 0, .6);
+            border-top: 2px solid rgba(0, 0, 0, .6);
+        }
+        .sex label input:hover {
+            cursor: pointer;
+        }
+        .btn{
+            margin-left: 120px;
+            margin-bottom: 5px;
+        }
+        .btn input {
+            width: 110px;
+            background: #DCD9D2;
+            border:  2.5px solid white;
+            border-bottom: 2.5px solid rgba(0, 0, 0, .6);
+            border-right: 2.5px solid rgba(0, 0, 0, .6);
+            outline: none;
+            font-size: 16px;
+            margin-right: 5px;
+        }
+        .submit_data,
+        .reset_data {
+            width: 100px;
+        }
+        .btn input:active {
+            font-size: 14px;
+            outline: none;
+            border:  2.5px solid white;
+            border-left: 2.5px solid rgba(0, 0, 0, .6);
+            border-top: 2.5px solid rgba(0, 0, 0, .6);
+        }
+    </style>
+</html>

@@ -1,0 +1,161 @@
+.app {
+    font-family: sans-serif, Tahoma, "Lucida Sans Unicode";
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h3 {
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-left: 5px;
+    padding: 10px;
+}
+h5 {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+header p {
+    padding: 5px 0 20px 15px;
+    font-size: 13px;
+    color: rgba(0, 0, 0, .7);
+    letter-spacing: 1px;
+    border-bottom: 1px dotted #ccc;
+}
+.age {
+    margin-top: 5px;
+    padding: 15px;
+}
+.income,
+.gender,
+.product,
+.use_product,
+.text_write,
+.price {
+    padding: 15px;
+}
+.age select,
+.income select {
+    width: 400px;
+    height: 23px;
+    outline: none;
+}
+.age:hover,
+.income:hover,
+.gender:hover,
+.product:hover,
+.use_product:hover,
+.price:hover,
+.text_write:hover,
+.effect:hover {
+    background: #FFF7C0;
+}
+.gender li,
+.product li,
+.use_product li {
+    padding: 5px 0;
+    list-style: none;
+    font-size: 13px;
+    color: rgba(0, 0, 0, .7);
+}
+.gender label,
+.product label,
+.use_product label{
+    padding-left: 10px;
+}
+.input_other {
+    width: 145px;
+    padding: 2px;
+    margin: 10px 0 5px 25px;
+}
+.gender p {
+    margin-left: 25px;
+    font-size: 11px;
+}
+.gender p span {
+    letter-spacing: 1px;
+}
+.cur_used {
+    margin-left: 10px;
+}
+.price input {
+    height: 23px;
+}
+.price input {
+    width: 70px;
+}
+.price .cents {
+    width: 20px;
+}
+.price > div {
+    padding-top: 5px;
+}
+.price div span {
+    font-size: 18px;
+}
+.price .unit span {
+    font-size: 13px;
+    padding-left: 15px;
+}
+.price .unit span:last-child{
+    padding-left: 38px;
+}
+.text_write textarea {
+    width: 100%;
+    height: 136px;
+    margin-top: 10px;
+}
+table {
+    width: 98%;
+    border-collapse: collapse;
+    margin: 0 15px;
+}
+caption {
+    text-align: left;
+    padding: 0 0 10px;
+}
+tr, td {
+    width: 15%;
+    border: 1px #cccccc solid;
+}
+table tr td p {
+    padding-top: 3px;
+}
+.thead {
+    font-size: 13px;
+    padding: 8px;
+}
+.decription {
+    width: 40%;
+    font-size: 13px;
+    padding: 8px;
+}
+tr:nth-child(1) {
+    background: #ddd;
+}
+tr:nth-child(3) {
+    background: #eee;
+}
+.check {
+    font-size: 13px;
+    padding: 6px 0;
+}
+.btn {
+    width: 70px;
+    height: 25px;
+    margin: 20px 15px 10px;
+}
+footer {
+    margin-top: 10px;
+    width: 100%;
+    height: 45px;
+    background: #F6F7FB;
+    text-align: center;
+}
+footer img {
+    width: 60px;
+    padding-top: 12px;
+}

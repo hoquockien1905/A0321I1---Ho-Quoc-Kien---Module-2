@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CaseStudy Module 1</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+
+        <header>
+            <img src="Screenshot%202021-06-03%20151511.png">
+            <h1>
+                Hệ thống quản lý bài tập Casestudy module 1
+            </h1>
+        </header>
+
+        <div class="container">
+
+            <ul class="sidebar">
+                <li onclick="case1()"><button>Yêu cầu I</button></li>
+                <li onclick="case2()"><button>Yêu cầu II</button></li>
+                <li onclick="case3()"><button>Yêu cầu III</button></li>
+                <li onclick="case4()"><button>Yêu cầu IV</button></li>
+                <li onclick="case5()"><button>Yêu cầu V</button></li>
+                <li onclick="case6()"><button>Yêu cầu VI</button></li>
+            </ul>
+
+            <div class="content">
+                <ul id="listYeuCau1">
+                    <h2>VẼ HÌNH</h2>
+                    <li>
+                        <button onclick="bai1()">Bài 1</button>
+                        <span>Vẽ hình chữ nhật rỗng chiều dài n và chiều rộng m</span>
+                    </li>
+                    <li>
+                        <button onclick="bai2()">Bài 2</button>
+                        <span>Vẽ tam giác vuông cân rỗng có chiều cao h</span>
+                    </li>
+                    <li>
+                        <button onclick="bai3()">Bài 3</button>
+                        <span>Vẽ tam giác cân đặc có chiều cao h</span>
+                    </li>
+                    <li>
+                        <button onclick="bai4()">Bài 4</button>
+                        <span>Vẽ tam giác cân rỗng có chiều cao h</span>
+                    </li>
+                </ul>
+                <ul id="listYeuCau2">
+                    <h2>IF VÀ SWITCH CASE</h2>
+                    <li>
+                        <button onclick="bai1Case2()">Bài 1</button>
+                        <span>Viết một chương trình để nhập lương nhân viên, tính thuế thu nhập và lương ròng (số tiền lương thực sự mà nhân viên đó nhận được). Với các thông số giả sử như sau (không theo luật lương, chỉ là con số giả sử để dễ tính toán):
+                            20% thuế thu nhập nếu lương là 15 triệu.
+                            10% thuế thu nhập nếu lương từ 7 đến 15 triệu.
+                            5% thuế thu nhập nếu lương dưới 7 triệu
+                        </span>
+                    </li>
+                    <li>
+                        <button onclick="bai2Case2()">Bài 2</button>
+                        <span>Viết chương trình kiểm tra một ký tự trong bảng chữ cái tiếng anh là nguyên âm hay phụ âm. Ký tự là bất kỳ được nhập từ bàn phím. Các ký tự nguyên âm bao gồm: 'o', 'u', 'i', 'a', 'e' hoặc 'O', 'U', 'I', 'A', 'E'</span>
+                    </li>
+                </ul>
+                <ul id="listYeuCau3">
+                    <h2>MẢNG VÀ VÒNG LẶP</h2>
+                    <li>
+                        <button onclick="bai1Case3()">Bài 1</button>
+                        <span>Cho mảng a chỉ chứa các số nguyên
+                            Xây dựng mảng b là prefix sums của mảng a cụ thể theo công thức:
+                              b[0]   = a[0]
+                              b[1]   = a[0] + a[1]
+                              b[2]   = a[0] + a[1] + a[2]
+                              ...
+                              b[n - 1] = a[0] + a[1] + ... + a[n - 1]
+                            với n là độ dài của mảng a.
+                            Ví dụ: Cho a = [1, 2, 3], thì kết quả prefixSums(a) = [1, 3, 6].
+                            Mảng b được tạo ra: [1, 1 + 2, 1 + 2 + 3] = [1, 3, 6]
+                        </span>
+                    </li>
+                    <li>
+                        <button onclick="bai2Case3()">Bài 2</button>
+                        <span>Cho 2 mảng A và B chứa số nguyên. Tìm ra một mảng đã được sắp xếp chứa các phần tử xuất hiện trong mảng B nhưng lại không xuất hiện A
+                            Chú ý các phần tử giống nhau chỉ tính là 1 lần xuất hiện
+                            Ví dụ:  A=[7,2,5,3,5,3] và B=[7,2,5,4,6,3,5,3] thì kết quả missingValue(A, B) = [4, 6]
+                        </span>
+                    </li>
+                    <li>
+                        <button onclick="bai3Case3()">Bài 3</button>
+                        <span>Cho một danh sách các phân số, hãy tìm chỉ số của phân số lớn nhất (đếm từ 0)
+                            Giả định rằng không có các phân số bằng nhau trong tập đầu vào
+                            Ví dụ: numerators = [5, 2, 5] và denominators = [6, 3, 4], thì kết quả maxFraction(numerators, denominators) = 2.
+                            ⇨	5/4 là phân số lớn nhất, có chỉ số là 2.
+                        </span>
+                    </li>
+                    <li>
+                        <button onclick="bai4Case3()">Bài 4</button>
+                        <span>
+                            Viết một chương trình nhập một số từ bàn phím và in ra màn hình bằng chữ. Ví dụ 1234, kết quả in ra màn hình là một hai ba bốn.
+                        </span>
+                    </li>
+                    <li>
+                        <button onclick="bai5Case3()">Bài 5</button>
+                        <span>
+                            Giả sử menu của chúng ta có các loại thức uống như sau:
+                            Cafe
+                            Cam vắt
+                            Nước ép cà rốt
+                            Nước ép cà chua
+                            Nước lọc
+                            Nước dừa
+                            Viết một chương trình gọi thức uống đơn giản.
+                            Gợi ý: Trước tiên in ra màn hinh danh sách các loại thức uống cho người dùng chọn lựa
+                            Đánh dấu theo thứ tự 1 (cafe), 2 (cam vắt), 3(nước ép cà rốt), 4(nước ép cà chua), 5(nước lọc), 6(nước dừa), 7(thoát gọi món)
+                            Khi người dùng lựa chọn 1 trong số các thức uống, chương trình sẽ hiện đơn giá của thức uống đó và cho phép người dùng nhập số lượng. Cuối cùng hiển thị tổng số tiền người dùng cần phải trả.
+                            Sử dụng vòng lặp do while lặp lại cho người dùng đặt thức uống, kết thúc quá trình đặt thức uống khi người nhấn số 7
+                        </span>
+                    </li>
+                </ul>
+                <ul id="listYeuCau4">
+                    <h2>STRING</h2>
+                    <li>
+                        <button>Bài 1</button>
+                        <span>
+                            Viết một hàm chuẩn hóa xâu ký tự: biến đổi xâu ký tự thành xâu sao cho trong xâu không có 2 dấu cách liền nhau và bắt đầu mỗi từ phải in hoa. Ví dụ tRuong    TaN   HAI => Truong Tan Hai.
+                            Và một hàm tìm từ dài nhất trong 1 xâu ký tự. Hàm main sử dụng các hàm này để nhập xâu ký tự từ bàn phím, in ra xâu trước và sau khi chuẩn hóa, 1 từ dài nhất trong xâu đó.
+                        </span>
+                    </li>
+                    <li>
+                        <button>Bài 2</button>
+                        <span>
+                            Cho xâu kí tự. Hãy đếm số lượng kí tự khác nhau trong xâu đó
+                            Ví dụ: s = "cabca", thì kết quả differentSymbolsNaive(s) = 3.
+                            ⇨	Có 3 kí tự khác nhau là a, b và c.
+                        </span>
+                    </li>
+                    <li>
+                        <button>Bài 3</button>
+                        <span>
+                            Cho hai xâu kí tự, tìm số lượng kí tự chung giữa chúng. *
+                            Ví dụ: s1 = "aabcc" và s2 = "adcaa", thì kết quả commonCharacterCount(s1, s2) = 3.
+                            ⇨	2 xâu s1 và s2 có 3 kí tự chung: 2 kí tự 'a' và 1 kí tự 'c'.
+                        </span>
+                    </li>
+                </ul>
+                <ul id="listYeuCau5">
+                    <h2>MẢNG 2 CHIỀU</h2>
+                    <li>
+                        <button>Bài 1</button>
+                        <span>
+                            Viết hàm tính tổng các số chẵn trong ma trận có kích thước m*n. Với m, n là các số nhập từ bàn phím.
+                        </span>
+                    </li>
+                    <li>
+                        <button>Bài 2</button>
+                        <span>
+                            Viết hàm liệt kê các số nguyên tố trong mảng 2 chiều, đếm các số nguyên tố có trong mảng đó.
+                        </span>
+                    </li>
+                    <li>
+                        <button>Bài 3</button>
+                        <span>
+                            Viết hàm tìm giá trị lớn nhất, nhỏ nhất trong mảng 2 chiều.
+                        </span>
+                    </li>
+                </ul>
+                <ul id="listYeuCau6">
+                    <h2>OOP</h2>
+                    <li>
+                        <button>Bài 1</button>
+                        <span>
+                            Xây dựng ứng dụng cho phép khách hàng thực hiện mua vé số tương tự VIETLOT, mỗi vé sẽ bao gồm 6 số nguyên dương, có thể mua tối đa 4 vé.
+                        </span> <br>
+                        <img id="soVe" src="xskt.png" alt="Hình ảnh"> <br>
+                        <span>
+                            Viết chương trình cho phép người dùng mua vé số. Sẽ có hai tuỳ chọn cho khách hàng thực hiện chọn số trên mỗi vé.
+                            - Nếu khách hàng chọn tự nhập thì cứ mỗi ô tròn KH click vào sẽ hiển thị 1 bảng chọn số từ 0-99
+                            - Nếu khách hàng chọn tuỳ chọn random thì hệ thống sẽ tự động tạo ra 6 số tương ứng 6 ô tròn
+                            Sau khi khách hàng hoàn tất việc chọn số trên vé thì nhấn hoàn tất để thực hiện quay số
+                            Hệ thống sẽ so khớp dãy số trên vé với dãy số của hệ thống xem KH có trúng thưởng không
+                            Sẽ có 3 giải bao gồm:
+                            Giải nhất: 6 số trên vé của KH trùng khớp hoàn toàn với 6 số của hệ thống
+                            Giải nhì: 5 số cuối của vé KH trùng khớp với 5 số cuối của hệ thống
+                            Giải khuyến khích: 3 số cuối của vé KH trùng khớp với 3 số cuối của hệ thống
+                            Khi KH may mắn trúng giải nào thì hệ thống sẽ hiển thị kết quả là số tiền sẽ nhận được tương ứng (HV tự defined)
+                            Khi KH không trúng giải nào thì hệ thống hiển thị thông báo “Chúc bạn may mắn lần sau”
+                        </span>
+                        <div>
+                            <img id="deMoSoXo" src="muaVe.png" alt=""> <br>
+                            <p>Hình 1.1 Khi người dùng click mua vé</p>
+                        </div>
+                        <div>
+                            <img id="deMoSoXo" src="ketQuaXoSo.png" alt=""><br>
+                            <p>Hình 1.2 Khi người dùng click xem kết quả</p>
+                        </div>
+                    </li>
+                </ul>
+
+                <div id="result"></div>
+                <div id="result2"></div>
+                <button id="back1" onclick="back1()">Trở lại</button>
+                <button id="back2" onclick="back2()">Trở lại</button>
+                <button id="back3" onclick="back3()">Trở lại</button>
+                <button id="back4" onclick="back4()">Trở lại</button>
+                <button id="back5" onclick="back5()">Trở lại</button>
+                <button id="back6" onclick="back6()">Trở lại</button>
+            </div>
+        </div>
+
+        <footer>
+            <div id="info">
+                <p id="name">Ho Quoc Kien</p>
+                <div>
+                    <p>A0321I1 - Codegym Danang</p>
+                    <p>Email: hquockien@gmail.com</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript">
+
+        function case1() {
+            document.getElementById("listYeuCau1").style.display = "block";
+            if (document.getElementById("listYeuCau1").style.display == "block") {
+                document.getElementById("listYeuCau2").style.display = "none";
+                document.getElementById("listYeuCau3").style.display = "none";
+                document.getElementById("listYeuCau4").style.display = "none";
+                document.getElementById("listYeuCau5").style.display = "none";
+                document.getElementById("listYeuCau6").style.display = "none";
+                document.getElementById("result").style.display = "none";
+                document.getElementById("result2").style.display = "none";
+                document.getElementById("back1").style.display = "none";
+                document.getElementById("back2").style.display = "none";
+                document.getElementById("back3").style.display = "none";
+                document.getElementById("back4").style.display = "none";
+                document.getElementById("back5").style.display = "none";
+                document.getElementById("back6").style.display = "none";
+            }
+        }
+        function case2() {
+            document.getElementById("listYeuCau2").style.display = "block";
+            if (document.getElementById("listYeuCau2").style.display == "block") {
+                document.getElementById("listYeuCau1").style.display = "none";
+                document.getElementById("listYeuCau3").style.display = "none";
+                document.getElementById("listYeuCau4").style.display = "none";
+                document.getElementById("listYeuCau5").style.display = "none";
+                document.getElementById("listYeuCau6").style.display = "none";
+                document.getElementById("result").style.display = "none";
+                document.getElementById("result2").style.display = "none";
+                document.getElementById("back1").style.display = "none";
+                document.getElementById("back2").style.display = "none";
+                document.getElementById("back3").style.display = "none";
+                document.getElementById("back4").style.display = "none";
+                document.getElementById("back5").style.display = "none";
+                document.getElementById("back6").style.display = "none";
+            }
+        }
+        function case3() {
+            document.getElementById("listYeuCau3").style.display = "block";
+            if (document.getElementById("listYeuCau3").style.display == "block") {
+                document.getElementById("listYeuCau2").style.display = "none";
+                document.getElementById("listYeuCau1").style.display = "none";
+                document.getElementById("listYeuCau4").style.display = "none";
+                document.getElementById("listYeuCau5").style.display = "none";
+                document.getElementById("listYeuCau6").style.display = "none";
+                document.getElementById("result").style.display = "none";
+                document.getElementById("result2").style.display = "none";
+                document.getElementById("back1").style.display = "none";
+                document.getElementById("back2").style.display = "none";
+                document.getElementById("back3").style.display = "none";
+                document.getElementById("back4").style.display = "none";
+                document.getElementById("back5").style.display = "none";
+                document.getElementById("back6").style.display = "none";
+            }
+        }
+        function case4() {
+            document.getElementById("listYeuCau4").style.display = "block";
+            if (document.getElementById("listYeuCau4").style.display == "block") {
+                document.getElementById("listYeuCau2").style.display = "none";
+                document.getElementById("listYeuCau3").style.display = "none";
+                document.getElementById("listYeuCau1").style.display = "none";
+                document.getElementById("listYeuCau5").style.display = "none";
+                document.getElementById("listYeuCau6").style.display = "none";
+                document.getElementById("result").style.display = "none";
+                document.getElementById("result2").style.display = "none";
+                document.getElementById("back1").style.display = "none";
+                document.getElementById("back2").style.display = "none";
+                document.getElementById("back3").style.display = "none";
+                document.getElementById("back4").style.display = "none";
+                document.getElementById("back5").style.display = "none";
+                document.getElementById("back6").style.display = "none";
+            }
+        }
+        function case5() {
+            document.getElementById("listYeuCau5").style.display = "block";
+            if (document.getElementById("listYeuCau5").style.display == "block") {
+                document.getElementById("listYeuCau2").style.display = "none";
+                document.getElementById("listYeuCau3").style.display = "none";
+                document.getElementById("listYeuCau4").style.display = "none";
+                document.getElementById("listYeuCau1").style.display = "none";
+                document.getElementById("listYeuCau6").style.display = "none";
+                document.getElementById("result").style.display = "none";
+                document.getElementById("result2").style.display = "none";
+                document.getElementById("back1").style.display = "none";
+                document.getElementById("back2").style.display = "none";
+                document.getElementById("back3").style.display = "none";
+                document.getElementById("back4").style.display = "none";
+                document.getElementById("back5").style.display = "none";
+                document.getElementById("back6").style.display = "none";
+            }
+        }
+        function case6() {
+            document.getElementById("listYeuCau6").style.display = "block";
+            if (document.getElementById("listYeuCau6").style.display == "block") {
+                document.getElementById("listYeuCau2").style.display = "none";
+                document.getElementById("listYeuCau3").style.display = "none";
+                document.getElementById("listYeuCau4").style.display = "none";
+                document.getElementById("listYeuCau5").style.display = "none";
+                document.getElementById("listYeuCau1").style.display = "none";
+                document.getElementById("result").style.display = "none";
+                document.getElementById("result2").style.display = "none";
+                document.getElementById("back1").style.display = "none";
+                document.getElementById("back2").style.display = "none";
+                document.getElementById("back3").style.display = "none";
+                document.getElementById("back4").style.display = "none";
+                document.getElementById("back5").style.display = "none";
+                document.getElementById("back6").style.display = "none";
+            }
+        }
+
+        function back1() {
+            document.getElementById("back1").style.display = "none";
+            case1();
+        }
+        function back2() {
+            document.getElementById("back2").style.display = "none";
+            case2();
+        }
+        function back3() {
+            document.getElementById("back3").style.display = "none";
+            case3();
+        }
+        function back4() {
+            document.getElementById("back4").style.display = "none";
+            case4();
+        }
+        function back5() {
+            document.getElementById("back5").style.display = "none";
+            case5();
+        }
+        function back6() {
+            document.getElementById("back6").style.display = "none";
+            case6();
+        }
+
+
+        function bai1() {
+            let a = parseInt(prompt("Enter width:"));
+            let b = parseInt(prompt("Enter length:"));
+            let result = "";
+            while (a > 25 || a <= 0 || isNaN(a) == true) {
+                a = parseInt(prompt("Enter again the width <= 25 and > 0"));
+            }
+            while (b > 100 || b <= 0  || isNaN(b) == true) {
+                b = parseInt(prompt("Enter again the length <= 100 and > 0"));
+            }
+            for (let i = 0; i <= a; i++) {
+                for (let j = 0; j <= b; j++) {
+                    if (i >= 1 && j >= 1 && i <= (a - 1) && j <= (b - 1)) {
+                        result += "&nbsp&nbsp";
+                    } else {
+                        result += "*";
+                    }
+                }
+                result += "<br>";
+            }
+            document.getElementById("listYeuCau1").style.display = "none";
+            document.getElementById("result").style.display = "block";
+            document.getElementById("result").innerHTML = result;
+            document.getElementById("back1").style.display = "block";
+        }
+
+        function bai2() {
+            let h = parseInt(prompt("Enter height"));
+            while (h <= 0 || h > 25 || isNaN(h) == true) {
+                h = parseInt(prompt("Enter again the height <= 25 and > 0"));
+            }
+            let result = "";
+            for (let i = 0; i <= h; i++) {
+                for (let j = 0; j <= i; j++) {
+                    if (i >= 2 && j >= 1 && j != i && i <= (h - 1)) {
+                        result += "&nbsp&nbsp";
+                    } else {
+                        result += "*";
+                    }
+                }
+                result += "<br>";
+            }
+            document.getElementById("listYeuCau1").style.display = "none";
+            document.getElementById("result").style.display = "block";
+            document.getElementById("result").innerHTML = result;
+            document.getElementById("back1").style.display = "block";
+        }
+
+        function bai3() {
+            let h = parseInt(prompt("Enter height"));
+            while (h <= 0 || h > 25 || isNaN(h) == true) {
+                h = parseInt(prompt("Enter again the height <= 25 and > 0"));
+            }
+            let result = "";
+
+            for (let i = 1; i <= h; i++) {
+                for (let j = 1; j <= (2 * h - 1); j++) {
+                    if (j >= (h - i + 1) && j <= (h + i - 1)) {
+                        result += "*";
+                    } else {
+                        result += "&nbsp&nbsp";
+                    }
+                }
+                result += "<br>";
+            }
+            document.getElementById("listYeuCau1").style.display = "none";
+            document.getElementById("result").style.display = "block";
+            document.getElementById("result").innerHTML = result;
+            document.getElementById("back1").style.display = "block";
+        }
+
+        function bai4() {
+            let h = parseInt(prompt("Enter height"));
+            while (h <= 0 || h > 25 || isNaN(h) == true) {
+                h = parseInt(prompt("Enter again the height <= 25 and > 0"));
+            }
+            let result = "";
+
+            for (let i = 1; i < h; i++) {
+                for (let j = 1; j <= (2 * h - 1); j++) {
+                    if (j == (h - i + 1) || j == (h + i - 1)) {
+                        result += "*";
+                    } else {
+                        result += "&nbsp&nbsp";
+                    }
+                }
+                result += "<br>";
+            }
+
+            for (let k = 1; k <= (2 * h - 1); k++) {
+                result += "*";
+            }
+            document.getElementById("listYeuCau1").style.display = "none";
+            document.getElementById("result").style.display = "block";
+            document.getElementById("result").innerHTML = result;
+            document.getElementById("back1").style.display = "block";
+        }
+
+        function bai1Case2() {
+            let salary = parseFloat(prompt("Enter your salary (million)"));
+            while (isNaN(salary) == true) {
+                salary = parseFloat(prompt("Enter again your salary (million)"));
+            }
+            let result = "";
+            let tax;
+            if (salary > 15) {
+                tax = salary * 0.2;
+            } else if (salary <= 15 && salary >= 7) {
+                tax = salary * 0.1;
+            } else {
+                tax = salary * 0.05;
+            }
+            result = "Your tax is: " + tax.toFixed(2) + " million" + "<br>" +
+                    "Your salary is: " + (salary - tax.toFixed(2)) + " million";
+            document.getElementById("listYeuCau2").style.display = "none";
+            document.getElementById("result2").style.display = "block";
+            document.getElementById("result2").innerHTML = result;
+            document.getElementById("back1").style.display = "block";
+        }
+
+        function bai2Case2() {
+            let arr = ['o', 'u', 'i', 'a', 'e'];
+            let char = prompt("Enter a character:");
+            let result = "";
+            while (isNaN(char) == false || char.length > 1) {
+                char = prompt("Enter again!");
+            }
+
+            let check = arr.find(function (item) {
+                return item.toLowerCase() === char.toLowerCase();
+            });
+
+            if (check) {
+                result = char + " is a vowel";
+            } else {
+                result = char + " is consonant";
+            }
+            document.getElementById("listYeuCau2").style.display = "none";
+            document.getElementById("result2").style.display = "block";
+            document.getElementById("result2").innerHTML = result;
+            document.getElementById("back2").style.display = "block";
+        }
+
+        function bai1Case3() {
+            let b = Array(parseInt(prompt("Enter the numbers of elements of the array")));
+            let result = "";
+            let array = [];
+            let a;
+            for (let i = 0; i < b.length; i++) {
+                a = parseInt(prompt("b[" + i + "]="));
+                array[i] = a;
+            }
+            let prefixSum = 0;
+            let newArray = [];
+            for (let j = 0; j < array.length; j++) {
+                prefixSum += array[j];
+                newArray[j] = prefixSum;
+            }
+            result = "Original Array is: " + "[" + array + "]" + "<br>" +
+            "The new Array after the prefix sum is: " + "[" + newArray + "]";
+            document.getElementById("listYeuCau3").style.display = "none";
+            document.getElementById("result2").style.display = "block";
+            document.getElementById("result2").innerHTML = result;
+            document.getElementById("back3").style.display = "block";
+        }
+
+        function bai2Case3() {
+            let elmsOfA;
+            let elmsOfB;
+            let result = "";
+            let a = [];
+            let b = [];
+            let A = Array(parseInt(prompt("The numbers of the Array A")));
+            for (let i = 0; i < A.length; i++) {
+                elmsOfA = parseInt(prompt("a[" + i + "] ="));
+                a[i] = elmsOfA;
+            }
+
+            let B = Array(parseInt(prompt("The numbers of the Array B")));
+            for (let i = 0; i < B.length; i++) {
+                elmsOfB = parseInt(prompt("b[" + i + "] ="));
+                b[i] = elmsOfB;
+            }
+
+            let c = [];
+            let length;
+            if (a.length > b.length) {
+                length = a.length;
+            } else {
+                length = b.length;
+            }
+            for (let i = 0; i < length; i++) {
+                if (a.indexOf(b[i]) === -1) {
+                    if (c.indexOf(b[i]) === -1) {
+                        c.push(b[i]);
+                    }
+                }
+            }
+            result = "A = " + a + "<br>" + "B = " + b + "<br>" + "missingValue(A, B) = " + "[" + c.join("; ") + "]";
+            document.getElementById("listYeuCau3").style.display = "none";
+            document.getElementById("result2").style.display = "block";
+            document.getElementById("result2").innerHTML = result;
+            document.getElementById("back3").style.display = "block";
+        }
+
+        function bai3Case3() {
+            alert("The lengths of the 2 arrays must be equal");
+            let numerators = Array(parseInt(prompt("The length of the array 1")));
+            let denominators = Array(parseInt(prompt("The length of the array 2")));
+
+            while (numerators.length != denominators.length) {
+                numerators = Array(parseInt(prompt("Enter again the array 1")));
+                denominators = Array(parseInt(prompt("Enter again the array 2")));
+            }
+
+            let newNumerators = [];
+            let newDenominators = [];
+            let result = "";
+            let str = [];
+            let arr = [];
+            let c = 0;
+            let index;
+
+            for (let i = 0; i < numerators.length; i++) {
+                let a = parseFloat(prompt("a [" + i + "] ="));
+                while (isNaN(a) == true || a == 0) {
+                    a = parseFloat(prompt("a [" + i + "] ="));
+                }
+                let b = parseFloat(prompt("b [" + i + "] ="));
+                while (isNaN(b) == true || b == 0) {
+                    b = parseFloat(prompt("a [" + i + "] ="));
+                }
+                newNumerators[i] = a;
+                denominators[i] = newDenominators;
+                newDenominators[i] = b;
+
+                c = newNumerators[i] / newDenominators[i];
+                arr[i] = c;
+                str += "index at " + i + " is: " + newNumerators[i] + " / " + newDenominators[i] + " = " + c.toFixed(2) + "<br>";
+                if (Math.max(...arr) == c) {
+                    index = i;
+                }
+            }
+            result = "Array 1: " + "[" + newNumerators.join(", ") + "]" + "<br>" +
+                "Array 2: " + "[" + newDenominators.join(", ") + "]" + "<br>" +
+                str + "<br>" +
+                "Max faction = " + Math.max(...arr) + " have index is: " + index;
+
+            document.getElementById("listYeuCau3").style.display = "none";
+            document.getElementById("result2").style.display = "block";
+            document.getElementById("result2").innerHTML = result;
+            document.getElementById("back3").style.display = "block";
+        }
+    </script>
+</body>
+</html>

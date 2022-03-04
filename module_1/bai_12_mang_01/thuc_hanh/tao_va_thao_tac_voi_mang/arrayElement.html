@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=utf-8 />
+    <title>[Thực hành] Tạo và thao tác với mảng</title>
+</head>
+
+<body>
+    <input type="text" id="txtValue"/>
+    <input type="button" id="btnAdd" value="Add" onclick="addElementToArray()"/>
+    <input type="button" id="btnDisplay" value="Display" onclick="displayArray()"/>
+    <div id="result"></div>
+    <style>
+        body {padding-top:50px}
+    </style>
+    <script>
+        let x = 1;
+        let array = Array();
+        function addElementToArray() {
+            array[x] = document.getElementById("txtValue").value;
+            alert("Element: " + array[x] + " Added at index " + x);
+            x++;
+            document.getElementById("txtValue ").value = "";
+        }
+        function displayArray() {
+            let e = "<hr/>";
+            for (let i = 1; i < array.length; i++) {
+                e += "Element " + i + " = " + array[i] + "<br/>";
+            }
+            document.getElementById("result").innerHTML = e;
+        }
+    </script>
+</body>
+
+</html>

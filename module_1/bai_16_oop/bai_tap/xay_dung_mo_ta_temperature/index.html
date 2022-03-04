@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Xây dựng lớp mô tả Temperature</title>
+</head>
+<body>
+    <script>
+        class Temperature {
+            constructor(celsius) {
+                this.celsius = celsius;
+            }
+
+            toFahrenheit() {
+                return (9 / 5) * this.celsius + 32;
+            }
+
+            toKevin() {
+                return this.celsius + 273.15;
+            }
+        }
+
+        let temperature = new Temperature(25);
+
+        console.log("From celsius to fahrenheit is: " + temperature.toFahrenheit().toFixed(2));
+        console.log("From celsius to kevin is: " + temperature.toKevin().toFixed(2));
+    </script>
+</body>
+</html>

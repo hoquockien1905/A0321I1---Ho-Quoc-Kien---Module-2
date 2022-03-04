@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Luyện tập tạo và sử dụng hàm 01</title>
+</head>
+<body>
+    <button onclick="alertMessage()">Bài 1</button>
+    <button onclick="bai2()">Bài 2</button>
+    <button onclick="bai3()">Bài 3</button>
+    <button onclick="bai4()">Bài 4</button>
+    <button onclick="bai5()">Bài 5</button>
+    <script>
+
+        function alertMessage() {
+            alert("Xin chào");
+        }
+
+        function bai2() {
+            let a = parseInt(prompt());
+            number(a);
+
+            function number(a) {
+                a = a + 1;
+                alert(a);
+            }
+        }
+
+        function bai3() {
+            let a = parseFloat(prompt("Nhập a:"));
+            let b = parseFloat(prompt("Nhập b:"));
+            compare(a, b);
+
+            function compare(x, y) {
+                if (x == y) {
+                    alert(x + " bằng " + y);
+                } else if (x > y) {
+                    alert(x + " lớn hơn " + y);
+                } else {
+                    alert(x + y);
+                }
+            }
+        }
+
+        function bai4() {
+            function addNumbers() {
+                let firstNum = 4;
+                let secondNum = 8;
+                let result = firstNum + secondNum;
+                return result;
+            }
+            result = 0;
+            alert(result);
+            result = addNumbers();
+            alert(result);
+        }
+        
+        function bai5() {
+            let listFamousPeople = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+            let listConstellation = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+
+            find(listFamousPeople);
+
+            function find(string) {
+                let name = prompt("Nhập tên Ngôi sao cần tìm");
+                let check = false;
+                for (let i = 0; i < string.length; i++) {
+                    if (name == string[i].toLowerCase()) {
+                        check = true;
+                        alert(listConstellation[i]);
+                        break;
+                    }
+                }
+                if (!check) {
+                    alert("Không tìm thấy");
+                }
+            }
+        }
+    </script>
+</body>
+</html>

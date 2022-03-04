@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Thực hành] Xây dựng lớp Date</title>
+</head>
+<body>
+    <script>
+        class Date {
+            constructor(day, month, year) {
+                this.day = day;
+                this.month = month;
+                this.year = year;
+            }
+            getDay() {
+                if (this.day <= 9) {
+                    return "Ngày 0" + this.day;
+                } else {
+                    return "Ngày " + this.day;
+                }
+            }
+            getMonth() {
+                if (this.month <= 9) {
+                    return " Tháng 0" + this.month;
+                } else {
+                    return " Tháng " + this.month;
+                }
+            }
+            getYear() {
+                return " Năm " + this.year;
+            }
+            setDay(day) {
+                this.day = day;
+                if (day <= 9) {
+                    return "Ngày 0" + day;
+                } else {
+                    return "Ngày " + day;
+                }
+            }
+            setMonth(month) {
+                this.month = month;
+                if (month <= 9) {
+                    return " Tháng 0" + month;
+                } else {
+                    return " Tháng " + month;
+                }
+            }
+            setYear(year) {
+                this.year = year;
+                return " Năm " + this.year;
+            }
+        }
+        let date = new Date(1, 5, 2000);
+        alert(date.getDay() + date.getMonth() + date. getYear());
+
+        alert(date.setDay(7) + date.setMonth(2) + date.setYear(2000));
+    </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p id="display"></p>
+    <script>
+        class Worker {
+            constructor(id, name, dateOfBirth, address, salary, position) {
+                this.id = id;
+                this.name = name;
+                this.dateOfBirth = dateOfBirth;
+                this.address = address;
+                this.salary = salary;
+                this.position = position;
+            }
+            getName() {
+                return this.name;
+            }
+
+            setName(newName) {
+                this.name = newName;
+            }
+
+            getDate() {
+                return this.dateOfBirth;
+            }
+
+            getAddress() {
+                return this.address;
+            }
+
+            getSalary() {
+                return this.salary;
+            }
+
+            getPosition() {
+                return this.position;
+            }
+        }
+
+        let peter = new Worker(1, "Peter","28-5-1999", "Đà Nẵng", 4000, "Công nhân");
+        let john = new Worker(2, "John","28-5-1999", "Đà Nẵng", 4000, "Công nhân");
+        let tony = new Worker(3, "Tony", "28-5-1999", "Đà Nẵng", 4000, "Công nhân");
+
+        let listWorker = [peter, john, tony];
+
+        display(listWorker);
+
+        function display(list) {
+            let tableString = '<table border="1">\n' +
+                '<tr>\n' +
+                '<th>STT</th>' +
+                '<th>Tên</th>' +
+                '<th>Ngày Sinh</th>' +
+                '<th>Địa Chỉ</th>' +
+                '<th>Lương</th>' +
+                '<th>Chức vụ</th>' +
+                '</tr>';
+            for (let i = 0; i < list.length; i++) {
+                console.log(list);
+                tableString += '<tr>\n' +
+                    '<td>' + (i + 1) + '</td>\n' +
+                    '<td>' + list[i].getName() + '</td>\n' +
+                    '<td>' + list[i].getDate() + '</td>\n' +
+                    '<td>' + list[i].getAddress() + '</td>\n' +
+                    '<td>' + list[i].getSalary() + '</td>\n' +
+                    '<td>' + list[i].getPosition() + '</td>\n' +
+                    '</tr>'
+            }
+            tableString += '</table>';
+            document.getElementById("display").innerHTML = tableString;
+        }
+    </script>
+</body>
+</html>

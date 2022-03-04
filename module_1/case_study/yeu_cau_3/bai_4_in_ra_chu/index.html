@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhập số in ra chữ</title>
+</head>
+<body>
+    <script>
+        let number = parseInt(prompt("Nhập một số nguyên: "));
+        let numberArray = number.toString().split("");
+        let string = "";
+        let result = "";
+        for (let i = 0; i < numberArray.length; i++) {
+            if (numberArray[i] == "0") {
+                string = "Không";
+            } else if (numberArray[i] == "1") {
+                string = "Một";
+            } else if (numberArray[i] == "2") {
+                string = "Hai";
+            } else if (numberArray[i] == "3") {
+                string = "Ba";
+            } else if (numberArray[i] == "4") {
+                string = "Bốn";
+            } else if (numberArray[i] == "5") {
+                string = "Năm";
+            } else if (numberArray[i] == "6") {
+                string = "Sáu";
+            } else if (numberArray[i] == "7") {
+                string = "Bảy";
+            } else if (numberArray[i] == "8") {
+                string = "Tám";
+            } else if (numberArray[i] == "9") {
+                string = "Chín";
+            } else {
+                break;
+            }
+            result += string + " ";
+        }
+        alert(result.toString());
+    </script>
+</body>
+</html>

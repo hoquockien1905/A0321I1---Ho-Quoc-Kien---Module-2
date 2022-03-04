@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Máy tính đơn giản</title>
+</head>
+<body>
+    <div id="calculator">
+        <table cellspacing="25">
+            <tr>
+                <td colspan="4"><input id="result" type="text"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="result.value += this.value"></td>
+                <td><input type="button" value="2" onclick="result.value += this.value"></td>
+                <td><input type="button" value="3" onclick="result.value += this.value"></td>
+                <td><input type="button" value="C" onclick="result.value = '' "></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="result.value += this.value"></td>
+                <td><input type="button" value="5" onclick="result.value += this.value"></td>
+                <td><input type="button" value="6" onclick="result.value += this.value"></td>
+                <td rowspan="2"><input type="button" value="del" onclick="result.value = result.value.substr(0,result.value.length-1)"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="result.value += this.value"></td>
+                <td><input type="button" value="8" onclick="result.value += this.value"></td>
+                <td><input type="button" value="9" onclick="result.value += this.value"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="0" onclick="result.value += this.value"></td>
+                <td><input type="button" value="+" onclick="result.value += this.value"></td>
+                <td><input type="button" value="-" onclick="result.value += this.value"></td>
+                <td rowspan="2"><input type="button" value="=" onclick="result.value = eval(result.value)"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="." onclick="result.value += this.value"></td>
+                <td><input type="button" value="/" onclick="result.value += this.value"></td>
+                <td><input type="button" value="*" onclick="result.value += this.value"></td>
+            </tr>
+         </table>
+    </div>
+</body>
+    <style>
+        #calculator {
+            width: 300px;
+            height: 400px;
+            margin: 100px auto;
+        }
+        #result {
+            padding: 0;
+            font-size: 20px;
+            text-align: right;
+        }
+        #result:hover {
+            cursor: none;
+            font-size: 20px;
+            font-weight: bold;
+            color: blue;
+            height: 100%;
+            outline: none;
+            border: none;
+            background: white;
+        }
+        table {
+            background: linear-gradient(blue, #8c8cfa, blue, #8c8cfa);
+            width: 100%;
+            table-layout: fixed;
+            margin-top: -15px;
+            box-shadow: 0 0 50px rgba(0, 0, 0, .5);
+        }
+        input{
+            font-size: 18px;
+            font-weight: bold;
+            color: blue;
+            width: 100%;
+            height: 100%;
+            outline: none;
+            border: none;
+            background: white;
+        }
+        input:active{
+            font-size: 12px;
+        }
+        input:hover{
+            background: #bbb;
+            cursor: pointer;
+        }
+        td {
+            height: 35px;
+            border: 3px solid #bbb;
+        }
+    </style>
+</html>

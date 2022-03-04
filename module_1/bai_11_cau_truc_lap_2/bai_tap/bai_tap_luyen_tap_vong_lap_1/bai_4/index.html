@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4</title>
+</head>
+<body>
+    <script>
+        let fib = [];
+        fib[0] = 0;
+        fib[1] = 1;
+        for (let i = 2; i <= 21; i++) {
+            fib[i] = fib[i - 2] + fib[i - 1];
+            if (fib[i] % 5 == 0) {
+                alert(fib[i] + " là số đầu tiên chia hết cho 5");
+                break;
+            }
+        }
+    </script>
+</body>
+</html>

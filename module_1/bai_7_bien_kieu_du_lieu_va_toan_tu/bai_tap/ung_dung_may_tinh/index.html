@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Ứng dụng máy tính</title>
+</head>
+<body>
+    <form>
+        <h2>Calculator</h2>
+        <div>
+            <input type="number" value="" name="number" id="numb1">
+            <input type="number" value="" name="number" id="numb2">
+        </div>
+        <button onclick="add()" name="button" type="button" id="sum">Addition(+)</button>
+        <button onclick="subtraction()" name="button" type="button" id="subt">Subtraction(-)</button>
+        <button onclick="multiplication()" name="button" type="button" id="mult">Multiplication(x)</button>
+        <button onclick="division()" name="button" type="button" id="div">Division(/)</button> <br>
+        <div>
+            <div id="result"></div> <br>
+        </div>
+    </form>
+</body>
+    <style>
+        form {
+            width: 500px;
+            margin: 200px auto;
+        }
+        button, input {
+            margin-bottom: 20px;
+        }
+    </style>
+    <script src="./index.js"></script>
+</html>

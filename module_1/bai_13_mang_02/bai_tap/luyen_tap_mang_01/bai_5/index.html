@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+    <script>
+        let numbers = [-8, 5, -9, 0, -6, 1, -2];
+        let count = 0;
+        for (let index in numbers) {
+            if (numbers[index] < 0 && Number.isInteger(numbers[index])) {
+                count++;
+            }
+        }
+        document.write("The number of elements with a negative value is: " + count);
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết hàm tính tổng các số chẵn trong ma trận</title>
+</head>
+<body>
+    <script>
+        let rows = parseInt(prompt("Nhập số số phần tử của mảng cha"));
+        let cols = parseInt(prompt("Nhập số số phần tử của mảng con"));
+        let arr = Array(rows);
+        for (let i = 0; i < rows; i++) {
+            arr[i] = Array(cols);
+        }
+        let evenNumbers = [];
+        let sum = 0;
+        for (let i = 0; i < rows; i++) {
+            for (let j = 0; j < cols; j++) {
+                arr[i][j] = parseInt(prompt("arr[" + i + "][" + j + "]="));
+                if (arr[i][j] % 2 == 0) {
+                    evenNumbers += arr[i][j] + " ";
+                    sum += arr[i][j];
+                }
+            }
+        }
+        console.log(arr);
+        console.log("Các số chẵn là: " + evenNumbers);
+        console.log("Tổng các số chẵn là: " + sum);
+    </script>
+</body>
+</html>

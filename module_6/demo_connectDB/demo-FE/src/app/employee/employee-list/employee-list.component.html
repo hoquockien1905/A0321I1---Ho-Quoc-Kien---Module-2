@@ -1,0 +1,131 @@
+<!--<form class="form-group d-flex" [formGroup]="formSearch" (ngSubmit)="search()">-->
+<!--  <input type="text" class="form-control w-25" placeholder="Name..." formControlName="name">-->
+<!--  <input type="text" class="form-control w-25" placeholder="Email..." formControlName="email">-->
+<!--  <input type="text" class="form-control w-25" placeholder="Customer type..." formControlName="customerType">-->
+<!--  <select class="form-control" formControlName="customerType">-->
+<!--    <ng-container *ngFor="let customerType of listCustomerType">-->
+<!--      <option>{{ customerType.typeName }}</option>-->
+<!--    </ng-container>-->
+<!--  </select>-->
+<!--  <button type="submit" class="btn btn-success">search</button>-->
+<!--</form>-->
+<div class="container" id="main-content">
+
+  <h1 class="d-flex justify-content-center mt-5">Employee List</h1>
+  <!--<a [routerLink]="['add']" class="btn btn-success m-2">Thêm mới</a>-->
+  <button (click)="onOpenModal(null, 'add')" type="button" class="btn btn-primary" data-toggle="modal" data-target="#addEmployeeModal">
+    Thêm mới
+  </button>
+  <table class="table table-striped" style="text-align: center">
+    <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Phone</th>
+      <th scope="col">Division</th>
+      <th scope="col" colspan="2">Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let employee of employeeList">
+      <th scope="row">{{ employee.id }}</th>
+      <td>{{ employee.name }}</td>
+      <td>{{ employee.email }}</td>
+      <td>{{ employee.phone}}</td>
+      <td>{{ employee.division.divisionName}}</td>
+      <!--    <td><a [routerLink]="['edit', employee.id]" class="btn btn-warning btn-sm">Edit</a></td>-->
+      <!--    <td>-->
+      <!--      <button mat-button (click)="openDialogDelete(customer.id ,customer.name)" class="btn btn-danger">Delete-->
+      <!--      </button>-->
+      <!--    </td>-->
+    </tr>
+    </tbody>
+  </table>
+  <!--<pagination-controls (pageChange)="p = $event"></pagination-controls>-->
+
+  <!-- Add Modal -->
+  <div class="modal fade" id="addEmployeeModal" tabindex="-1" aria-labelledby="addEmployeeModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="addEmployeeModalLabel">Thêm mới Nhân viên</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form [formGroup]="formGroup">
+            <div class="form-group">
+              <label>Name:</label>
+              <input type="text" formControlName="name" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Email:</label>
+              <input type="text" formControlName="email" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Phone:</label>
+              <input type="text" formControlName="phone" class="form-control">
+            </div>
+            <div class="form-group">
+              <p>Division:</p>
+              <select class="form-control" formControlName="division">
+                  <option *ngFor="let division of divisionList" [value]="division">
+                    {{division.divisionName}}
+                  </option>
+              </select>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Quay lại</button>
+              <button [disabled]="formGroup.invalid" type="submit" class="btn btn-primary">Thêm</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Edit Modal -->
+  <div class="modal fade" id="updateEmployeeModal" tabindex="-1" aria-labelledby="updateEmployeeModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="updateEmployeeModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Delete Modal -->
+  <div class="modal fade" id="deleteEmployeeModal" tabindex="-1" aria-labelledby="deleteEmployeeModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="deleteEmployeeModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

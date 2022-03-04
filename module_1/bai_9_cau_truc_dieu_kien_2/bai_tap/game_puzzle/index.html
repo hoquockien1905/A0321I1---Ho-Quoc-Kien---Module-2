@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Game puzzle</title>
+</head>
+<body>
+    <div onclick="check()" id="done">
+        <img id="img1" src="" onclick="changeImages1()">
+        <img id="img2" src="" onclick="changeImages2()">
+        <img id="img3" src="" onclick="changeImages3()">
+        <img id="img4" src="" onclick="changeImages4()">
+        <img id="img5" src="" onclick="changeImages5()">
+    </div>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        #done {
+            display: flex;
+            flex-direction: column;
+        }
+        img {
+            margin: 0 auto;
+            padding: 2px;
+            width: 400px;
+            height: 120px;
+            box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, .5);
+        }
+    </style>
+    <script>
+        let images1 = [
+            "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part1x1.jpg",
+            "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part1x1.jpg",
+            "https://demo.codegym.vn/8/puzzlegame/img/monkey_part1x1.jpg"
+        ];
+        let randomIndex1 = Math.round(Math.random() * 2);
+        document.getElementById("img1").src = images1[randomIndex1];
+
+        function changeImages1() {
+            randomIndex1++;
+            if (randomIndex1 == 3) {
+                randomIndex1 = 0;
+            }
+            document.getElementById("img1").src = images1[randomIndex1];
+        }
+        let images2 = [
+            "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part2x1.jpg",
+            "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part2x1.jpg",
+            "https://demo.codegym.vn/8/puzzlegame/img/monkey_part2x1.jpg"
+        ];
+        let randomIndex2 = Math.round(Math.random() * 2);
+        document.getElementById("img2").src = images2[randomIndex2];
+
+        function changeImages2() {
+            randomIndex2++;
+            if (randomIndex2 == 3) {
+                randomIndex2 = 0;
+            }
+            document.getElementById("img2").src = images2[randomIndex2];
+        }
+        let images3 = [
+            "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part3x1.jpg",
+            "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part3x1.jpg",
+            "https://demo.codegym.vn/8/puzzlegame/img/monkey_part3x1.jpg"
+        ];
+        let randomIndex3 = Math.round(Math.random() * 2);
+        document.getElementById("img3").src = images3[randomIndex3];
+
+        function changeImages3() {
+            randomIndex3++;
+            if (randomIndex3 == 3) {
+                randomIndex3 = 0;
+            }
+            document.getElementById("img3").src = images3[randomIndex3];
+        }
+        let images4 = [
+            "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part4x1.jpg",
+            "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part4x1.jpg",
+            "https://demo.codegym.vn/8/puzzlegame/img/monkey_part4x1.jpg"
+        ];
+        let randomIndex4 = Math.round(Math.random() * 2);
+        document.getElementById("img4").src = images4[randomIndex4];
+
+        function changeImages4() {
+            randomIndex4++;
+            if (randomIndex4 == 3) {
+                randomIndex4 = 0;
+            }
+            document.getElementById("img4").src = images4[randomIndex4];
+        }
+        let images5 = [
+            "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part5x1.jpg",
+            "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part5x1.jpg",
+            "https://demo.codegym.vn/8/puzzlegame/img/monkey_part5x1.jpg"
+        ];
+        let randomIndex5 = Math.round(Math.random() * 2);
+        document.getElementById("img5").src = images5[randomIndex5];
+
+        function changeImages5() {
+            randomIndex5++;
+            if (randomIndex5 == 3) {
+                randomIndex5 = 0;
+            }
+            document.getElementById("img5").src = images5[randomIndex5];
+        }
+
+        function check() {
+            if ((document.getElementById("img1").src ==="https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part1x1.jpg"
+                && document.getElementById("img2").src ==="https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part2x1.jpg"
+                && document.getElementById("img3").src === "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part3x1.jpg"
+                && document.getElementById("img4").src === "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part4x1.jpg"
+                && document.getElementById("img5").src === "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part5x1.jpg")
+                ||
+                (document.getElementById("img1").src === "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part1x1.jpg"
+                    && document.getElementById("img2").src === "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part2x1.jpg"
+                    && document.getElementById("img3").src === "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part3x1.jpg"
+                    && document.getElementById("img4").src === "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part4x1.jpg"
+                    && document.getElementById("img5").src === "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part5x1.jpg")
+                ||
+                (document.getElementById('img1').src === "https://demo.codegym.vn/8/puzzlegame/img/monkey_part1x1.jpg"
+                    && document.getElementById('img2').src === "https://demo.codegym.vn/8/puzzlegame/img/monkey_part2x1.jpg"
+                    && document.getElementById('img3').src === "https://demo.codegym.vn/8/puzzlegame/img/monkey_part3x1.jpg"
+                    && document.getElementById('img4').src === "https://demo.codegym.vn/8/puzzlegame/img/monkey_part4x1.jpg"
+                    && document.getElementById('img5').src === "https://demo.codegym.vn/8/puzzlegame/img/monkey_part5x1.jpg")) {
+                document.getElementById("done").style.backgroundColor = "orange";
+            }
+        }
+    </script>
+</body>
+</html>

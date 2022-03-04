@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+    <script>
+        let celsius = parseFloat(prompt("Nhập nhiệt độ hiện tại lớn hơn 20 và nhỏ hơn 100"));
+            while (celsius > 99 || celsius < 21) {
+                while (celsius < 20.1) {
+                    celsius = prompt("Hãy tăng nhiệt độ > 20");
+                }
+                if (celsius > 20 && celsius < 100) {
+                    break;
+                }
+                celsius = prompt("Hãy giảm nhiệt độ < 100");
+            }
+            alert("Hoàn thành !!!")
+    </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6</title>
+</head>
+<body>
+    <div></div>
+    <script>
+        let arrStr = ["d", "-", "x", "s", "-", "-"];
+        let str = arrStr.toString();
+        let newArrayString = str.replace(/-/g, "_"); // /-/g => biểu thức chính quy
+        document.querySelector("div").innerHTML = newArrayString;
+        document.querySelector("div").style.fontSize = "50px";
+    </script>
+</body>
+</html>

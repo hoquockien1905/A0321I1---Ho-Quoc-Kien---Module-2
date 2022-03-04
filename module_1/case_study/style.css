@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.app {
+    width: 100%;
+    min-height: 100vh;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+header {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    background-color: #272882;
+    box-shadow: 0px 8px 20px 0px #8c8c8c;
+}
+img {
+    margin-top: 5px;
+    width: 240px;
+}
+h1 {
+    font-family: sans-serif;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+h2 {
+    text-align: center;
+}
+.container {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+}
+.sidebar {
+    width: 20%;
+}
+.content {
+    position: relative;
+    flex: 1;
+    border-left: 5px solid #272882;
+}
+ul {
+    margin: 20px;
+    padding: 15px 20px;
+}
+ul li{
+    list-style: none;
+    padding: 20px;
+    text-align: center;
+    border-bottom: #272882 1px solid;
+}
+button {
+    height: 30px;
+    width: 80px;
+    background-color: #272882;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 2px #bbbbbb;
+}
+button:hover {
+    cursor: pointer;
+}
+button:active {
+    box-shadow: inset 0px 0px 3px 2px #bbbbbb;
+}
+#listYeuCau1 li,
+#listYeuCau2 li,
+#listYeuCau3 li,
+#listYeuCau4 li,
+#listYeuCau5 li,
+#listYeuCau6 li {
+    margin: 35px 100px 0;
+    text-align: unset;
+}
+#listYeuCau1,
+#listYeuCau2,
+#listYeuCau3,
+#listYeuCau4,
+#listYeuCau5,
+#listYeuCau6,
+#result,
+#result2,
+#back1,
+#back2,
+#back3,
+#back4,
+#back5,
+#back6 {
+    display: none;
+}
+#soVe {
+    width: 300px;
+    margin: 10px 0 10px 215px;
+    border: 1px solid #000000;
+}
+#deMoSoXo {
+    width: 500px;
+    margin:20px 121px 10px;
+    border: 1px solid #000000;
+}
+p {
+    text-align: center;
+}
+span {
+    margin-left: 20px;
+}
+footer {
+    min-height: 60px;
+    background-color: #272882;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+#name {
+    margin-bottom: 10px;
+}
+#info {
+    padding: 5px 0;
+}
+#result,
+#result2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#result2 {
+    font-weight: bold;
+    font-size: 35px;
+    color: #272882;
+}
+
+#back1,
+#back2,
+#back3,
+#back4,
+#back5,
+#back6 {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}

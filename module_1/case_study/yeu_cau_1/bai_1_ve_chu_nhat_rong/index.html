@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vẽ hình chữ nhật rỗng </title>
+</head>
+<body>
+    <div id="result"></div>
+    <script>
+        let a = parseInt(prompt("Enter width:"));
+        let b = parseInt(prompt("Enter length:"));
+        let result = "";
+        for (let i = 0; i <= a; i++) {
+            for (let j = 0; j <= b; j++) {
+                if (i >= 1 && j >= 1 && i <= (a - 1) && j <= (b - 1)) {
+                    result += "&nbsp&nbsp";
+                } else {
+                    result += "*";
+                }
+            }
+            result += "<br>";
+        }
+        document.getElementById("result").innerHTML = result;
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function checkNumberOfDays(month, year) {
+            let day = "";
+            switch (month) {
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+                    day = "31";
+                    break;
+                case 4:
+                case 6:
+                case 9:
+                case 11:
+                    day = "30";
+                    break;
+                case 2:
+                    if (year % 4 == 0) {
+                        if (year % 100 == 0) {
+                            if (year % 400 == 0) {
+                                day = "29";
+                            } else {
+                                day = "28";
+                            }
+                        } else {
+                            day = "29";
+                        }
+                    }
+                default:
+                    break;
+            }
+            document.write(month + "/" + year + " có " + day + " ngày");
+        }
+
+        let month = parseInt(prompt("Nhập tháng:"));
+
+        while (isNaN(month) == true || month < 1 || month > 12) {
+            month = parseInt(prompt("Nhập lại tháng trong khoảng từ 1 đến 12"))
+        }
+
+        let year = parseInt(prompt("Nhập năm:"));
+
+        while (isNaN(year) == true || year < 0) {
+            year = parseInt(prompt("Nhập lại năm là một số nguyên dương"));
+        }
+
+        checkNumberOfDays(month, year);
+    </script>
+</body>
+</html>

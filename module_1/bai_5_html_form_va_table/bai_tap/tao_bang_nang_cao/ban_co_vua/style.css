@@ -1,0 +1,109 @@
+body {
+    width: 700px;
+    margin: 100px auto;
+    background: #FFB300;
+}
+table {
+    width: 100%;
+}
+th {
+    font-size: 30px;
+    padding: 15px;
+}
+
+table .number th {
+    padding-bottom: 0;
+}
+
+tr, td {
+    width: 70px;
+    height: 70px;
+}
+.row_A td:nth-child(1),
+.row_A td:nth-child(3),
+.row_A td:nth-child(5),
+.row_A td:nth-child(7),
+.row_A td:nth-child(9),
+.row_C td:nth-child(1),
+.row_C td:nth-child(3),
+.row_C td:nth-child(5),
+.row_C td:nth-child(7),
+.row_C td:nth-child(9),
+.row_E td:nth-child(1),
+.row_E td:nth-child(3),
+.row_E td:nth-child(5),
+.row_E td:nth-child(7),
+.row_E td:nth-child(9),
+.row_G td:nth-child(1),
+.row_G td:nth-child(3),
+.row_G td:nth-child(5),
+.row_G td:nth-child(7),
+.row_G td:nth-child(9) {
+    background: black;
+}
+.row_A td:nth-child(0),
+.row_A td:nth-child(2),
+.row_A td:nth-child(4),
+.row_A td:nth-child(6),
+.row_A td:nth-child(8),
+.row_C td:nth-child(0),
+.row_C td:nth-child(2),
+.row_C td:nth-child(4),
+.row_C td:nth-child(6),
+.row_C td:nth-child(8),
+.row_E td:nth-child(0),
+.row_E td:nth-child(2),
+.row_E td:nth-child(4),
+.row_E td:nth-child(6),
+.row_E td:nth-child(8),
+.row_G td:nth-child(0),
+.row_G td:nth-child(2),
+.row_G td:nth-child(4),
+.row_G td:nth-child(6),
+.row_G td:nth-child(8) {
+    background: white;
+}
+.row_B td:nth-child(0),
+.row_B td:nth-child(2),
+.row_B td:nth-child(4),
+.row_B td:nth-child(6),
+.row_B td:nth-child(8),
+.row_D td:nth-child(0),
+.row_D td:nth-child(2),
+.row_D td:nth-child(4),
+.row_D td:nth-child(6),
+.row_D td:nth-child(8),
+.row_F td:nth-child(0),
+.row_F td:nth-child(2),
+.row_F td:nth-child(4),
+.row_F td:nth-child(6),
+.row_F td:nth-child(8),
+.row_H td:nth-child(0),
+.row_H td:nth-child(2),
+.row_H td:nth-child(4),
+.row_H td:nth-child(6),
+.row_H td:nth-child(8) {
+    background: black;
+}
+.row_B td:nth-child(1),
+.row_B td:nth-child(3),
+.row_B td:nth-child(5),
+.row_B td:nth-child(7),
+.row_B td:nth-child(9),
+.row_D td:nth-child(1),
+.row_D td:nth-child(3),
+.row_D td:nth-child(5),
+.row_D td:nth-child(7),
+.row_D td:nth-child(9),
+.row_F td:nth-child(1),
+.row_F td:nth-child(3),
+.row_F td:nth-child(5),
+.row_F td:nth-child(7),
+.row_F td:nth-child(9),
+.row_H td:nth-child(1),
+.row_H td:nth-child(3),
+.row_H td:nth-child(5),
+.row_H td:nth-child(7),
+.row_H td:nth-child(9) {
+    background: white;
+}

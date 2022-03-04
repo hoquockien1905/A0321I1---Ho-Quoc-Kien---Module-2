@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="eb5c7733-31a5-4135-8163-7601787eaa04" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../bai_11_cau_truc_lap_2/bai_tap/bai_tap_luyen_tap_vong_lap_1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../bai_11_cau_truc_lap_2/bai_tap/bai_tap_luyen_tap_vong_lap_1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../game_puzzle/imges/funny-cat1_part1x1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../game_puzzle/imges/funny-cat1_part2x1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../game_puzzle/imges/funny-cat1_part3x1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../game_puzzle/imges/funny-cat1_part4x1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../game_puzzle/imges/funny-cat1_part5x1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../game_puzzle/imges/monkey_part1x1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../game_puzzle/imges/monkey_part2x1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../game_puzzle/imges/monkey_part3x1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../game_puzzle/imges/monkey_part4x1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../game_puzzle/imges/monkey_part5x1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../game_puzzle/imges/panda_swap_part1x1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../game_puzzle/imges/panda_swap_part2x1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../game_puzzle/imges/panda_swap_part3x1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../game_puzzle/imges/panda_swap_part4x1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../game_puzzle/imges/panda_swap_part5x1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../game_puzzle/index.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="ProjectId" id="1r9w8TBQBoTSRwx2vWWpvbibYqQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eb5c7733-31a5-4135-8163-7601787eaa04" name="Default Changelist" comment="" />
+      <created>1618401453226</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1618401453226</updated>
+      <workItem from="1618401454523" duration="9000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="456" y="188" key="FileChooserDialogImpl" timestamp="1618401462393">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="456" y="188" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1618401462393" />
+  </component>
+</project>

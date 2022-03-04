@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Luyện tập tạo và sử dụng hàm 02</title>
+</head>
+<body>
+    <button onclick="bai1()">Bài 1</button>
+    <button onclick="bai2()">Bài 2</button>
+    <button onclick="bai3()">Bài 3</button>
+    <button onclick="bai4()">Bài 4</button>
+    <button onclick="bai5()">Bài 5</button>
+    <button onclick="bai6()">Bài 6</button>
+    <button onclick="bai7()">Bài 7</button>
+    <button onclick="bai8()">Bài 8</button>
+    <button onclick="bai9()">Bài 9</button>
+    <script>
+        function bai1() {
+
+            let number = parseFloat(prompt("Enter a number"));
+            alert("The square of " + number + " is " + power(number));
+
+            function power(a) {
+                return Math.pow(a, 2);
+            }
+        }
+        
+        function bai2() {
+
+            let r = parseFloat(prompt("Enter the radius of the circle"));
+            const PI = 3.14;
+            alert("Perimeter is: " + perimeter(r));
+            alert("Area is: " + area(r));
+
+            function perimeter(r) {
+                return 2 * PI * r;
+            }
+            
+            function area(r) {
+                return r * r * PI;
+            }
+        }
+
+        function bai3() {
+
+            let number = parseInt(prompt("Enter a Integer number"));
+            alert("The factorial of " + number + " is " + factorial(number));
+
+            function factorial(number) {
+                if (number > 0) {
+                    return number * factorial(number - 1);
+                }
+                return 1;
+            }
+        }
+
+        function bai4() {
+            let char = prompt("Enter a character");
+            alert(checkCharacter(char));
+
+            function checkCharacter(a) {
+                if (isNaN(a)) {
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+        }
+
+        function bai5() {
+            let a = parseInt(prompt("Enter the first number"));
+            let b = parseInt(prompt("Enter the second number"));
+            let c = parseInt(prompt("Enter the third number"));
+            alert("The minimum value is " + minimumValue(a, b, c));
+
+            function minimumValue(x, y, z) {
+                if (x <= y && x <= z) {
+                    return x;
+                } else if (y <= z) {
+                    return y;
+                } else {
+                    return z;
+                }
+            }
+        }
+        
+        function bai6() {
+            let number = parseInt(prompt("Enter a Integer number"));
+            alert(positiveNumber(number));
+            
+            function positiveNumber(n) {
+                if (n <= 0) {
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+        }
+
+        function bai7() {
+            let a = 1;
+            let b = 4;
+            alert("before swap : " + a + " - " + b);
+            alert("after swap: " + swap(a, b));
+
+            function swap(x, y) {
+                return [y, x].join(" - ");
+            }
+        }
+
+        function bai8() {
+            let arr = Array(parseInt(prompt("The number of elements in the Array")));
+            for (let i = 0; i < arr.length; i++) {
+                arr[i] = parseInt(prompt("a[" + i + "]="));
+            }
+            alert("Array imported: " + arr);
+            alert("Array reserve: " + reserveArray());
+
+            function reserveArray() {
+                return arr.reverse();
+            }
+        }
+
+        function bai9() {
+            let arr = Array(parseInt(prompt("The number of elements in the Array")));
+            for (let i = 0; i < arr.length; i++) {
+                arr[i] = prompt("a[" + i + "]=");
+            }
+            let char = prompt("Enter a character");
+            alert(find());
+
+            function find() {
+                let count = 0;
+                for (let i = 0; i < arr.length; i++) {
+                    if (char == arr[i]) {
+                         count++;
+                    }
+                }
+                if (count == 0) {
+                    return -1;
+                } else {
+                    return count;
+                }
+            }
+        }
+    </script>
+</body>
+</html>

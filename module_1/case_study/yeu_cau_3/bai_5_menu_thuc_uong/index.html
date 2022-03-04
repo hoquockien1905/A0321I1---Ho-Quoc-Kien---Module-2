@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu các loại thức uống</title>
+</head>
+<body>
+    <script>
+        let order;
+        let productName ="";
+        let list = "";
+        let quantity;
+        let total = 0;
+        let price;
+        let result = 0;
+        let yourName = prompt("Nhập tên của bạn: ");
+        while (order != 7) {
+            order = parseInt(prompt(" 1. Cà Phê \n 2. Cam vắt \n 3. Nước ép cà rốt" +
+                "\n 4. Nước ép cà chua \n 5. Nước lọc \n 6. Nước dừa \n 7. Thoát"));
+            switch (order) {
+                case 1:
+                    quantity = parseInt(prompt("Đơn giá: 15.000VNĐ \n Mời nhập số lượng"));
+                    productName = "Cà phê";
+                    price = 15000;
+                    total = price * quantity;
+                    break;
+                case 2:
+                    quantity = parseInt(prompt("Đơn giá: 20.000VNĐ \n Mời nhập số lượng"));
+                    productName = "Cam vắt";
+                    price = 20000;
+                    total = price * quantity;
+                    break;
+                case 3:
+                    quantity = parseInt(prompt("Đơn giá: 25.000VNĐ \n Mời nhập số lượng"));
+                    productName = "Nước ép cà rốt";
+                    price = 25000;
+                    total = price * quantity;
+                    break;
+                case 4:
+                    quantity = parseInt(prompt("Đơn giá: 25.000VNĐ \n Mời nhập số lượng"));
+                    productName = "Nước ép cà chua";
+                    price = 25000;
+                    total = price * quantity;
+                    break;
+                case 5:
+                    quantity = parseInt(prompt("Đơn giá: 10.000VNĐ \n Mời nhập số lượng"));
+                    productName = "Nước lọc";
+                    price = 10000;
+                    total = price * quantity;
+                    break;
+                case 6:
+                    quantity = parseInt(prompt("Đơn giá: 15.000VNĐ \n Mời nhập số lượng"));
+                    productName = "Nước dừa";
+                    price = 15000;
+                    total = price * quantity;
+                    break;
+                default:
+                    break;
+            }
+            if (order != 7) {
+                list += productName + ": " + price.toLocaleString() + " x " + quantity + " = " + total.toLocaleString() + " VNĐ" + "\n";
+                result += total;
+            }
+        }
+        alert(yourName + " đã gọi: \n" + list + "\n"
+        + "Tổng cộng: " + result.toLocaleString() + " VNĐ");
+    </script>
+</body>
+</html>

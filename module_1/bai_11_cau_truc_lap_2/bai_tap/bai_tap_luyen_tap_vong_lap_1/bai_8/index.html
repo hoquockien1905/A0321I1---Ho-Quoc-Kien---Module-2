@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 8</title>
+</head>
+<body>
+<button onclick="play()" type="button">CHƠI</button>
+<style>
+    body {
+        width: 400px;
+        margin: 200px auto;
+    }
+    button {
+        width: 400px;
+        height: 100px;
+        font-size: 50px;
+        background: cornflowerblue;
+        color: white;
+    }
+    button:hover {
+        background: blue;
+        cursor: pointer;
+    }
+    button:active {
+        background: darkblue;
+    }
+</style>
+<script>
+    function play() {
+        let min = parseInt(prompt("Số bạn muốn đoán trong khoảng từ "));
+        if (Number.isInteger(min) == false) {
+            alert("Ký tự không hợp lệ. Thoát trò chơi!");
+        } else {
+            let max = parseInt(prompt("đến"));
+            if (Number.isInteger(max) == false) {
+                alert("Ký tự không hợp lệ. Thoát trò chơi!");
+            } else {
+                let number = parseInt(prompt("Số bạn muốn đoán là số mấy?"));
+                if (Number.isInteger(number) == false) {
+                    alert("Ký tự không hợp lệ. Thoát trò chơi!");
+                } else {
+                    let rand = Math.round(min + Math.random() * (max - min));
+                    if (number > max || number < min) {
+                        alert("Số bạn nhập không hợp lệ");
+                    } else {
+                        if (rand == number) {
+                            alert("Bạn đã đoán đúng!!!");
+                        } else if (number < rand) {
+                            for (let i = 1; i <= 3; i++) {
+                                number = parseInt(prompt("Số bạn nhập đang nhỏ hơn đáp án!"));
+                                if (number == rand) {
+                                    alert("Bạn đã đoán đúng!!!");
+                                    break;
+                                } else {
+                                    if ((number < min) || (number > max) || Number.isInteger(number) == false) {
+                                        alert ("Số hoặc ký tự không hợp lệ!");
+                                        break;
+                                    } else {
+                                        if (i == 3) {
+                                            alert("Hết lượt!");
+                                        }
+                                    }
+                                }
+                            }
+                        } else {
+                            for (let i = 1; i <= 3; i++) {
+                                number = parseInt(prompt("Số bạn nhập đang lớn hơn đáp án!"));
+                                if (number == rand) {
+                                    alert("Bạn đã đoán đúng!!!");
+                                    break;
+                                } else {
+                                    if ((number < min) || (number > max) || Number.isInteger(number) == false) {
+                                        alert ("Số hoặc ký tự không hợp lệ!");
+                                        break;
+                                    } else {
+                                        if (i == 3) {
+                                            alert("Hết lượt!");
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+</script>
+</body>
+</html>

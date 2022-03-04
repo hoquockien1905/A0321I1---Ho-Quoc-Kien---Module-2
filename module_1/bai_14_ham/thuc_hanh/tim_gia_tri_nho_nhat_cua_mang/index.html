@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Thực hành] Tìm giá trị nhỏ nhất của mảng</title>
+</head>
+<body>
+    <script>
+        let arr1 = [3, 5, 1, 8, -3, 7, 8];
+        let arr2 = [7, 12, 6, 9, 20, 56, 89];
+        let arr3 = [];
+        let arr4 = [0, 0, 0, 0, 0, 0];
+        function minValue(arr) {
+            let min = arr[0];
+            for (let i = 0; i < arr.length; i++) {
+                if (min > arr[i]) {
+                    min = arr[i];
+                }
+            }
+            return "Giá trị nhỏ nhất của mảng " + arr + " là: " + min;
+        }
+        document.write(minValue(arr1) + "<br>" + "<br>");
+        document.write(minValue(arr2) + "<br>" + "<br>");
+        document.write(minValue(arr3) + "<br>" + "<br>");
+        document.write(minValue(arr4) + "<br>" + "<br>");
+    </script>
+</body>
+</html>

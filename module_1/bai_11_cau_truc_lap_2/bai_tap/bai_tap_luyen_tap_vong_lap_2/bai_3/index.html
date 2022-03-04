@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+    <div>
+        <button onclick="shape1()" type="button">Click Shape 1!</button>
+        <button onclick="shape2()" type="button">Click Shape 2!</button>
+    </div>
+    <div>
+        <button onclick="shape3()" type="button">Click Shape 3!</button>
+        <button onclick="shape4()" type="button">Click Shape 4!</button>
+    </div>
+    <style>
+        body {
+            width: 1000px;
+            margin: 100px auto;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+        }
+        button {
+            width: 380px;
+            height: 70px;
+            margin: 100px 50px;
+        }
+    </style>
+    <script>
+        function shape1() {
+            for (let i = 0; i <= 40; i++) {
+                for (let j = 1; j <= i; j++) {
+                    document.write("* ");
+                }
+                document.write("<br>");
+            }
+        }
+        function shape2() {
+            for (let i = 0; i <= 40; i++) {
+                for (let j = i; j < 40; j++) {
+                    document.write("* ");
+                }
+                document.write("* " + "<br>");
+            }
+        }
+        function shape3() {
+            let number = 1;
+            while (number <= 40) {
+                for (let i = 1; i <= 40 - number; i++) {
+                    document.write(" ..");
+                }
+                for (let j = 1; j <= number; j++) {
+                    document.write(" *");
+                }
+                document.write("<br>");
+                number++;
+            }
+        }
+        function shape4() {
+            let number = 40;
+            while (number >= 1) {
+                for (let i = 1; i <= 40 - number; i++){
+                    document.write(" ..");
+                }
+                for (let j = 1; j <= number; j++) {
+                    document.write(" *");
+                }
+                document.write("<br>");
+                number--;
+            }
+        }
+    </script>
+</body>
+</html>
